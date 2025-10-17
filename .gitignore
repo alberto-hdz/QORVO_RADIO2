@@ -6,13 +6,17 @@ __pycache__/
 # C extensions
 *.so
 
-# KiCade
+# KiCad
 *.bak
 *-backup.*
 *.kicad_prl
 fp-info-cache
 sym-lib-table
 fp-lib-table
+*.pro-bak
+*.sch-bak
+*.tmp
+_autosave-*
 
 # Distribution / packaging
 .Python
