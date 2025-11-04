@@ -58,120 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "annular_width|32225000|34550000|70ccc79d-3e1c-451b-a102-e3ba35d50fd3|00000000-0000-0000-0000-000000000000",
-          "Structural Throughhole"
-        ],
-        [
-          "annular_width|40425001|34550000|0ee27ea0-8a1b-4382-a320-81ae68b79c04|00000000-0000-0000-0000-000000000000",
-          "Structural Throughhole"
-        ],
-        [
-          "clearance|53980000|21885000|9e51e909-96bf-4949-9882-ae548872e1b6|3b9e8a56-16a4-466b-8319-e6e580fdb452",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|54615000|21250000|3b9e8a56-16a4-466b-8319-e6e580fdb452|43354a07-ff55-4173-a8d1-a29ce09038fc",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|54615000|22520000|9e51e909-96bf-4949-9882-ae548872e1b6|aa239837-75cd-4567-94ea-ccb6c436fa73",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|55250000|21885000|aa239837-75cd-4567-94ea-ccb6c436fa73|43354a07-ff55-4173-a8d1-a29ce09038fc",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|55885000|21250000|43354a07-ff55-4173-a8d1-a29ce09038fc|4834d039-d08f-49a6-a396-957fd687f819",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|56520000|21885000|478f7fc6-f015-4c75-b719-0f8df72fbcc3|4834d039-d08f-49a6-a396-957fd687f819",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|57155000|21250000|4834d039-d08f-49a6-a396-957fd687f819|54956001-2aa8-4c2f-bf95-97417660216a",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|57155000|22520000|478f7fc6-f015-4c75-b719-0f8df72fbcc3|d1c63661-aba3-4ed2-9813-adb11ef8025a",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|57790000|21885000|d1c63661-aba3-4ed2-9813-adb11ef8025a|54956001-2aa8-4c2f-bf95-97417660216a",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|58425000|21250000|54956001-2aa8-4c2f-bf95-97417660216a|f89ba658-6c46-4d35-aa4c-74a7e236579b",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|58425000|22520000|d1c63661-aba3-4ed2-9813-adb11ef8025a|daae2d6a-bde3-4a2a-852a-4693af959d38",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|59060000|21885000|daae2d6a-bde3-4a2a-852a-4693af959d38|f89ba658-6c46-4d35-aa4c-74a7e236579b",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|71850000|35000000|478e19fe-c48b-4d06-9593-deb1e50420da|f413f1c6-da0e-4cc7-b7ad-c16b514cafb8",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|71850000|35500000|f413f1c6-da0e-4cc7-b7ad-c16b514cafb8|e42afb29-3070-4c36-ac69-26178cc7f969",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|72100000|34750000|478e19fe-c48b-4d06-9593-deb1e50420da|927f10d1-c9f2-40ed-8eca-79f293e63528",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|72100000|35750000|e42afb29-3070-4c36-ac69-26178cc7f969|7a6138f7-a556-49ef-8849-e4aeab0b57f9",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|72350000|35000000|927f10d1-c9f2-40ed-8eca-79f293e63528|9809fa41-cfbc-42ae-ab5c-50f3e069dc80",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|72350000|35500000|9809fa41-cfbc-42ae-ab5c-50f3e069dc80|7a6138f7-a556-49ef-8849-e4aeab0b57f9",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|72600000|34750000|927f10d1-c9f2-40ed-8eca-79f293e63528|31bfc896-375d-449b-ad72-33de39eeed62",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|72600000|35250000|9809fa41-cfbc-42ae-ab5c-50f3e069dc80|f8cb3708-a099-4653-8937-0d5c4667678f",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|72600000|35750000|7a6138f7-a556-49ef-8849-e4aeab0b57f9|bbf1dcd9-1b54-4fb7-af23-7a99802530b5",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|72850000|35000000|31bfc896-375d-449b-ad72-33de39eeed62|f8cb3708-a099-4653-8937-0d5c4667678f",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "clearance|72850000|35500000|f8cb3708-a099-4653-8937-0d5c4667678f|bbf1dcd9-1b54-4fb7-af23-7a99802530b5",
-          "Footprint from vendor (Checked)"
-        ],
-        [
-          "padstack|32225000|34550000|70ccc79d-3e1c-451b-a102-e3ba35d50fd3|00000000-0000-0000-0000-000000000000",
-          "Structural Throughhole"
-        ],
-        [
-          "padstack|40425001|34550000|0ee27ea0-8a1b-4382-a320-81ae68b79c04|00000000-0000-0000-0000-000000000000",
-          "Structural Throughhole"
-        ],
-        [
-          "silk_edge_clearance|60000000|82000000|c211ed53-5fe2-482b-bda5-c5c84b2115b4|0dbdac05-eb1f-4344-8b70-ebe9d55d73aa",
-          "Connector to hug side of board"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -236,22 +123,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.127,
-        "min_connection": 0.127,
-        "min_copper_edge_clearance": 0.5,
+        "min_clearance": 0.075,
+        "min_connection": 0.075,
+        "min_copper_edge_clearance": 0.0,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.127,
-        "min_hole_to_hole": 0.127,
-        "min_microvia_diameter": 0.4064,
-        "min_microvia_drill": 0.2032,
+        "min_hole_clearance": 0.28,
+        "min_hole_to_hole": 0.2,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.127,
-        "min_through_hole_diameter": 0.2032,
-        "min_track_width": 0.127,
-        "min_via_annular_width": 0.1016,
-        "min_via_diameter": 0.4064,
+        "min_silk_clearance": 0.15,
+        "min_text_height": 0.1,
+        "min_text_thickness": 0.15,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.075,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -591,7 +478,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -602,9 +489,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.075,
+        "via_diameter": 0.25,
+        "via_drill": 0.15,
         "wire_width": 6
       },
       {

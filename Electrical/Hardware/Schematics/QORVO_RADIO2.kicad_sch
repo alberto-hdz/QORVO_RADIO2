@@ -4426,107 +4426,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Inverted_F_Antenna:_1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "InvertedF"
-				(at 19.304 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "_1_0_1"
-				(rectangle
-					(start 3.81 5.08)
-					(end 36.83 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "_1_1_1"
-				(pin power_out line
-					(at 1.27 2.54 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 39.37 2.54 180)
-					(length 2.54)
-					(name "RF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "J-Link Header:3220-10-0100-00"
+		(symbol "GRPB052VWQS-RC:GRPB052VWQS-RC"
 			(pin_names
 				(offset 0.254)
 			)
@@ -4541,16 +4441,16 @@
 					)
 				)
 			)
-			(property "Value" "3220-10-0100-00"
-				(at 0 0 0)
+			(property "Value" "GRPB052VWQS-RC"
+				(at 8.89 9.144 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" "CONN_3220-10-0100-00_CNC"
-				(at 0 0 0)
+			(property "Footprint" "CONN_GRPB052_SUL"
+				(at 8.89 11.176 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4559,8 +4459,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "3220-10-0100-00"
-				(at 0 0 0)
+			(property "Datasheet" "GRPB052VWQS-RC"
+				(at 8.89 12.954 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4586,7 +4486,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "3220-10-0100-00"
+			(property "ki_keywords" "GRPB052VWQS-RC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4595,7 +4495,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "CONN_3220-10-0100-00_CNC"
+			(property "ki_fp_filters" "CONN_GRPB052_SUL"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4604,7 +4504,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "3220-10-0100-00_1_1"
+			(symbol "GRPB052VWQS-RC_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 12.7 -25.4)
@@ -5157,7 +5057,7 @@
 					)
 				)
 			)
-			(symbol "3220-10-0100-00_1_2"
+			(symbol "GRPB052VWQS-RC_1_2"
 				(polyline
 					(pts
 						(xy 5.08 2.54) (xy 5.08 -25.4)
@@ -5749,6 +5649,106 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Inverted_F_Antenna:_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "InvertedF"
+				(at 19.304 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "_1_0_1"
+				(rectangle
+					(start 3.81 5.08)
+					(end 36.83 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "_1_1_1"
+				(pin power_out line
+					(at 1.27 2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 39.37 2.54 180)
+					(length 2.54)
+					(name "RF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "LDO40LPU33RY:LDO40LPU33RY"
 			(pin_names
 				(offset 0.254)
@@ -5895,7 +5895,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin power_in line
 					(at 40.64 0 180)
 					(length 7.62)
 					(name "EPAD"
@@ -6116,7 +6116,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin power_in line
 					(at 40.64 0 180)
 					(length 7.62)
 					(name "EPAD"
@@ -10918,6 +10918,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 107.95) (xy 237.49 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e1c114-1ab6-4222-92f5-7ed2ba0a4711")
+	)
+	(wire
+		(pts
 			(xy 213.36 176.53) (xy 199.39 176.53)
 		)
 		(stroke
@@ -11175,6 +11185,16 @@
 			(type default)
 		)
 		(uuid "258d19d8-3d58-464b-b34c-d53779590a61")
+	)
+	(wire
+		(pts
+			(xy 232.41 24.13) (xy 232.41 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29764d24-997c-4f65-a177-c1a4dfb540e0")
 	)
 	(wire
 		(pts
@@ -12948,6 +12968,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 114.3) (xy 237.49 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e75d762c-f416-401d-a9b6-afd9a9901757")
+	)
+	(wire
+		(pts
 			(xy 485.14 237.49) (xy 485.14 246.38)
 		)
 		(stroke
@@ -12965,6 +12995,16 @@
 			(type default)
 		)
 		(uuid "eac94b91-3286-4a72-b583-57c1a7dc998a")
+	)
+	(wire
+		(pts
+			(xy 226.06 26.67) (xy 232.41 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eba1e0c1-5f08-4c9f-8475-9fd74d0a18b9")
 	)
 	(wire
 		(pts
@@ -14752,102 +14792,6 @@
 		)
 	)
 	(symbol
-		(lib_id "J-Link Header:3220-10-0100-00")
-		(at 480.06 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "081f67d5-6b39-4ba3-acbb-acee67e53343")
-		(property "Reference" "J2"
-			(at 494.03 64.7699 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3220-10-0100-00"
-			(at 494.03 67.3099 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "J-Link Header:CONN_3220-10-0100-00_CNC"
-			(at 480.06 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "3220-10-0100-00"
-			(at 480.06 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 480.06 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "097333e2-e5ed-426f-8ff3-eb7cfbcc2bc0")
-		)
-		(pin "3"
-			(uuid "49244537-7abd-4c18-a6c2-ae97f0fe1f42")
-		)
-		(pin "7"
-			(uuid "35bc3c0b-557a-4f44-9647-3ebab7163878")
-		)
-		(pin "10"
-			(uuid "daf01aaf-53a5-4d0a-a867-afee41a6da12")
-		)
-		(pin "5"
-			(uuid "afd6b24b-c097-4568-8e22-c108a8245136")
-		)
-		(pin "4"
-			(uuid "55041428-568c-448c-b734-a152ac2ca0c9")
-		)
-		(pin "1"
-			(uuid "85f88299-d720-47a5-98a2-389cdea7fe24")
-		)
-		(pin "9"
-			(uuid "5ed5983a-fff8-4b1a-bc72-3d9347cacf39")
-		)
-		(pin "2"
-			(uuid "c79e349d-4e41-4659-bcff-daf11a6ab491")
-		)
-		(pin "8"
-			(uuid "77c4061d-c4f0-4edf-b547-fdf7e9f594b1")
-		)
-		(instances
-			(project ""
-				(path "/857d4a07-0150-4c4b-a0bc-a2b2a01a1105"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Capacitor 1 uF:CL10B105KP8NNNC")
 		(at 213.36 189.23 0)
 		(unit 1)
@@ -16617,6 +16561,7 @@
 		)
 		(property "Footprint" "AU-Y1005:LED Header"
 			(at 504.19 325.12 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18865,6 +18810,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 237.49 107.95 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9df1ca0d-c40b-4941-bdc6-0bcb407666a5")
+		(property "Reference" "#PWR09"
+			(at 237.49 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 237.49 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 237.49 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc18e746-86f2-4b58-aebe-2dc65560ff10")
+		)
+		(instances
+			(project ""
+				(path "/857d4a07-0150-4c4b-a0bc-a2b2a01a1105"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Resistor 1KOhm:RMCF0603FG1K00")
 		(at 278.13 274.32 270)
 		(unit 1)
@@ -19542,6 +19553,102 @@
 		)
 	)
 	(symbol
+		(lib_id "GRPB052VWQS-RC:GRPB052VWQS-RC")
+		(at 480.06 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9973e88-8f0c-4105-9b15-aad8f1c6b721")
+		(property "Reference" "J1"
+			(at 494.03 64.7699 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GRPB052VWQS-RC"
+			(at 494.03 67.3099 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GRPB052VWQS-RC:CONN_GRPB052_SUL"
+			(at 480.06 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "GRPB052VWQS-RC"
+			(at 480.06 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 480.06 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "89c96093-7e4c-432f-a24c-6d72ff4bbe35")
+		)
+		(pin "4"
+			(uuid "2513ee91-2520-4ada-92ae-34abfbe3d3ca")
+		)
+		(pin "5"
+			(uuid "10fed368-1f76-4f25-9763-94e2caf3a829")
+		)
+		(pin "7"
+			(uuid "e19639e8-a397-4bfc-b47a-a52a430c3af4")
+		)
+		(pin "6"
+			(uuid "cf8bb56c-3c3c-4876-a53a-371b2b464025")
+		)
+		(pin "10"
+			(uuid "9053b19f-e1f0-4795-ab79-b114fc154f4a")
+		)
+		(pin "1"
+			(uuid "0fe8677e-3cd3-4fea-a60a-5f14e4d4acaf")
+		)
+		(pin "2"
+			(uuid "b03eacc2-32a2-413a-b208-991606119d61")
+		)
+		(pin "3"
+			(uuid "c5664c40-104f-40ce-b7ff-5e74fe39343b")
+		)
+		(pin "9"
+			(uuid "f373537f-3d6b-4e6c-858c-f17c8fd46d62")
+		)
+		(instances
+			(project ""
+				(path "/857d4a07-0150-4c4b-a0bc-a2b2a01a1105"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Resistor 0 Ohm:Shunt")
 		(at 332.74 397.51 270)
 		(unit 1)
@@ -20153,6 +20260,72 @@
 			(project "QORVO_RADIO2"
 				(path "/857d4a07-0150-4c4b-a0bc-a2b2a01a1105"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 24.13 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf09dbea-cf9b-4a0e-9f86-2e43de85111e")
+		(property "Reference" "#PWR08"
+			(at 232.41 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ff39cd7-07e8-4886-8c5d-8ea67a9fbf01")
+		)
+		(instances
+			(project ""
+				(path "/857d4a07-0150-4c4b-a0bc-a2b2a01a1105"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
