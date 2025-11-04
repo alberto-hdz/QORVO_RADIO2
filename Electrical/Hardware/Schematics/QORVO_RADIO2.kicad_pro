@@ -239,12 +239,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "lib_symbol_mismatch|1854200|266700|e3221c32-eac9-4205-83b2-aa3bff6666cf|00000000-0000-0000-0000-000000000000|||",
-        "ADJ is unconnected in this config"
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
