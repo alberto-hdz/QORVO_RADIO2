@@ -10,8 +10,8 @@
         "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
-        "copper_text_size_v": 1.5,
-        "copper_text_thickness": 0.3,
+        "copper_text_size_v": 0.762,
+        "copper_text_thickness": 0.1905,
         "copper_text_upright": false,
         "courtyard_line_width": 0.05,
         "dimension_precision": 4,
@@ -27,13 +27,13 @@
         "fab_line_width": 0.1,
         "fab_text_italic": false,
         "fab_text_size_h": 1.0,
-        "fab_text_size_v": 1.0,
+        "fab_text_size_v": 0.762,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
         "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
-        "other_text_size_v": 1.0,
+        "other_text_size_v": 0.762,
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
@@ -44,11 +44,11 @@
         "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
+        "silk_text_size_v": 0.762,
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -242,7 +242,140 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|1270000|3327400|f270e850-9735-472d-9af7-b5595862a9b2|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1270000|3619500|78bb9029-eb55-4376-8f9d-fbdda1ebd523|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|139700|381000|5f7840fe-5f70-47a6-bd50-f3549e35cd47|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1816100|990600|c86d85ab-926b-4261-a90e-e31ce4d9d1f0|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1854200|266700|e3221c32-eac9-4205-83b2-aa3bff6666cf|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1866900|774700|26cc14b4-dfc5-48b8-bb1a-bf6cff3809b8|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1879600|3403600|2db876b3-b718-44af-8299-2f379ea5fc44|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1879600|3556000|97727a8a-94c3-4e1d-b3e1-fb1334687952|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2082800|3594100|935dccda-319a-4a37-8149-b6a8432ed010|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2095500|3365500|98590228-d9b6-4a87-bd34-4be98d176980|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2552700|1790700|0ad64f26-6aab-484d-b68c-f391e38cd25c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2616200|1651000|1c93e86f-7ecc-4f49-bdfb-ee899a211eb6|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|3505200|1092200|fd1524dd-397a-4a64-90c5-0d716ea4446c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|3962400|1079500|e933a41f-862b-4c58-86b0-0fcc164c2db4|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|3975100|2311400|70a8cf1f-a24a-4bb5-b094-cb50c5f0136c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|3987800|3175000|f6550928-3db1-4d19-ab45-f655b80d7342|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4152900|2425700|1739af73-47b9-4d76-8b15-c741d825a619|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4241800|3175000|1c03401a-38b7-40ea-811f-4ef6e0c9cfb9|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4330700|1955800|4c5cdb6c-914b-47eb-a7e8-8083c2c01852|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4508500|3162300|0bc4791f-6e60-4d4f-bdc5-8e11a5e19cef|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4622800|2705100|ff0d285c-bba9-4808-bffd-4d251bd8ad47|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4660900|3162300|54aa40ca-bc98-4670-9e8d-cd629886d41c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4724400|2514600|71f84437-2ea9-4654-abd6-84741c754799|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4737100|1016000|4da3a69e-c18b-4056-8602-492ceaa09848|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4749800|2501900|426b01a4-8016-44cc-acaa-4052de58f4fc|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4787900|3162300|c61f6f78-326f-42e2-ab33-1926cb2f4797|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4965700|2705100|c6483cc1-6683-441f-ac41-003beaac7d68|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4978400|3162300|4f23d0ff-9316-4ca3-aa35-ba5afea84255|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|5105400|3022600|a6aa0ea8-64f4-4c76-83f9-85a10bd389d5|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|5105400|3213100|183b6e96-6819-4e82-b95f-fcd5f556934a|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|533400|2489200|5dd988d7-b368-4e15-836f-a0f6a8fef357|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|749300|1181100|13bf36e9-a3f0-4f3e-b959-df7a5d10e228|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|749300|2501900|e07ca138-3dfc-4768-9bfd-62c2eeeb545b|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
