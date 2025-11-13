@@ -34,7 +34,7 @@
 /*****************************************************************************
  *                    Includes Definitions
  *****************************************************************************/
-#include "hal.h"  // Hardware Abstraction Layer gives acees to microcontroller features
+#include "hal.h"  // Hardware Abstraction Layer gives access to microcontroller features
 #include "gpHal_DEFS.h" // Qorvo's low level GPIO and hardware macros/constants
 #include "gpBaseComps.h" // Qorvo's base libraries for communication, logging, and scheduling
 #include "gpCom.h" // Qorvo's base libraries for communication, logging, and scheduling
@@ -42,6 +42,7 @@
 #include "gpSched.h" // Qorvo's base libraries for communication, logging, and scheduling
 
 #include "qPinCfg.h" // Handles pin configuration 
+#include "qDrvGPIO.h" // GPIO driver functions
 
 #include "FreeRTOS.h" // Core FreeRTOS headers for multitasking and scheduling
 #include "task.h" // Core FreeRTOS headers for multitasking and scheduling
@@ -60,8 +61,8 @@
 #define LED_TASK_STACK_SIZE         (configMINIMAL_STACK_SIZE + 1000) // each task gets memory for its execution stack
 #define SENSOR_TASK_STACK_SIZE (configMINIMAL_STACK_SIZE + 1000) // each task gets memory for its execution stack
 
-#define TRIG_GPIO 10  // GPIO10 for Trig (output) //defines whihc pins are connexted to the HC-SR04 senosrs trig and echo pins 
-#define ECHO_GPIO 11  // GPIO11 for Echo (input) //defines whihc pins are connexted to the HC-SR04 senosrs trig and echo pins
+#define TRIG_GPIO 10  // GPIO10 for Trig (output)
+#define ECHO_GPIO 11  // GPIO11 for Echo (input)
 
 /******************************************************************************
  *                    Static Function Declarations
@@ -93,42 +94,68 @@ static void sensor_Task(void* pvParameters) // Measuring Distance
 {
     static int prev_distance = 0;
 
-    // Configure Trig as output, low
-    gpHal_GPIO_SetPinMode(TRIG_GPIO, GP_HAL_GPIO_MODE_OUTPUT);
-    gpHal_GPIO_SetPin(TRIG_GPIO, 0);
+    // Configure GPIO pins
+    qDrvGPIO_PinConfig_t trigConfig;
+    trigConfig.mode = qDrvIOB_ModeGpio;
+    trigConfig.direction = qDrvGPIO_DirectionOutput;
+    trigConfig.pull = qDrvIOB_PullNone;
+    qDrvGPIO_SetPinConfig(TRIG_GPIO, &trigConfig);
+    qDrvGPIO_WritePin(TRIG_GPIO, 0);
 
-    // Configure Echo as input
-    gpHal_GPIO_SetPinMode(ECHO_GPIO, GP_HAL_GPIO_MODE_INPUT);
+    qDrvGPIO_PinConfig_t echoConfig;
+    echoConfig.mode = qDrvIOB_ModeGpio;
+    echoConfig.direction = qDrvGPIO_DirectionInput;
+    echoConfig.pull = qDrvIOB_PullNone;
+    qDrvGPIO_SetPinConfig(ECHO_GPIO, &echoConfig);
 
     while(1)
     {
         // Send 10us trigger pulse
-        gpHal_GPIO_SetPin(TRIG_GPIO, 1);
-        gpHal_SleepUs(10);
-        gpHal_GPIO_SetPin(TRIG_GPIO, 0);
+        qDrvGPIO_WritePin(TRIG_GPIO, 1);
+        hal_WaitUs(10);
+        qDrvGPIO_WritePin(TRIG_GPIO, 0);
 
-        // Wait for echo to go high (start)
-        while (gpHal_GPIO_GetPin(ECHO_GPIO) == 0) {}
+        // Wait for echo to go high (start) - with timeout
+        uint32_t timeout = 10000;
+        while (qDrvGPIO_ReadPin(ECHO_GPIO) == 0 && timeout-- > 0) {}
+
+        if (timeout == 0) {
+            GP_LOG_SYSTEM_PRINTF("Sensor timeout - no echo", 0);
+            vTaskDelay(INTERVAL_MS);
+            continue;
+        }
 
         // Start timing
         uint32_t start_time = gpSched_GetCurrentTime();
 
-        // Wait for echo to go low (end)
-        while (gpHal_GPIO_GetPin(ECHO_GPIO) == 1) {}
+        // Wait for echo to go low (end) - with timeout
+        timeout = 30000;
+        while (qDrvGPIO_ReadPin(ECHO_GPIO) == 1 && timeout-- > 0) {}
+
+        if (timeout == 0) {
+            GP_LOG_SYSTEM_PRINTF("Sensor timeout - echo stuck high", 0);
+            vTaskDelay(INTERVAL_MS);
+            continue;
+        }
 
         // End timing
         uint32_t end_time = gpSched_GetCurrentTime();
 
         // Calculate time in us, distance in cm (speed of sound 0.0343 cm/us, /2 for round trip)
         uint32_t time_us = end_time - start_time;
-        int distance_cm = (time_us * 0.0343) / 2;
+        int distance_cm = (time_us * 343) / 20000; // More accurate calculation
 
-        // Detect movement if distance changed
-        if (distance_cm != prev_distance) {
-            GP_LOG_SYSTEM_PRINTF("Movement detected! Distance: %d cm", 0, distance_cm);
-            prev_distance = distance_cm;
+        // Only log if distance is reasonable (2-400cm for HC-SR04)
+        if (distance_cm >= 2 && distance_cm <= 400) {
+            // Detect movement if distance changed significantly
+            if (distance_cm != prev_distance && abs(distance_cm - prev_distance) > 2) {
+                GP_LOG_SYSTEM_PRINTF("Movement detected! Distance: %d cm", 0, distance_cm);
+                prev_distance = distance_cm;
+            } else {
+                GP_LOG_SYSTEM_PRINTF("No movement. Distance: %d cm", 0, distance_cm);
+            }
         } else {
-            GP_LOG_SYSTEM_PRINTF("No movement. Distance: %d cm", 0, distance_cm);
+            GP_LOG_SYSTEM_PRINTF("Out of range reading: %d cm", 0, distance_cm);
         }
 
         vTaskDelay(INTERVAL_MS);
