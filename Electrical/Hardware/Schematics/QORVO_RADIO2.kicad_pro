@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -68,23 +68,11 @@
           ""
         ],
         [
-          "footprint_symbol_mismatch|152840000|107978000|e9af694b-27c0-4d38-9d8f-d4eba83c5d79|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "footprint_symbol_mismatch|156662000|86458000|30bed3d6-b566-4a66-b6db-feedaa5f75ae|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "footprint_symbol_mismatch|163833000|86264000|723ee9dd-f1c0-4778-bb71-431b1a2f741b|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "footprint_symbol_mismatch|165891100|83266000|d4544d92-7d2d-4312-af03-82cc31eee2fd|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "footprint_symbol_mismatch|167904000|107870000|5c209461-5562-4c50-b3eb-1d93c58b27d8|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -93,10 +81,6 @@
         ],
         [
           "footprint_symbol_mismatch|175106000|74981000|a1b4e1d6-ffdf-467e-bdde-1c9c6177ed20|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "footprint_symbol_mismatch|175858000|87137000|e064f8c6-80ce-46bd-bd67-8f20ab41ab12|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -538,135 +522,49 @@
         "wire_width": 6
       },
       {
-        "name": "ALERT/RDY",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "CLOCK",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 15,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "DAC_SCL",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "DAC_SDA",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "DATA",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 16,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "DB_GPIO",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 8,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "Data+",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 7,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "Data-",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "JTAG_TCK",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 14,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "JTAG_TDI",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 12,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "JTAG_TDO",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 13,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "JTAG_TMS",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 9,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "JTAG_nRESET",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 11,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "QPG_RX",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "QPG_TX",
+        "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
-        "name": "SHUTDOWN",
+        "name": "RF0+",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "RF0-",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "diff_pair_width": 0.355,
+        "name": "RF1+",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.355
+      },
+      {
+        "diff_pair_width": 0.355,
+        "name": "RF1-",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.355
+      },
+      {
+        "name": "Signal",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
-        "name": "VDD_3.3V",
+        "name": "VCC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 18,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "VDD_5V",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 19,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "V_Source1",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 21,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "V_Source2",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 20,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "X32MN",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 17,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "X32MP",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 10,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
@@ -681,23 +579,47 @@
       "+5V": [
         "VDD_5V"
       ],
+      "/3.3V": [
+        "VCC"
+      ],
+      "/5V": [
+        "VCC"
+      ],
+      "/6V": [
+        "VCC"
+      ],
       "/ALERT{slash}RDY": [
         "ALERT/RDY"
+      ],
+      "/AUDIO_AMP_SHUTDOWN": [
+        "Signal"
       ],
       "/CLOCK": [
         "CLOCK"
       ],
+      "/DAC_MOSI": [
+        "Signal"
+      ],
+      "/DAC_OUT": [
+        "Signal"
+      ],
       "/DAC_SCL": [
         "DAC_SCL"
       ],
+      "/DAC_SCLK": [
+        "Signal"
+      ],
       "/DAC_SDA": [
         "DAC_SDA"
+      ],
+      "/DAC_SYNC": [
+        "Signal"
       ],
       "/DATA": [
         "DATA"
       ],
       "/DB_GPIO": [
-        "DB_GPIO"
+        "Signal"
       ],
       "/Data +": [
         "Data+"
@@ -705,20 +627,32 @@
       "/Data -": [
         "Data-"
       ],
+      "/GNDRF0": [
+        "GNDRF0"
+      ],
+      "/GNDRF1": [
+        "GNDRF1"
+      ],
       "/JTAG_TCK": [
-        "JTAG_TCK"
+        "Signal"
       ],
       "/JTAG_TDI": [
-        "JTAG_TDI"
+        "Signal"
       ],
       "/JTAG_TDO": [
-        "JTAG_TDO"
+        "Signal"
       ],
       "/JTAG_TMS": [
-        "JTAG_TMS"
+        "Signal"
       ],
       "/JTAG_nRESET": [
-        "JTAG_nRESET"
+        "Signal"
+      ],
+      "/MIC_CLOCK": [
+        "Signal"
+      ],
+      "/MIC_DATA": [
+        "Signal"
       ],
       "/QPG_RX": [
         "QPG_RX"
@@ -726,8 +660,32 @@
       "/QPG_TX": [
         "QPG_TX"
       ],
+      "/RF0": [
+        "RF0"
+      ],
+      "/RF0+": [
+        "RF0+"
+      ],
+      "/RF0-": [
+        "RF0-"
+      ],
+      "/RF1": [
+        "RF1"
+      ],
+      "/RF1+": [
+        "RF1+"
+      ],
+      "/RF1-": [
+        "RF1-"
+      ],
       "/SHUTDOWN": [
         "SHUTDOWN"
+      ],
+      "/ULT_SEN_QPG_RX": [
+        "Signal"
+      ],
+      "/ULT_SEN_QPG_TX": [
+        "Signal"
       ],
       "/VDD_3.3V": [
         "VDD_3.3V"
@@ -742,30 +700,135 @@
         "V_Source"
       ],
       "/V_Source1": [
-        "V_Source1"
+        "VCC"
       ],
       "/V_Source2": [
-        "V_Source2"
+        "VCC"
       ],
       "/X32MN": [
         "X32MN"
       ],
+      "/X32MN_CRYSTAL": [
+        "Signal"
+      ],
       "/X32MP": [
         "X32MP"
+      ],
+      "/X32MP_CRYSTAL": [
+        "Signal"
+      ],
+      "GND": [
+        "GND"
       ]
     },
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": ""
+        "netclass": "VCC",
+        "pattern": "/V_Source2"
       },
       {
-        "netclass": "ALERT/RDY",
+        "netclass": "Signal",
+        "pattern": "/MIC_CLOCK"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/MIC_DATA"
+      },
+      {
+        "netclass": "VCC",
+        "pattern": "/3.3V"
+      },
+      {
+        "netclass": "VCC",
+        "pattern": "/5V"
+      },
+      {
+        "netclass": "VCC",
+        "pattern": "/6V"
+      },
+      {
+        "netclass": "VCC",
+        "pattern": "/V_Source1"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_TMS"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_TCK"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_TDO"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_TDI"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_nRESET"
+      },
+      {
+        "netclass": "GND",
         "pattern": "GND"
       },
       {
-        "netclass": "ALERT/RDY",
+        "netclass": "Signal",
+        "pattern": "/DB_GPIO"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/DAC_OUT"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/DAC_MOSI"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/DAC_SCLK"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/DAC_SYNC"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/AUDIO_AMP_SHUTDOWN"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/ULT_SEN_QPG_RX"
+      },
+      {
+        "netclass": "Signal",
         "pattern": "/ULT_SEN_QPG_TX"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/X32MP_CRYSTAL"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/X32MN_CRYSTAL"
+      },
+      {
+        "netclass": "RF0+",
+        "pattern": "/RF0+"
+      },
+      {
+        "netclass": "RF0-",
+        "pattern": "/RF0-"
+      },
+      {
+        "netclass": "RF1+",
+        "pattern": "/RF1+"
+      },
+      {
+        "netclass": "RF1-",
+        "pattern": "/RF1-"
       }
     ]
   },
