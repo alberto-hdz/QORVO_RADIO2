@@ -60,6 +60,34 @@
       ],
       "drc_exclusions": [
         [
+          "clearance|156863300|97443000|21e7c095-a324-4404-b4c9-9080496fb019|de3ec78a-e46b-4bd9-8f78-69454d05727e",
+          ""
+        ],
+        [
+          "clearance|172158300|90926700|478e19fe-c48b-4d06-9593-deb1e50420da|927f10d1-c9f2-40ed-8eca-79f293e63528",
+          ""
+        ],
+        [
+          "clearance|172408300|91176700|927f10d1-c9f2-40ed-8eca-79f293e63528|9809fa41-cfbc-42ae-ab5c-50f3e069dc80",
+          ""
+        ],
+        [
+          "clearance|172658300|90926700|927f10d1-c9f2-40ed-8eca-79f293e63528|31bfc896-375d-449b-ad72-33de39eeed62",
+          ""
+        ],
+        [
+          "clearance|172658300|91426700|9809fa41-cfbc-42ae-ab5c-50f3e069dc80|f8cb3708-a099-4653-8937-0d5c4667678f",
+          ""
+        ],
+        [
+          "clearance|172908300|91176700|31bfc896-375d-449b-ad72-33de39eeed62|f8cb3708-a099-4653-8937-0d5c4667678f",
+          ""
+        ],
+        [
+          "clearance|172908300|91676700|f8cb3708-a099-4653-8937-0d5c4667678f|bbf1dcd9-1b54-4fb7-af23-7a99802530b5",
+          ""
+        ],
+        [
           "footprint_symbol_mismatch|145539900|108009000|e3aaa211-1046-4050-a462-a69b7e47f87f|00000000-0000-0000-0000-000000000000",
           ""
         ],
@@ -81,6 +109,10 @@
         ],
         [
           "footprint_symbol_mismatch|175106000|74981000|a1b4e1d6-ffdf-467e-bdde-1c9c6177ed20|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|118347500|99034471|a867b65c-c170-45e8-b1fa-7da0f279edfc|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -540,20 +572,24 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
-        "diff_pair_width": 0.355,
+        "clearance": 0.2,
+        "diff_pair_width": 0.340503,
         "name": "RF1+",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.355
+        "track_width": 0.340503
       },
       {
-        "diff_pair_width": 0.355,
+        "clearance": 0.2,
+        "diff_pair_width": 0.340503,
         "name": "RF1-",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.355
+        "track_width": 0.340503,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
       },
       {
         "name": "Signal",
@@ -718,7 +754,9 @@
         "Signal"
       ],
       "GND": [
-        "GND"
+        "GND",
+        "RF0-",
+        "RF1-"
       ]
     },
     "netclass_patterns": [
