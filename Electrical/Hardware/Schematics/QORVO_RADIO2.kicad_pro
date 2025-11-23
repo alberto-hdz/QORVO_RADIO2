@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 2.5,
-          "width": 1.7
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -60,32 +60,24 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|156863300|97443000|21e7c095-a324-4404-b4c9-9080496fb019|de3ec78a-e46b-4bd9-8f78-69454d05727e",
-          ""
+          "clearance|123275000|103594029|7712c9fe-209b-49e0-aaa7-9c32c7082cc0|48406db2-38b6-490c-a107-9d9a193dd7db",
+          "INVERTED F ANTENNA DESIGN"
         ],
         [
-          "clearance|172158300|90926700|478e19fe-c48b-4d06-9593-deb1e50420da|927f10d1-c9f2-40ed-8eca-79f293e63528",
-          ""
+          "clearance|123275000|97694029|41b19028-2c2f-4d34-9057-9110771fe743|0e2d8a39-725f-43ee-90e1-e1cc549c4849",
+          "INVERTED F ANTENNA DESIGN"
         ],
         [
-          "clearance|172408300|91176700|927f10d1-c9f2-40ed-8eca-79f293e63528|9809fa41-cfbc-42ae-ab5c-50f3e069dc80",
-          ""
+          "clearance|155028000|95843000|cf3bc3bb-373c-4ba4-9bc3-b70a151ee41e|388c1408-54cb-46cd-be12-547b33008cf4",
+          "ADDED GND VIA ON PAD"
         ],
         [
-          "clearance|172658300|90926700|927f10d1-c9f2-40ed-8eca-79f293e63528|31bfc896-375d-449b-ad72-33de39eeed62",
-          ""
+          "clearance|155067000|69267999|8cded96c-487a-4ca3-9f68-1b2f25f40f4e|767c0208-49aa-480a-ae3f-77bcfe59cf6e",
+          "ADDED GND VIA ON PAD"
         ],
         [
-          "clearance|172658300|91426700|9809fa41-cfbc-42ae-ab5c-50f3e069dc80|f8cb3708-a099-4653-8937-0d5c4667678f",
-          ""
-        ],
-        [
-          "clearance|172908300|91176700|31bfc896-375d-449b-ad72-33de39eeed62|f8cb3708-a099-4653-8937-0d5c4667678f",
-          ""
-        ],
-        [
-          "clearance|172908300|91676700|f8cb3708-a099-4653-8937-0d5c4667678f|bbf1dcd9-1b54-4fb7-af23-7a99802530b5",
-          ""
+          "clearance|155887000|61248000|327ee3bd-011b-4951-a8b0-363fce933e31|99ad7eba-6f5c-46e5-9626-f80f4938ffcd",
+          "Added GND VIA ON PAD"
         ],
         [
           "footprint_symbol_mismatch|145539900|108009000|e3aaa211-1046-4050-a462-a69b7e47f87f|00000000-0000-0000-0000-000000000000",
@@ -112,12 +104,64 @@
           ""
         ],
         [
-          "lib_footprint_mismatch|118347500|99034471|a867b65c-c170-45e8-b1fa-7da0f279edfc|00000000-0000-0000-0000-000000000000",
+          "missing_footprint|0|0|00000000-0000-0000-0000-000000000000|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "missing_footprint|0|0|00000000-0000-0000-0000-000000000000|00000000-0000-0000-0000-000000000000",
-          ""
+          "net_conflict|155917000|69267999|8613a437-35b3-43fe-8ec4-22d190c3936a|00000000-0000-0000-0000-000000000000",
+          "CHANGED TO 0"
+        ],
+        [
+          "net_conflict|156737000|61248000|ddf430b1-cf8f-441c-8445-03e85f7124b0|00000000-0000-0000-0000-000000000000",
+          "CHANGED TO 0"
+        ],
+        [
+          "solder_mask_bridge|115640000|103594029|c7c17673-d171-4ee6-bee8-6d349030666b|48406db2-38b6-490c-a107-9d9a193dd7db",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "solder_mask_bridge|115640000|97694029|c7c17673-d171-4ee6-bee8-6d349030666b|0e2d8a39-725f-43ee-90e1-e1cc549c4849",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "solder_mask_bridge|123275000|103594029|7712c9fe-209b-49e0-aaa7-9c32c7082cc0|48406db2-38b6-490c-a107-9d9a193dd7db",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "solder_mask_bridge|123275000|97694029|41b19028-2c2f-4d34-9057-9110771fe743|0e2d8a39-725f-43ee-90e1-e1cc549c4849",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "solder_mask_bridge|155028000|95843000|cf3bc3bb-373c-4ba4-9bc3-b70a151ee41e|388c1408-54cb-46cd-be12-547b33008cf4",
+          "ADDED GND VIA ON PAD (DEVICE HAS INTERNALLY CONNECTED GNDS TO PINS 0 AND 30"
+        ],
+        [
+          "solder_mask_bridge|155067000|69267999|8cded96c-487a-4ca3-9f68-1b2f25f40f4e|767c0208-49aa-480a-ae3f-77bcfe59cf6e",
+          "ADDED GND VIA ON PAD"
+        ],
+        [
+          "solder_mask_bridge|155887000|61248000|327ee3bd-011b-4951-a8b0-363fce933e31|99ad7eba-6f5c-46e5-9626-f80f4938ffcd",
+          "ADDED GND VIA ON PAD"
+        ],
+        [
+          "unconnected_items|153253000|94143000|F.Cu|4|1910851c-caaf-4e30-b6c5-9cff791d8c5d|3d58240f-5853-4186-ad9e-62ece063c19c",
+          "INTERNALLY CONNECTED GNDS"
+        ],
+        [
+          "unconnected_items|153253000|97743000|F.Cu|4|8e9ab397-1c1b-49b8-98ed-8514bd9e07f1|2f7d2cc9-f8df-4c5e-8025-3ed39d6fcf67",
+          "INTERNALLY CONNECTED GNDS"
+        ],
+        [
+          "unconnected_items|154453000|93918000|F.Cu|4|3d58240f-5853-4186-ad9e-62ece063c19c|1308d261-9772-4733-947f-eafd02b9842c",
+          "INTERNALLY CONNECTED GNDS"
+        ],
+        [
+          "unconnected_items|154453000|93918000|F.Cu|4|3d58240f-5853-4186-ad9e-62ece063c19c|388c1408-54cb-46cd-be12-547b33008cf4",
+          "INTERNALLY CONNECTED GNDS"
+        ],
+        [
+          "unconnected_items|156853000|97743000|F.Cu|4|94a4f82a-f786-445e-9483-5bfa9bb1e2e9|4155841a-8ac3-4773-8c5a-752c81d078a1",
+          "INTERNALLY CONNECTED GNDS"
         ]
       ],
       "meta": {
@@ -249,6 +293,7 @@
       ],
       "track_widths": [
         0.0,
+        0.1,
         0.2,
         0.355476,
         0.4
@@ -303,7 +348,168 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "duplicate_pins|2717800|2120900|8898cf57-3fa4-4e6f-9e68-76d5540aaae5|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "footprint_link_issues|3517900|1130300|f653d99b-16dc-4056-b951-03f7e6d75933|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "footprint_link_issues|4000500|1130300|9434b2f5-155b-4d30-918e-5ca41e8ccfed|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "footprint_link_issues|4000500|2501900|73492ab2-b516-453a-a11d-c643abdd2e3d|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "footprint_link_issues|4787900|1308100|aa56892d-68c9-41b3-abba-31b84d4fde83|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "footprint_link_issues|4940300|2997200|a593bc32-6d51-4883-84f6-6866c2e4266b|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "footprint_link_issues|4940300|3340100|79b92168-fd53-4cac-bf8a-a33a5afcb585|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|139700|381000|5f7840fe-5f70-47a6-bd50-f3549e35cd47|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1816100|990600|c86d85ab-926b-4261-a90e-e31ce4d9d1f0|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1828800|469900|a516b850-280d-4d3f-9553-d38189276336|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1854200|266700|e3221c32-eac9-4205-83b2-aa3bff6666cf|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1866900|774700|26cc14b4-dfc5-48b8-bb1a-bf6cff3809b8|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2095500|2501900|13bf36e9-a3f0-4f3e-b959-df7a5d10e228|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2527300|2781300|8b63f825-ca21-4e25-b4a5-149710b9e5f6|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2552700|1790700|0ad64f26-6aab-484d-b68c-f391e38cd25c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2616200|1651000|1c93e86f-7ecc-4f49-bdfb-ee899a211eb6|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2717800|2120900|8898cf57-3fa4-4e6f-9e68-76d5540aaae5|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2921000|2794000|c69db4ed-d627-4b5d-85df-b648e5cc2c50|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|3111500|3060700|3d0d9f57-7f6f-44f1-836d-8cde7d9fe0e4|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|3289300|3136900|3c9cd991-d0b4-46d1-affd-7805e589ebc4|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|3683000|3213100|7e4c0e0c-b4e6-4f09-88d8-e39ffa68da18|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|3822700|3263900|8e12e24c-76ec-478a-953e-d21331467cf8|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4076700|3263900|4ef226fe-e30b-4a94-80be-44b4aad277c1|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4343400|3200400|0bc4791f-6e60-4d4f-bdc5-8e11a5e19cef|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4356100|3175000|632a8f2d-e62b-4812-bcc0-b439e565639b|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4495800|3200400|54aa40ca-bc98-4670-9e8d-cd629886d41c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4622800|3200400|c61f6f78-326f-42e2-ab33-1926cb2f4797|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4635500|3149600|5c4ca567-1402-478a-b7bd-f7399a16c0af|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4813300|3200400|4f23d0ff-9316-4ca3-aa35-ba5afea84255|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4940300|2997200|a593bc32-6d51-4883-84f6-6866c2e4266b|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|4940300|3340100|79b92168-fd53-4cac-bf8a-a33a5afcb585|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|5054600|3149600|f26fc012-245c-46d5-9537-4af58218df4c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|584200|3581400|270e54ca-cabe-4b5c-a9e4-2d00be5f6731|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|939800|2387600|04eea645-2b28-484b-9da6-2dbe7d59069a|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "pin_to_pin|2082800|3594100|1a36531a-24f5-4c01-a23f-6a784b42d2a8|788e1b21-cd3b-4f91-a8ad-ae06f31ffc84|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105",
+        ""
+      ],
+      [
+        "pin_to_pin|2095500|3365500|7ec58f2a-42e7-4189-a245-8153691d3083|8e47f91e-4597-4880-8187-9dc533bba327|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105",
+        ""
+      ],
+      [
+        "pin_to_pin|4343400|3200400|77749ff9-7ce7-491c-a262-8935289f94ae|e10914e4-4c1e-4769-a54e-623e131090d0|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105",
+        ""
+      ],
+      [
+        "pin_to_pin|4495800|3200400|463d783c-a8b2-445b-92c4-6e9336d6b8f2|132b8f82-3f0f-489e-a58f-896cba3ec984|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105",
+        ""
+      ],
+      [
+        "pin_to_pin|4622800|3200400|6cd844aa-fd7c-42e0-90b0-02128fd49888|fbef462f-1b3c-4aaf-bbee-af3fd37b11de|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105",
+        ""
+      ],
+      [
+        "pin_to_pin|4813300|3200400|ba2d805a-1b61-446f-98d9-42148249e050|48275960-6cf5-4edc-8441-0d5259f02cd8|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105|/857d4a07-0150-4c4b-a0bc-a2b2a01a1105",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -554,6 +760,7 @@
         "wire_width": 6
       },
       {
+        "clearance": 0.15,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
@@ -563,41 +770,43 @@
         "name": "RF0+",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.215458
       },
       {
         "name": "RF0-",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.215458
       },
       {
-        "clearance": 0.2,
         "diff_pair_width": 0.340503,
         "name": "RF1+",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.340503
+        "track_width": 0.215458
       },
       {
-        "clearance": 0.2,
         "diff_pair_width": 0.340503,
         "name": "RF1-",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.340503,
+        "track_width": 0.215458,
         "via_diameter": 0.6,
         "via_drill": 0.3
       },
       {
+        "clearance": 0.15,
         "name": "Signal",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
+        "clearance": 0.15,
         "name": "VCC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 6,
@@ -757,6 +966,30 @@
         "GND",
         "RF0-",
         "RF1-"
+      ],
+      "Net-(C10-Pad1)": [
+        "RF1+"
+      ],
+      "Net-(C10-Pad2)": [
+        "RF1+"
+      ],
+      "Net-(C11-Pad1)": [
+        "RF0+"
+      ],
+      "Net-(C29-Pad1)": [
+        "RF1+"
+      ],
+      "Net-(C30-Pad1)": [
+        "RF0+"
+      ],
+      "Net-(C7-Pad1)": [
+        "RF0+"
+      ],
+      "Net-(C7-Pad2)": [
+        "RF0+"
+      ],
+      "Net-(InvertedF1-RF)": [
+        "RF1+"
       ]
     },
     "netclass_patterns": [
