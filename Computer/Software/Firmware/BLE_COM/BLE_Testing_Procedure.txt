@@ -1,0 +1,25 @@
+BLE Testing Procedure
+Step 1: Program Boards
+├── Flash BLE Peripheral example to Board 1
+└── Flash BLE Central example to Board 2
+Step 2: Power On Sequence
+├── Power on Board 1 first (peripheral)
+├── Wait for "BLE advertising started" message
+└── Then power on Board 2 (central)
+Step 3: Observe Connection
+├── Board 2: "Scanning started..."
+├── Board 2: "Found device: qBLE peripheral"
+├── Board 2: "*** TARGET DEVICE FOUND! ***"
+├── Board 2: "Connecting to XX:XX:XX:XX:XX:XX"
+├── Board 1: "BLE connection opened"
+├── Board 2: "Connected to peripheral!"
+└── Board 2: "Service discovery complete!"
+Step 4: Observe Data Exchange
+├── Board 2: "Toggled remote LED to: 1"
+├── Board 1: "BLE WRITE RECEIVED" + "Value: 0x01"
+├── Board 1: LED turns ON
+├── (2 seconds later)
+├── Board 2: "Toggled remote LED to: 0"
+├── Board 1: "BLE WRITE RECEIVED" + "Value: 0x00"
+└── Board 1: LED turns OFF
+SUCCESS: Both LEDs should toggle in sync!

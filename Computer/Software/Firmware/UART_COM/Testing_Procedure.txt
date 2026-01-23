@@ -1,0 +1,27 @@
+Testing Procedure
+Step 1: Setup Hardware
+├── Connect Board 1 GPIO8 → Board 2 GPIO9
+├── Connect Board 1 GPIO9 → Board 2 GPIO8
+├── Connect GND to GND
+└── Connect both boards to PC via USB (for power and debug)
+Step 2: Program Boards
+├── Flash "uart_sender" to Board 1
+└── Flash "uart_receiver" to Board 2
+Step 3: Open Serial Monitors
+├── Open terminal for Board 1 (sender debug output)
+└── Open terminal for Board 2 (receiver debug output)
+Step 4: Observe
+├── Board 1 should show "Sent: MSG:0", "Sent: MSG:1", etc.
+├── Board 2 should show "RX[0]: MSG:0:HELLO_FROM_BOARD1"
+├── Both boards should blink LEDs
+└── If no messages received, check wiring
+Expected Output (Board 2):
+================================
+=== BOARD 2: UART RECEIVER ===
+UART initialized successfully
+Receiver task started - waiting for data...
+RX[0]: MSG:0:HELLO_FROM_BOARD1
+Valid message #1 received!
+RX[1]: MSG:1:HELLO_FROM_BOARD1
+Valid message #2 received!
+...
