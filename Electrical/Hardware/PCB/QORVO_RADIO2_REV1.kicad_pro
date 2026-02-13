@@ -1,0 +1,1063 @@
+{
+  "board": {
+    "3dviewports": [],
+    "design_settings": {
+      "defaults": {
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
+        "copper_text_italic": false,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 0.762,
+        "copper_text_thickness": 0.1905,
+        "copper_text_upright": false,
+        "courtyard_line_width": 0.05,
+        "dimension_precision": 4,
+        "dimension_units": 3,
+        "dimensions": {
+          "arrow_length": 1270000,
+          "extension_offset": 500000,
+          "keep_text_aligned": true,
+          "suppress_zeroes": true,
+          "text_position": 0,
+          "units_format": 0
+        },
+        "fab_line_width": 0.1,
+        "fab_text_italic": false,
+        "fab_text_size_h": 1.0,
+        "fab_text_size_v": 0.762,
+        "fab_text_thickness": 0.15,
+        "fab_text_upright": false,
+        "other_line_width": 0.1,
+        "other_text_italic": false,
+        "other_text_size_h": 1.0,
+        "other_text_size_v": 0.762,
+        "other_text_thickness": 0.15,
+        "other_text_upright": false,
+        "pads": {
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
+        },
+        "silk_line_width": 0.1,
+        "silk_text_italic": false,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 0.762,
+        "silk_text_thickness": 0.1,
+        "silk_text_upright": false,
+        "zones": {
+          "min_clearance": 0.5
+        }
+      },
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "clearance|123275000|103594029|7712c9fe-209b-49e0-aaa7-9c32c7082cc0|48406db2-38b6-490c-a107-9d9a193dd7db",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "clearance|123275000|97694029|41b19028-2c2f-4d34-9057-9110771fe743|0e2d8a39-725f-43ee-90e1-e1cc549c4849",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "clearance|155028000|95843000|cf3bc3bb-373c-4ba4-9bc3-b70a151ee41e|388c1408-54cb-46cd-be12-547b33008cf4",
+          "ADDED GND VIA ON PAD"
+        ],
+        [
+          "clearance|155067000|69267999|8cded96c-487a-4ca3-9f68-1b2f25f40f4e|767c0208-49aa-480a-ae3f-77bcfe59cf6e",
+          "ADDED GND VIA ON PAD"
+        ],
+        [
+          "clearance|155887000|61248000|327ee3bd-011b-4951-a8b0-363fce933e31|99ad7eba-6f5c-46e5-9626-f80f4938ffcd",
+          "Added GND VIA ON PAD"
+        ],
+        [
+          "footprint_symbol_mismatch|145539900|108009000|e3aaa211-1046-4050-a462-a69b7e47f87f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|149768000|84501000|4bbf74ab-8507-4f1e-a920-d8a23ac31708|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|156662000|86458000|30bed3d6-b566-4a66-b6db-feedaa5f75ae|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|165891100|83266000|d4544d92-7d2d-4312-af03-82cc31eee2fd|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|175106000|74981000|a1b4e1d6-ffdf-467e-bdde-1c9c6177ed20|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "missing_footprint|0|0|00000000-0000-0000-0000-000000000000|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "net_conflict|155917000|69267999|8613a437-35b3-43fe-8ec4-22d190c3936a|00000000-0000-0000-0000-000000000000",
+          "CHANGED TO 0"
+        ],
+        [
+          "net_conflict|156737000|61248000|ddf430b1-cf8f-441c-8445-03e85f7124b0|00000000-0000-0000-0000-000000000000",
+          "CHANGED TO 0"
+        ],
+        [
+          "solder_mask_bridge|115640000|103594029|c7c17673-d171-4ee6-bee8-6d349030666b|48406db2-38b6-490c-a107-9d9a193dd7db",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "solder_mask_bridge|115640000|97694029|c7c17673-d171-4ee6-bee8-6d349030666b|0e2d8a39-725f-43ee-90e1-e1cc549c4849",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "solder_mask_bridge|123275000|103594029|7712c9fe-209b-49e0-aaa7-9c32c7082cc0|48406db2-38b6-490c-a107-9d9a193dd7db",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "solder_mask_bridge|123275000|97694029|41b19028-2c2f-4d34-9057-9110771fe743|0e2d8a39-725f-43ee-90e1-e1cc549c4849",
+          "INVERTED F ANTENNA DESIGN"
+        ],
+        [
+          "solder_mask_bridge|155028000|95843000|cf3bc3bb-373c-4ba4-9bc3-b70a151ee41e|388c1408-54cb-46cd-be12-547b33008cf4",
+          "ADDED GND VIA ON PAD (DEVICE HAS INTERNALLY CONNECTED GNDS TO PINS 0 AND 30"
+        ],
+        [
+          "solder_mask_bridge|155067000|69267999|8cded96c-487a-4ca3-9f68-1b2f25f40f4e|767c0208-49aa-480a-ae3f-77bcfe59cf6e",
+          "ADDED GND VIA ON PAD"
+        ],
+        [
+          "solder_mask_bridge|155887000|61248000|327ee3bd-011b-4951-a8b0-363fce933e31|99ad7eba-6f5c-46e5-9626-f80f4938ffcd",
+          "ADDED GND VIA ON PAD"
+        ],
+        [
+          "unconnected_items|153253000|97743000|F.Cu|4|8e9ab397-1c1b-49b8-98ed-8514bd9e07f1|2f7d2cc9-f8df-4c5e-8025-3ed39d6fcf67",
+          "INTERNALLY CONNECTED GNDS"
+        ],
+        [
+          "unconnected_items|156853000|97743000|F.Cu|4|94a4f82a-f786-445e-9483-5bfa9bb1e2e9|4155841a-8ac3-4773-8c5a-752c81d078a1",
+          "INTERNALLY CONNECTED GNDS"
+        ]
+      ],
+      "meta": {
+        "version": 2
+      },
+      "rule_severities": {
+        "annular_width": "error",
+        "clearance": "error",
+        "connection_width": "warning",
+        "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
+        "courtyards_overlap": "error",
+        "creepage": "error",
+        "diff_pair_gap_out_of_range": "error",
+        "diff_pair_uncoupled_length_too_long": "error",
+        "drill_out_of_range": "error",
+        "duplicate_footprints": "warning",
+        "extra_footprint": "warning",
+        "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_mismatch": "warning",
+        "footprint_type_mismatch": "ignore",
+        "hole_clearance": "error",
+        "hole_to_hole": "warning",
+        "holes_co_located": "warning",
+        "invalid_outline": "error",
+        "isolated_copper": "warning",
+        "item_on_disabled_layer": "error",
+        "items_not_allowed": "error",
+        "length_out_of_range": "error",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
+        "malformed_courtyard": "error",
+        "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
+        "missing_courtyard": "ignore",
+        "missing_footprint": "warning",
+        "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
+        "npth_inside_courtyard": "ignore",
+        "padstack": "warning",
+        "pth_inside_courtyard": "ignore",
+        "shorting_items": "error",
+        "silk_edge_clearance": "warning",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
+        "skew_out_of_range": "error",
+        "solder_mask_bridge": "error",
+        "starved_thermal": "error",
+        "text_height": "warning",
+        "text_on_edge_cuts": "error",
+        "text_thickness": "warning",
+        "through_hole_pad_without_hole": "error",
+        "too_many_vias": "error",
+        "track_angle": "error",
+        "track_dangling": "warning",
+        "track_segment_length": "error",
+        "track_width": "error",
+        "tracks_crossing": "error",
+        "unconnected_items": "error",
+        "unresolved_variable": "error",
+        "via_dangling": "warning",
+        "zones_intersect": "error"
+      },
+      "rules": {
+        "max_error": 0.005,
+        "min_clearance": 0.075,
+        "min_connection": 0.075,
+        "min_copper_edge_clearance": 0.0,
+        "min_groove_width": 0.0,
+        "min_hole_clearance": 0.28,
+        "min_hole_to_hole": 0.2,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
+        "min_resolved_spokes": 2,
+        "min_silk_clearance": 0.15,
+        "min_text_height": 0.1,
+        "min_text_thickness": 0.15,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.075,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.25,
+        "solder_mask_to_copper_clearance": 0.0,
+        "use_height_for_length_calcs": true
+      },
+      "teardrop_options": [
+        {
+          "td_onpthpad": false,
+          "td_onroundshapesonly": false,
+          "td_onsmdpad": false,
+          "td_ontrackend": true,
+          "td_onvia": false
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
+      "track_widths": [
+        0.0,
+        0.1,
+        0.2,
+        0.355476,
+        0.4
+      ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
+      "zones_allow_external_fillets": false
+    },
+    "ipc2581": {
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": ""
+    },
+    "layer_pairs": [],
+    "layer_presets": [],
+    "viewports": []
+  },
+  "boards": [],
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "rule_severities": {
+      "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
+      "bus_to_bus_conflict": "error",
+      "bus_to_net_conflict": "error",
+      "different_unit_footprint": "error",
+      "different_unit_net": "error",
+      "duplicate_reference": "error",
+      "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
+      "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
+      "global_label_dangling": "warning",
+      "hier_label_mismatch": "error",
+      "label_dangling": "error",
+      "label_multiple_wires": "warning",
+      "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
+      "pin_not_connected": "error",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
+      "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
+      "similar_labels": "warning",
+      "similar_power": "warning",
+      "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
+      "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
+      "unit_value_mismatch": "error",
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": [
+      "QPG6200L"
+    ]
+  },
+  "meta": {
+    "filename": "QORVO_RADIO2_REV1.kicad_pro",
+    "version": 3
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.075,
+        "via_diameter": 0.25,
+        "via_drill": 0.15,
+        "wire_width": 6
+      },
+      {
+        "clearance": 0.15,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "RF0+",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.215458
+      },
+      {
+        "name": "RF0-",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.215458
+      },
+      {
+        "diff_pair_width": 0.340503,
+        "name": "RF1+",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.215458
+      },
+      {
+        "diff_pair_width": 0.340503,
+        "name": "RF1-",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.215458,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.15,
+        "name": "Signal",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "clearance": 0.15,
+        "name": "VCC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      }
+    ],
+    "meta": {
+      "version": 4
+    },
+    "net_colors": null,
+    "netclass_assignments": {
+      "+3.3V": [
+        "VDD_3.3V"
+      ],
+      "+5V": [
+        "VDD_5V"
+      ],
+      "/3.3V": [
+        "VCC"
+      ],
+      "/5V": [
+        "VCC"
+      ],
+      "/6V": [
+        "VCC"
+      ],
+      "/ALERT{slash}RDY": [
+        "ALERT/RDY"
+      ],
+      "/AUDIO_AMP_SHUTDOWN": [
+        "Signal"
+      ],
+      "/CLOCK": [
+        "CLOCK"
+      ],
+      "/DAC_MOSI": [
+        "Signal"
+      ],
+      "/DAC_OUT": [
+        "Signal"
+      ],
+      "/DAC_SCL": [
+        "DAC_SCL"
+      ],
+      "/DAC_SCLK": [
+        "Signal"
+      ],
+      "/DAC_SDA": [
+        "DAC_SDA"
+      ],
+      "/DAC_SYNC": [
+        "Signal"
+      ],
+      "/DATA": [
+        "DATA"
+      ],
+      "/DB_GPIO": [
+        "Signal"
+      ],
+      "/Data +": [
+        "Data+"
+      ],
+      "/Data -": [
+        "Data-"
+      ],
+      "/GNDRF0": [
+        "GNDRF0"
+      ],
+      "/GNDRF1": [
+        "GNDRF1"
+      ],
+      "/JTAG_TCK": [
+        "Signal"
+      ],
+      "/JTAG_TDI": [
+        "Signal"
+      ],
+      "/JTAG_TDO": [
+        "Signal"
+      ],
+      "/JTAG_TMS": [
+        "Signal"
+      ],
+      "/JTAG_nRESET": [
+        "Signal"
+      ],
+      "/MIC_CLOCK": [
+        "Signal"
+      ],
+      "/MIC_DATA": [
+        "Signal"
+      ],
+      "/QPG_RX": [
+        "QPG_RX"
+      ],
+      "/QPG_TX": [
+        "QPG_TX"
+      ],
+      "/RF0": [
+        "RF0"
+      ],
+      "/RF0+": [
+        "RF0+"
+      ],
+      "/RF0-": [
+        "RF0-"
+      ],
+      "/RF1": [
+        "RF1"
+      ],
+      "/RF1+": [
+        "RF1+"
+      ],
+      "/RF1-": [
+        "RF1-"
+      ],
+      "/SHUTDOWN": [
+        "SHUTDOWN"
+      ],
+      "/ULT_SEN_QPG_RX": [
+        "Signal"
+      ],
+      "/ULT_SEN_QPG_TX": [
+        "Signal"
+      ],
+      "/VDD_3.3V": [
+        "VDD_3.3V"
+      ],
+      "/VDD_3V": [
+        "VDD_3V"
+      ],
+      "/VDD_5V": [
+        "VDD_5V"
+      ],
+      "/V_Source": [
+        "V_Source"
+      ],
+      "/V_Source1": [
+        "VCC"
+      ],
+      "/V_Source2": [
+        "VCC"
+      ],
+      "/X32MN": [
+        "X32MN"
+      ],
+      "/X32MN_CRYSTAL": [
+        "Signal"
+      ],
+      "/X32MP": [
+        "X32MP"
+      ],
+      "/X32MP_CRYSTAL": [
+        "Signal"
+      ],
+      "GND": [
+        "GND",
+        "RF0-",
+        "RF1-"
+      ],
+      "Net-(C10-Pad1)": [
+        "RF1+"
+      ],
+      "Net-(C10-Pad2)": [
+        "RF1+"
+      ],
+      "Net-(C11-Pad1)": [
+        "RF0+"
+      ],
+      "Net-(C29-Pad1)": [
+        "RF1+"
+      ],
+      "Net-(C30-Pad1)": [
+        "RF0+"
+      ],
+      "Net-(C7-Pad1)": [
+        "RF0+"
+      ],
+      "Net-(C7-Pad2)": [
+        "RF0+"
+      ],
+      "Net-(InvertedF1-RF)": [
+        "RF1+"
+      ]
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "VCC",
+        "pattern": "/V_Source2"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/MIC_CLOCK"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/MIC_DATA"
+      },
+      {
+        "netclass": "VCC",
+        "pattern": "/3.3V"
+      },
+      {
+        "netclass": "VCC",
+        "pattern": "/5V"
+      },
+      {
+        "netclass": "VCC",
+        "pattern": "/6V"
+      },
+      {
+        "netclass": "VCC",
+        "pattern": "/V_Source1"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_TMS"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_TCK"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_TDO"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_TDI"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/JTAG_nRESET"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/DB_GPIO"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/DAC_OUT"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/DAC_MOSI"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/DAC_SCLK"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/DAC_SYNC"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/AUDIO_AMP_SHUTDOWN"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/ULT_SEN_QPG_RX"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/ULT_SEN_QPG_TX"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/X32MP_CRYSTAL"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/X32MN_CRYSTAL"
+      },
+      {
+        "netclass": "RF0+",
+        "pattern": "/RF0+"
+      },
+      {
+        "netclass": "RF0-",
+        "pattern": "/RF0-"
+      },
+      {
+        "netclass": "RF1+",
+        "pattern": "/RF1+"
+      },
+      {
+        "netclass": "RF1-",
+        "pattern": "/RF1-"
+      }
+    ]
+  },
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "",
+      "plot": "./",
+      "pos_files": "",
+      "specctra_dsn": "",
+      "step": "QORVO_RADIO2_REV1.step",
+      "svg": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "schematic": {
+    "annotate_start_num": 0,
+    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_fmt_presets": [],
+    "bom_fmt_settings": {
+      "field_delimiter": ",",
+      "keep_line_breaks": false,
+      "keep_tabs": false,
+      "name": "CSV",
+      "ref_delimiter": ",",
+      "ref_range_delimiter": "",
+      "string_delimiter": "\""
+    },
+    "bom_presets": [],
+    "bom_settings": {
+      "exclude_dnp": false,
+      "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        }
+      ],
+      "filter_string": "",
+      "group_symbols": true,
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
+      "sort_asc": true,
+      "sort_field": "Reference"
+    },
+    "connection_grid_size": 50.0,
+    "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "field_names": [],
+      "intersheets_ref_own_page": false,
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
+      "label_size_ratio": 0.375,
+      "operating_point_overlay_i_precision": 3,
+      "operating_point_overlay_i_range": "~A",
+      "operating_point_overlay_v_precision": 3,
+      "operating_point_overlay_v_range": "~V",
+      "overbar_offset_ratio": 1.23,
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    },
+    "net_format_name": "",
+    "page_layout_descr_file": "",
+    "plot_directory": "",
+    "space_save_all_events": true,
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
+    "spice_save_all_voltages": false,
+    "subpart_first_id": 65,
+    "subpart_id_separator": 0
+  },
+  "sheets": [
+    [
+      "857d4a07-0150-4c4b-a0bc-a2b2a01a1105",
+      "Root"
+    ]
+  ],
+  "text_variables": {}
+}
