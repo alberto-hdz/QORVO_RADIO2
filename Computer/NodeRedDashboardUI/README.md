@@ -17,4 +17,4 @@ node-red-start
 You should see the Node-RED console logs and a message like:
 Server now running at http://127.0.0.1:1880/
 4. Access the editor from a PC on the same network:
-Open a browser and navigate to: http://<raspberry-pi-ip>:1880
+Open a browser and navigate to: http://(raspberry-pi-ip):1880
