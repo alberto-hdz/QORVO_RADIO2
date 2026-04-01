@@ -6,16 +6,15 @@
 5. Click Import on the bottom
 
 
-3. Installing Node-RED
-Node-RED is a visual programming environment for connecting IoT devices and dashboards. After this installation, you can customize the dashboard for any purpose.
-Run the Node-RED installer for Linux (official script):
+# Node-RED is a visual programming environment for connecting IoT devices and dashboards. After this installation, you can customize the dashboard for any purpose.
+1. Run the Node-RED installer for Linux (official script):
 bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb)
 This script installs Node.js, Node-RED, and sets up the environment correctly.
-Enable Node-RED to start automatically on boot:
+2. Enable Node-RED to start automatically on boot:
 sudo systemctl enable nodered.service
-Start Node-RED manually for the first time:
+3. Start Node-RED manually for the first time:
 node-red-start
 You should see the Node-RED console logs and a message like:
 Server now running at http://127.0.0.1:1880/
-Access the editor from a PC on the same network:
+4. Access the editor from a PC on the same network:
 Open a browser and navigate to: http://<raspberry-pi-ip>:1880
