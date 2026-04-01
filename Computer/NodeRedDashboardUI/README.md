@@ -6,7 +6,8 @@
 5. Click Import on the bottom
 
 
-# Node-RED is a visual programming environment for connecting IoT devices and dashboards. After this installation, you can customize the dashboard for any purpose.
+# Node-RED Installation
+Node-RED is a visual programming environment for connecting IoT devices and dashboards. After this installation, you can customize the dashboard for any purpose.
 1. Run the Node-RED installer for Linux (official script):
 bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb)
 This script installs Node.js, Node-RED, and sets up the environment correctly.
