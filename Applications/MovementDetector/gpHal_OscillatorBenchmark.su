@@ -1,7 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/src/gpHal_OscillatorBenchmark.c:285:6:gpHal_OscillatorBenchmark_RunAvg8_Init	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/src/gpHal_OscillatorBenchmark.c:291:8:gpHal_OscillatorBenchmark_RunAvg8_Add	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/src/gpHal_OscillatorBenchmark.c:305:6:gpHal_OscillatorBenchmark_3Phase_Init	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/src/gpHal_OscillatorBenchmark.c:313:36:gpHal_OscillatorBenchmark_3Phase_Add	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/src/gpHal_OscillatorBenchmark.c:358:8:gpHal_OscillatorBenchmark_3Phase_GetMSE	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/src/gpHal_OscillatorBenchmark.c:381:8:gpHal_OscillatorBenchmark_3Phase_GetAvg	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/src/gpHal_OscillatorBenchmark.c:405:8:gpHal_OscillatorBenchmark_MSE_GetStableValue	0	static

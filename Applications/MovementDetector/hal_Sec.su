@@ -1,2 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Sec.c:104:14:gpHalSec_SspAesEncrypt	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Sec.c:165:14:gpHalSec_SspCcmOperation	24	static

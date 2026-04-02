@@ -1,4 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpLog/src/gpLog_vsnprintf.c:197:6:gpLog_Init	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpLog/src/gpLog_vsnprintf.c:207:6:gpLog_Printf	276	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpLog/src/gpLog_vsnprintf.c:234:6:gpLog_Flush	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpLog/src/gpLog_vsnprintf.c:239:6:gpLog_PrintBuffer	48	static

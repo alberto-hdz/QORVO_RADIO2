@@ -1,7 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ChannelMapUpdate.c:180:27:Ble_LlcpChannelMapUpdatePduReceived	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ChannelMapUpdate.c:107:27:Ble_LlcpChannelMapUpdateStoreCtrData	48	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ChannelMapUpdate.c:190:6:Ble_LlcpChannelMapUpdateFinished	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ChannelMapUpdate.c:154:27:Ble_LlcpChannelMapUpdatePduTransmitted	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ChannelMapUpdate.c:200:6:Ble_LlcpChannelMapUpdatePreInstantPassed	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ChannelMapUpdate.c:219:6:gpBleLlcpProcedures_ChannelMapUpdateInit	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ChannelMapUpdate.c:224:6:gpBleLlcpProcedures_ChannelMapUpdateReset	0	static

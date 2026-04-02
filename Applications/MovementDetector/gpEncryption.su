@@ -1,4 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption.c:103:23:gpEncryption_AESEncrypt	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption.c:114:23:gpEncryption_CCMEncrypt	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption.c:121:23:gpEncryption_CCMDecrypt	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption.c:133:6:gpEncryption_Init	0	static

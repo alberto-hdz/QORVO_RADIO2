@@ -1,5 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Pmu.c:49:6:rap_pmu_config_standby	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Pmu.c:112:6:rap_pmu_config_hps	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Pmu.c:153:6:rap_pmu_config_mps	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Pmu.c:184:6:rap_pmu_vcore_ldo_enable	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Pmu.c:194:6:rap_pmu_vcore_ldo_disable	8	static

@@ -1,4 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Vsd.c:337:16:gpBle_SetVsdfixedRxWindowThresholdHelper	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Vsd.c:363:16:gpBle_SetVsdTestParams	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Vsd.c:405:16:gpBle_VsdSetSleep	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Vsd.c:464:16:gpBle_VsdSetAccessCode	8	static

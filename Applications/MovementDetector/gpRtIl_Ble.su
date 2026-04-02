@@ -1,3 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_Ble.c:67:16:RtIl_BleEventStart	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_Ble.c:82:16:RtIl_BleEventStop	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_Ble.c:109:6:gpRtIl_BleInit	0	static

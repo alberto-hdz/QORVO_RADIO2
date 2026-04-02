@@ -1,6 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/gpAppUcSubsystem_Calibrations.c:164:6:gpAppUcSubsystem_CalibrationSetDcdcValues	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/gpAppUcSubsystem_Calibrations.c:174:6:gpAppUcSubsystem_CalibrationSetXo32mValues	12	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/gpAppUcSubsystem_Calibrations.c:180:6:gpAppUcSubsystem_TriggerCalibrations	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/gpAppUcSubsystem_Calibrations.c:124:6:gpAppUcSubsystem_CalibrationInit	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/gpAppUcSubsystem_Calibrations.c:204:6:gpHal_WaitForCalibrationDone	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/gpAppUcSubsystem_Calibrations.c:87:13:TemperatureCalibrationsTask	16	static

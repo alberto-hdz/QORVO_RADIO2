@@ -1,4 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Applications/MovementDetector/src/main.c:145:6:Application_Init	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Applications/MovementDetector/src/main.c:92:13:button_Task	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Applications/MovementDetector/src/main.c:66:13:ledToggle_Task	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Applications/MovementDetector/src/main.c:211:5:main	8	static

@@ -1,2 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_CLK.c:43:6:hal_SetMcuClockSpeed	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_CLK.c:55:7:hal_GetMcuClockSpeed	0	static

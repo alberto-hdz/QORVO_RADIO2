@@ -1,9 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c:101:6:gpVersion_GetSoftwareVersion	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c:125:6:gpVersion_GetSoftwareInfo	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c:149:6:gpVersion_GetBaseCompsVersion	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c:155:6:gpVersion_GetBleControllerVersion	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c:163:7:gpVersion_GetNrtRomVersion	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c:174:7:gpVersion_GetMinimalMatterRomVersion	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c:185:7:gpVersion_GetMatterRomVersion	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c:196:8:gpVersion_GetChangelist	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c:202:6:gpVersion_DumpVersion	32	static

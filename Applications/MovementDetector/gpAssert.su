@@ -1,7 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpAssert/src/gpAssert.c:159:8:Assert_doWhileTimeOutBody	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpAssert/src/gpAssert.c:211:31:gpAssert_RegisterCbAssertIndication	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpAssert/src/gpAssert.c:259:6:gpAssert_PrintLogString	80	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpAssert/src/gpAssert.c:231:6:gpAssert_CallCbAssertIndication	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpAssert/src/gpAssert.c:325:6:gpAssert_BlinkLed	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpAssert/src/gpAssert.c:199:6:gpAssert_DoAssertHandling_Basic	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpAssert/src/gpAssert.c:179:8:Assert_doWhileTimeOutBody_Assert	24	static

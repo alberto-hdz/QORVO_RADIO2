@@ -1,4 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_vs.c:42:6:hciCoreResetStart	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_vs.c:60:9:hciCoreVsEvtRcvd	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_vs.c:76:9:hciCoreHwErrorRcvd	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_vs.c:92:6:HciVsInit	0	static

@@ -1,7 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_SysAk.c:50:6:ak_rap_sys_is_tx20	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_SysAk.c:64:6:ak_rap_sys_reset_early	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_SysAk.c:119:6:ak_rap_sys_backup_late	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_SysAk.c:123:6:ak_rap_sys_hal_init	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_SysAk.c:127:6:ak_rap_sys_temp_change	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_SysAk.c:133:6:ak_rap_sys_cal_nvm_load_defaults	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_SysAk.c:137:6:ak_rap_sys_cal_nvm_restore	8	static

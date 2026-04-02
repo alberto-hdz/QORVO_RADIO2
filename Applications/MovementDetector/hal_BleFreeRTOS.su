@@ -1,6 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_BleFreeRTOS.c:89:13:vBleTask	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_BleFreeRTOS.c:122:6:hal_BleIsrRciDefer	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_BleFreeRTOS.c:140:6:hal_BleIsrIPCGPMDefer	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_BleFreeRTOS.c:158:6:hal_BleTaskCreate	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_BleFreeRTOS.c:182:6:hal_BleTaskDestroy	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_BleFreeRTOS.c:192:6:hal_IsBleTaskCreated	0	static

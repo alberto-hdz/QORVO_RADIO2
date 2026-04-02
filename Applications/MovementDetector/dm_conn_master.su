@@ -1,7 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master.c:99:6:dmConnUpdActUpdateMaster	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master.c:115:6:dmConnUpdActL2cUpdateInd	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master.c:80:6:dmConnSmActCancelOpen	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master.c:135:6:DmL2cConnUpdateInd	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master.c:162:12:DmConnOpen	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master.c:172:6:DmConnCancelOpen	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master.c:186:6:DmConnSetAddrType	8	static

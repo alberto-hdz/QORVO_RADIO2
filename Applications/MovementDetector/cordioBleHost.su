@@ -1,5 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/cordioBleHost.c:439:6:cordioBleHost_OnIdle	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/cordioBleHost.c:256:6:cordioBleHost_PostProcessing	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/cordioBleHost.c:243:13:BleHost_BufDiagnostics	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/cordioBleHost.c:306:6:cordioBleHost_Init	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/cordioBleHost.c:449:6:cordioBleHost_PrintEventString	0	static

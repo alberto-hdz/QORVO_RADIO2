@@ -1,3 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures.c:72:27:Ble_LlcpCommonUnexpectedPduReceived	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures.c:139:6:gpBleLlcpProcedures_Init	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures.c:166:6:gpBleLlcpProcedures_Reset	8	static

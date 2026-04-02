@@ -1,7 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Tx.c:50:6:ak_rap_tx_config_antenna	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Tx.c:58:6:ak_rap_tx_cw_enable	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Tx.c:81:6:ak_rap_tx_cw_disable	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Tx.c:94:6:ak_rap_tx_set_psf_coeffs	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Tx.c:161:6:ak_rap_tx_config_psf	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Tx.c:223:8:ak_rap_tx_power2pbo	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Tx.c:255:6:ak_rap_tx_config_pa	8	static

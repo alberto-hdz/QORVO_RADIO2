@@ -1,9 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c:121:27:Ble_LlcpFeaturesStart	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c:342:6:Ble_LlcpFeaturesNotifyHost	80	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c:317:6:Ble_LlcpFeaturesFinished	4	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c:105:27:Ble_LlcpFeaturesQueueingNeeded	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c:260:27:Ble_LlcpFeaturesPduQueued	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c:288:27:Ble_LlcpFeaturesPduReceived	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c:195:27:Ble_LlcpFeaturesStoreCtrData	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c:142:6:Ble_LlcpFeaturesGetCtrData	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c:372:6:gpBleLlcpProcedures_FeatureExchangeInit	0	static

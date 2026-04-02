@@ -1,8 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci.c:83:6:gpHci_CompReset	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci.c:91:6:gpHci_Init	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci.c:100:6:gpHci_processData	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci.c:113:6:gpHci_commandsEnabled	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci.c:118:6:gpHci_stopCommands	80	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci.c:156:6:gpHci_StoreCrossOverCommand	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci.c:173:6:gpHci_ExecuteCrossOverCommand	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci.c:135:6:gpHci_resumeCommands	80	static

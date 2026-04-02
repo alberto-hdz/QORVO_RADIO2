@@ -1,2 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp400x/src/qRegHwInfo.c:35:22:qRegHwInfo_PackageGet	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp400x/src/qRegHwInfo.c:44:10:qRegHwInfo_DebugPinMaskGet	8	static

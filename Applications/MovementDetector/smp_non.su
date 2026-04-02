@@ -1,3 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_non.c:43:13:smpNonL2cCtrlCback	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_non.c:59:6:smpNonL2cDataCback	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_non.c:102:6:SmpNonInit	0	static

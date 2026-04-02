@@ -1,3 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_pwr.c:8:6:rap_pwr_por_to_active	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_pwr.c:52:6:rap_pwr_active_to_standby	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_pwr.c:123:6:rap_pwr_standby_to_active	8	static

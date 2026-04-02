@@ -1,9 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c:52:13:wsfTimerRemove	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c:87:13:wsfTimerInsert	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c:130:6:WsfTimerInit	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c:143:6:WsfTimerStartSec	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c:161:6:WsfTimerStartMs	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c:178:6:WsfTimerStop	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c:198:6:WsfTimerUpdate	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c:241:17:WsfTimerNextExpiration	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c:274:13:WsfTimerServiceExpired	16	static

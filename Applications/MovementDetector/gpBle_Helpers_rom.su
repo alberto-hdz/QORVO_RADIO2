@@ -1,5 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Helpers_rom.c:125:6:Ble_EventSpecificHandling	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Helpers_rom.c:157:6:Ble_ReadConnReqFromPd	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Helpers_rom.c:189:6:Ble_IsSupervisionToValid	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Helpers_rom.c:214:8:Ble_ScaFieldToMaxPpm	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Helpers_rom.c:231:17:Ble_PpmToScaField	0	static

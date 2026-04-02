@@ -1,2 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_ISR.c:90:6:gpHal_ESInterrupt	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_ISR.c:153:6:gpHal_RegisterAbsoluteEventCallback	16	static

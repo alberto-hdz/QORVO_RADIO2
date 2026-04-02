@@ -1,8 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ipc.c:92:6:inInterrupt	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ipc.c:101:16:gpHal_IpcTriggerCommand	48	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ipc.c:188:6:gpHal_IpcStop	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ipc.c:216:6:gpHal_IpcRestart	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ipc.c:240:6:gpHal_WaitForRtStart	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ipc.c:247:6:gpHal_IpcInit	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ipc.c:262:6:gpHal_RtInitVersionInfo	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ipc.c:275:7:gpHal_GetRtSystemVersion	8	static

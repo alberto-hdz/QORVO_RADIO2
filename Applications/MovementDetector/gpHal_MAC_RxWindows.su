@@ -1,8 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MAC_RxWindows.c:101:6:gpHal_InitMAC_RxWindows	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MAC_RxWindows.c:124:6:gpHal_EnableCsl	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MAC_RxWindows.c:139:6:gpHal_UpdateCslSampleTime	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MAC_RxWindows.c:144:6:gpHal_EnableRxWindows	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MAC_RxWindows.c:184:6:gpHal_DisableRxWindows	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MAC_RxWindows.c:193:6:gpHal_BackupRxChannel	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MAC_RxWindows.c:199:6:gpHal_HandleTimedRxDoneZb	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MAC_RxWindows.c:209:7:gpHal_GetRxUncertainty	0	static

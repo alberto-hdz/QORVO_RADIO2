@@ -1,2 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_appuc_header.c:110:26:hal_get_appuc_header	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_appuc_header.c:116:33:get_sw_info	0	static

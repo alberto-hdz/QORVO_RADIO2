@@ -1,3 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_aes.c:112:6:SecAesHciCback	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_aes.c:75:9:SecAes	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_aes.c:133:6:SecAesInit	0	static

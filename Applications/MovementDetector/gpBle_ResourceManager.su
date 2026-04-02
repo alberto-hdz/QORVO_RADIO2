@@ -1,2 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_ResourceManager.c:82:6:Ble_RMFreeResource	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_ResourceManager.c:93:16:Ble_RMGetResource	8	static

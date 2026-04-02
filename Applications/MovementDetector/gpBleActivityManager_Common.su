@@ -1,8 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Common.c:264:6:gpBleActivityManager_InitCommon	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Common.c:269:6:gpBleActivityManager_ResetCommon	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Common.c:282:6:gpBleActivityManager_OpenConnection	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Common.c:303:6:gpBleActivityManager_OnCloseConnectionCommon	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Common.c:312:6:gpBleActivityManager_StopSupervisionTimeout	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Common.c:328:6:gpBleActivityManager_ConnectionEventDoneCommon	40	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Common.c:355:6:gpBleActivityManager_GetEventProcessedContext	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Common.c:116:6:BleActivityManager_ConnectionSupervisionTimeout	80	static

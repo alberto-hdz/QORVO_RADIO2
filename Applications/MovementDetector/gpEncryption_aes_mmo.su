@@ -1,5 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption_aes_mmo.c:94:30:calcAesMmoHash.constprop	56	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption_aes_mmo.c:223:6:gpEncryptionAesMmo_Init	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption_aes_mmo.c:228:6:gpEncryptionAesMmo_Start	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption_aes_mmo.c:237:23:gpEncryptionAesMmo_Update	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption_aes_mmo.c:254:23:gpEncryptionAesMmo_Finalize	48	static

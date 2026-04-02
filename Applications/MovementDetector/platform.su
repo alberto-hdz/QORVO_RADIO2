@@ -1,3 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/secure_element/software/host/libs/esecure/platform/QPG62xx/platform.c:15:6:esec_wait_cmd_response	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/secure_element/software/host/libs/esecure/platform/QPG62xx/platform.c:20:6:esec_has_cmd_response	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/secure_element/software/host/libs/esecure/platform/QPG62xx/platform.c:42:6:esec_map_desclists	8	static

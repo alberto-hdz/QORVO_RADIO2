@@ -1,9 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_appuc.c:9:13:rap_appuc_lpwait_us_base	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_appuc.c:44:6:rap_appuc_lpwait_us	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_appuc.c:74:6:rap_appuc_enable_watchdog	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_appuc.c:94:6:rap_appuc_disable_watchdog	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_appuc.c:107:6:rap_appuc_reset_watchdog	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_appuc.c:116:6:rap_appuc_backup_watchdog	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_appuc.c:126:6:rap_appuc_restore_watchdog	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_appuc.c:145:6:rap_appuc_enable_sync_down_bridge_bypass	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/rap/rap_appuc.c:170:6:rap_appuc_set_cpu_speed	16	static

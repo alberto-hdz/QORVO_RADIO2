@@ -1,3 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/platform/targets/qorvo/sources/pal_sys.c:61:6:PalSysInit	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/platform/targets/qorvo/sources/pal_sys.c:71:6:PalSysCsEnter	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/platform/targets/qorvo/sources/pal_sys.c:81:6:PalSysCsExit	8	static

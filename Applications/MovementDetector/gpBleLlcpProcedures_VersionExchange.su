@@ -1,6 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_VersionExchange.c:100:27:Ble_LlcpVersionQueueingNeeded	80	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_VersionExchange.c:129:27:Ble_LlcpVersionPduQueued	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_VersionExchange.c:153:27:Ble_LlcpVersionPduReceived	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_VersionExchange.c:116:27:Ble_LlcpVersionStart	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_VersionExchange.c:181:6:Ble_LlcpVersionFinished	80	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_VersionExchange.c:220:6:gpBleLlcpProcedures_VersionExchangeInit	0	static

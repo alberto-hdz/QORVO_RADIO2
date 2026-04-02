@@ -1,3 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_interrupts.c:68:6:hal_PlatformInterruptIsPending	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_interrupts.c:83:6:hal_HandlePolledPlatformInterrupt	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_interrupts.c:93:6:hal_PlatformInterruptsRestoreMasksAfterHandling	0	static

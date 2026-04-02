@@ -10,6 +10,8 @@ __pycache__/
 ## Ignore build artifacts
 *.o
 *.d
+*.su
+*.map
 
 ## Ignore KiCad lock files
 *.lck

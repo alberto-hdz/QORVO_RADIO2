@@ -1,8 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_il.c:220:13:gpSched_DeferredEvent	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_il.c:161:13:Sched_Main	40	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_il.c:236:6:vApplicationIdleHook	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_il.c:260:6:gpSched_NotifySchedTask	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_il.c:274:6:gpSched_ScheduleEventDeferred	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_il.c:320:6:Sched_Integration_Init	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_il.c:333:6:Sched_Integration_DeInit	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_il.c:338:6:gpSched_Trigger	0	static

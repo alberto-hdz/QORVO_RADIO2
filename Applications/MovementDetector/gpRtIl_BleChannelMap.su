@@ -1,5 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_BleChannelMap.c:89:6:RtIl_BleChannelMapInit	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_BleChannelMap.c:95:6:gpRtIl_BleWriteChannelMap	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_BleChannelMap.c:112:6:gpRtIl_BleReadChannelMap	4	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_BleChannelMap.c:127:8:gpRtIl_BleChannelMapHandleToOffset	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_BleChannelMap.c:133:6:gpRtIl_BleSwitchChannelMap	8	static

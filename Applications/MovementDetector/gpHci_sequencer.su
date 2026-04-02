@@ -1,4 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci_sequencer.c:360:6:gpHci_SequencerInit	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci_sequencer.c:371:6:gpHci_SequencerReset	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci_sequencer.c:385:6:gpBle_cbEventIndication	104	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpHci/src/gpHci_sequencer.c:431:6:gpBle_cbDataRxIndication	16	static

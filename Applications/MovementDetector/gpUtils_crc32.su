@@ -1,3 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_crc32.c:89:6:gpUtils_CalculatePartialCrc32	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_crc32.c:99:8:gpUtils_CalculateCrc32	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_crc32.c:107:6:gpUtils_UpdateCrc32	16	static

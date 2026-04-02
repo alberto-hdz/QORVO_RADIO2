@@ -1,6 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_slave.c:116:13:l2cSlaveRxSignalingPkt	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_slave.c:203:6:L2cSlaveInit	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_slave.c:225:6:L2cDmSigReq	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_slave.c:271:6:L2cDmConnUpdateReq	24	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_slave.c:319:6:L2cSlaveHandlerInit	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_slave.c:336:6:L2cSlaveHandler	8	static

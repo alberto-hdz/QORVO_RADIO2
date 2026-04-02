@@ -1,8 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ConnectionUpdate.c:493:16:Ble_LlcpTriggerOptimalUpdateProcedure	80	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ConnectionUpdate.c:198:27:Ble_LlcpConnectionUpdatePduReceived	16	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ConnectionUpdate.c:216:6:Ble_LlcpConnectionUpdateFinished	96	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ConnectionUpdate.c:186:27:Ble_LlcpConnectionUpdateStoreCtrData	32	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ConnectionUpdate.c:245:6:Ble_LlcpConnectionUpdatePreInstantPassed	104	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ConnectionUpdate.c:628:6:gpBleLlcpProcedures_ConnectionUpdateInit	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ConnectionUpdate.c:633:16:gpBleLlcpProcedures_TriggerAnchorMove	64	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ConnectionUpdate.c:672:16:gpBle_LeConnectionUpdate	88	static

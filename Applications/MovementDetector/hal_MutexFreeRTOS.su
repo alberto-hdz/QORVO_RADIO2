@@ -1,6 +1,0 @@
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_MutexFreeRTOS.c:69:6:hal_MutexCreate	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_MutexFreeRTOS.c:84:6:hal_MutexDestroy	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_MutexFreeRTOS.c:95:6:hal_MutexIsValid	0	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_MutexFreeRTOS.c:100:6:hal_MutexIsAcquired	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_MutexFreeRTOS.c:123:6:hal_MutexAcquire	8	static
-/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_MutexFreeRTOS.c:150:6:hal_MutexRelease	16	static
