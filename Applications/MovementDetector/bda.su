@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/bda.c:37:6:BdaCpy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/bda.c:52:8:BdaCmp	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/bda.c:66:10:BdaClr	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/bda.c:82:8:BdaIsZeros	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/bda.c:98:7:Bda2Str	12	static

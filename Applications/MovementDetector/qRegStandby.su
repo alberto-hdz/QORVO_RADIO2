@@ -1,0 +1,2 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp4002/src/qRegStandby.c:33:11:qRegStandby_ResetFuncEnableSet	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp4002/src/qRegStandby.c:51:11:qRegStandby_WakeupPinsConfigure	8	static

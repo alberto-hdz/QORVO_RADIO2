@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Sx.c:50:6:ak_rap_sx_set_channel_launch	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Sx.c:57:6:ak_rap_sx_set_channel_join	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Sx.c:64:6:ak_rap_sx_set_channel	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Sx.c:70:6:ak_rap_sx_cal_nrt	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Sx.c:75:8:ak_rap_sx_measure_freq_khz	16	static

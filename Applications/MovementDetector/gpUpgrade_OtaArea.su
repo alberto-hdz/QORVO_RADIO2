@@ -1,0 +1,15 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:129:27:Upgrade_WriteChunk	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:184:6:gpUpgrade_StartOrEndCrc	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:203:6:gpUpgrade_CalculatePartialCrc	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:220:8:gpUpgrade_GetCrc	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:225:6:gpUpgrade_ClrCrc	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:230:6:gpUpgrade_SetCrc	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:235:6:gpUpgrade_EraseOtaArea	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:242:6:gpUpgrade_StartEraseOtaArea	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:255:8:gpUpgrade_GetOtaAreaStartAddress	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:260:8:gpUpgrade_GetJumptableOtaAreaStartAddress	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:270:8:gpUpgrade_GetJumptableOtaAreaSize	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:280:8:gpUpgrade_GetOtaAreaSize	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:290:6:gpUpgrade_StartWrite	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:307:20:gpUpgrade_WriteChunk	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c:355:20:gpUpgrade_ReadChunk	8	static

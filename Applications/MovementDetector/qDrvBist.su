@@ -1,0 +1,4 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvBist.c:75:6:qDrvBist_RegisterCallback	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvBist.c:81:6:qDrvBist_UnRegisterCallback	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvBist.c:87:6:qDrvBist_IRQEnable	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvBist.c:99:6:bist_handler	8	static

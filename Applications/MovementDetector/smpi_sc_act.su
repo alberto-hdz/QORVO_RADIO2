@@ -1,0 +1,16 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:49:6:smpiScActAuthSelect	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:65:6:smpiScActSendPubKey	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:84:6:smpiScActJwncSetup	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:109:6:smpiScActJwncSendRand	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:135:6:smpiScActJwncCalcF4	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:155:6:smpiScActJwncCalcG2	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:182:6:smpiScActPkCalcCa	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:219:6:smpiScActPkCalcCb	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:251:6:smpiScActPkSendCnf	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:272:6:smpiScActPkSendRand	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:304:6:smpiScActPkCheck	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:346:6:smpiScActOobCalcCb	40	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:389:6:smpiScActOobSendRand	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:426:6:smpiScActOobProcRand	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:447:6:smpiScActDHKeyCheckSend	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c:471:6:smpiScActDHKeyCheckVerify	40	static

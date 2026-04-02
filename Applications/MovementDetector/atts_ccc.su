@@ -1,0 +1,10 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:148:18:attsCccGetTbl	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:299:16:attsCccMainCback	56	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:326:9:AttsCccRegister	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:349:6:AttsCccInitTable	48	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:392:6:AttsCccClearTable	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:410:10:AttsCccGet	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:438:6:AttsCccSet	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:461:10:AttsCccEnabled	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:486:10:AttsCccEnabledByHandle	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c:512:9:AttsGetCccTableLen	0	static

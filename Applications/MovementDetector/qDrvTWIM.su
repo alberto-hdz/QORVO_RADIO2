@@ -1,0 +1,15 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp400x/inc/qRegSysRam.h:95:20:qSysRam_RetainEnableSet	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp4002/inc/qRegTWIM.h:83:20:qRegTWIM_EnableSet	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp4002/inc/qRegTWIM.h:95:20:qRegTWIM_AckSet	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:324:13:qDrvTWIM_IRQHandler	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:380:11:qDrvTWIM_PinConfigSet	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:403:11:qDrvTWIM_PinConfigClear	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:473:6:qDrvTWIM_InitCheck	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:410:11:qDrvTWIM_Init	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:480:11:qDrvTWIM_Transfer	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:536:11:qDrvTWIM_BusClear	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:564:11:qDrvTWIM_Abort	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:452:11:qDrvTWIM_Deinit	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:584:6:qDrvTWIM_BusyCheck	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:597:1:i2c_m_0_handler_impl	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvTWIM.c:604:1:i2c_m_1_handler_impl	0	static

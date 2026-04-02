@@ -1,0 +1,4 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpReset/src/gpReset.c:77:6:gpReset_Init	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpReset/src/gpReset.c:89:6:gpReset_ResetBySwPor	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpReset/src/gpReset.c:94:6:gpReset_ResetByWatchdog	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpReset/src/gpReset.c:99:23:gpReset_GetResetReason	0	static

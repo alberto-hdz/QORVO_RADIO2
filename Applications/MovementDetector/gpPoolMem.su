@@ -1,0 +1,3 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpPoolMem/src/gpPoolMem.c:55:7:gpPoolMem_Init	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpPoolMem/src/gpPoolMem.c:61:7:gpPoolMem_Malloc	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpPoolMem/src/gpPoolMem.c:69:6:gpPoolMem_Free	0	static

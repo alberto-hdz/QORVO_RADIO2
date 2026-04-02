@@ -1,0 +1,1124 @@
+#Generated from:
+# $(BASEDIR)/../../../Applications/Ble/Central/QPG6200DK.py
+
+ifndef BASEDIR
+BASEDIR:=$(abspath $(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
+endif
+# Global vars
+OS_USED?=LINUX
+ROOTDIR?=$(BASEDIR)/../../..
+WORKDIR?=$(BASEDIR)/../../../Work/Central_Ble_qpg6200
+ENV_PATH?=$(BASEDIR)/../../..
+PYTHON_BIN?=/usr/bin/python3
+CURRENT_CONF:=QPG6200DK.py
+EXTRA_CONF:=
+
+CONFIG_HEADER:=$(BASEDIR)/../../../Applications/Ble/Central/gen/Ble_qpg6200/qorvo_config.h
+INTERNALS_HEADER:=$(BASEDIR)/../../../Applications/Ble/Central/gen/Ble_qpg6200/qorvo_internals.h
+PREINCLUDE_HEADER:=$(BASEDIR)/../../../Applications/Ble/Central/gen/Ble_qpg6200/qorvo_config.h
+
+PREBUILD_SCRIPT:=
+
+POSTBUILD_SCRIPT:=$(BASEDIR)/../../../Applications/Ble/Central/Central_Ble_qpg6200_postbuild.sh
+
+FLAGS=
+# Build variables
+ARMCHIP=XP4002
+CFLAGS_COMPILER += -DESEC_AUTH_ALGO=ESEC_AUTH_ALGO_ECDSA_P256 -DESEC_PUBKEY_HASH_ALGO=ESEC_HASH_ALGO_SHA256 -DHOST_VERSION=0
+CFLAGS_COMPILER +=-Wno-attributes
+CXXFLAGS_COMPILER+=-Wnon-virtual-dtor
+CXXFLAGS_COMPILER+=-fno-rtti
+CXXFLAGS_COMPILER+=-fno-use-cxa-atexit
+CXXFLAGS_COMPILER+=-std=gnu++17
+FLAGS+=--specs=nano.specs
+FLAGS+=--specs=nosys.specs
+FLAGS+=-Os
+FLAGS+=-fdata-sections
+FLAGS+=-fdiagnostics-color
+FLAGS+=-ffunction-sections
+FLAGS+=-g2
+FLAGS+=-mabi=aapcs
+FLAGS+=-march=armv7e-m
+FLAGS+=-mcpu=cortex-m4
+FLAGS+=-mfloat-abi=hard
+FLAGS+=-mfpu=fpv4-sp-d16
+FLAGS+=-mthumb
+LDFLAGS_COMPILER+=--specs=nano.specs
+LDFLAGS_COMPILER+=--specs=nosys.specs
+LDFLAGS_COMPILER+=-Os
+LDFLAGS_COMPILER+=-Werror
+LDFLAGS_COMPILER+=-Wl,--fatal-warnings
+LDFLAGS_COMPILER+=-Wl,--gc-sections
+LDFLAGS_COMPILER+=-Wl,--no-warn-rwx-segment
+LDFLAGS_COMPILER+=-Wl,-u_binary_bl_userlicense_bin_start
+LDFLAGS_COMPILER+=-Wl,-u_binary_bootloader_bin_start
+LDFLAGS_COMPILER+=-fdiagnostics-color
+LDFLAGS_COMPILER+=-fno-use-cxa-atexit
+LDFLAGS_COMPILER+=-lm
+LDFLAGS_COMPILER+=-lstdc++_nano
+LDFLAGS_COMPILER+=-mabi=aapcs
+LDFLAGS_COMPILER+=-march=armv7e-m
+LDFLAGS_COMPILER+=-mcpu=cortex-m4
+LDFLAGS_COMPILER+=-mfloat-abi=hard
+LDFLAGS_COMPILER+=-mfpu=fpv4-sp-d16
+LDFLAGS_COMPILER+=-mthumb
+LDFLAGS_NO_NOSTDLIB=1
+LINK_CXX=y
+MCU=cortex-m4f
+PRODUCTID?=QPG6200
+QORVO_MAKEFILE_COMPILERFLAGS_OVERRIDE=yes
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/cordioBleHost.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/cordioBleHost_Hci.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_cmd.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_cmd_enc.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_cmd_phy.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_core_ps.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_tr.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_vs.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/hci/common/hci_core.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_aes.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_aes_rev.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_cmac_hci.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_main.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/qorvo/sec_ecc.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/att_main.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/att_uuid.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_csf.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_dyn.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ind.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_main.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_proc.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_sign.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_write.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/cfg/cfg_stack.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_adv.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_adv_leg.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master_leg.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave_leg.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_sm.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev_priv.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_phy.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_priv.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_scan.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_scan_leg.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec_lesc.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec_master.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec_slave.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/hci/hci_main.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_main.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_master.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_slave.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_act.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_db.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_main.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_non.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_sc_act.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_sc_main.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_act.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_sm.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sm.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpr_act.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpr_sc_act.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpr_sc_sm.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpr_sm.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/platform/targets/qorvo/sources/pal_sys.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/bda.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/bstream.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/calc128.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/crc32.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/fcs.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/print.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/wstr.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_assert.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_cs.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_msg.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_os.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_trace.c
+SRC_DISABLE_ALIGNMENT_WARNING+=$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/stream_buffer.c
+
+# Main target file
+APPFILE:=$(WORKDIR)/Central_Ble_qpg6200.hex
+
+
+# Compiler specifics
+COMPILER?=armgccemb
+COMPILER_VERSION:=12.2.mpacbti-rel1.1-p345-matter
+TOOLCHAIN?=/usr
+PROGRAMMER?=jlink
+PROGRAM_EXT:=hex
+LIB_EXT:=a
+
+SRC=
+SRC_NOWARNING=
+ASRC=
+INC=
+AINC=
+LIB=
+
+# Application defines
+APPNAME:=Central_Ble_qpg6200
+SRC_APP:=
+SRC_APP+=$(BASEDIR)/../../../Applications/Ble/Central/src/AppManager.cpp
+SRC_APP+=$(BASEDIR)/../../../Applications/Ble/Central/src/AppTask.cpp
+SRC_APP+=$(BASEDIR)/../../../Applications/Ble/Central/src/Ble_Central_Config.c
+SRC_APP+=$(BASEDIR)/../../../Applications/Ble/shared/BleIf.c
+SRC_APP+=$(BASEDIR)/../../../Applications/Matter/shared/src/application_header.c
+SRC_APP+=$(BASEDIR)/../../../Applications/shared/modules/src/AppButtons.cpp
+SRC_APP+=$(BASEDIR)/../../../Applications/shared/src/main.cpp
+SRC_APP+=$(BASEDIR)/../../../Applications/shared/src/premain_init.c
+SRC_APP+=$(BASEDIR)/../../../Components/Qorvo/BSP/qButton/src/ButtonHandler.c
+SRC_APP+=$(BASEDIR)/../../../Components/Qorvo/BSP/qLed/src/StatusLed.c
+SRC_APP+=$(BASEDIR)/../../../Components/Qorvo/BSP/qPinCfg/src/qPinCfg.c
+SRC+=$(SRC_APP)
+INC_APP:=
+INC_APP+=-I$(BASEDIR)/../../../Applications/Ble/Central/gen/Ble_qpg6200
+INC_APP+=-I$(BASEDIR)/../../../Applications/Ble/Central/inc
+INC_APP+=-I$(BASEDIR)/../../../Applications/Ble/shared
+INC_APP+=-I$(BASEDIR)/../../../Applications/Matter/shared/config/inc
+INC_APP+=-I$(BASEDIR)/../../../Applications/shared/modules/inc
+INC_APP+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/qButton/inc
+INC_APP+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/qLed/inc
+INC_APP+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/qPinCfg/inc
+INC_APP+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/qPinCfg/inc/boards
+INC_APP+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/qPinCfg/inc/qpg6200
+INC_APP+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/inc
+INC_APP+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/inc/compiler/ARMGCCEMB
+INC+=$(INC_APP)
+AINC_APP:=
+AINC_APP+=-I$(BASEDIR)/../../../Applications/Ble/Central/gen/Ble_qpg6200
+AINC_APP+=-I$(BASEDIR)/../../../Applications/Matter/shared/config/inc
+AINC_APP+=-I$(BASEDIR)/../../../Applications/Matter/shared/config/inc
+AINC+=$(AINC_APP)
+
+#Compilation flags are defined in $(BASEDIR)/../../../Applications/Ble/Central/gen/Ble_qpg6200/qorvo_config.h
+FLAGS+=-DGP_CONFIG_HEADER
+LINKERSCRIPT:=$(BASEDIR)/../../../Applications/Ble/Central/gen/Ble_qpg6200/Central_Ble_qpg6200.ld
+APPFIRMWARE:=
+
+COMPS:=
+
+#Component sources
+#Depends on:
+# src: gpLog
+COMPS+=gpAssert
+SRC_gpAssert:=
+SRC_gpAssert+=$(BASEDIR)/../../../Components/Qorvo/OS/gpAssert/src/gpAssert.c
+SRC+=$(SRC_gpAssert)
+INC_gpAssert:=
+INC_gpAssert+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpAssert/inc
+INC+=$(INC_gpAssert)
+SRC_NOWARNING+=$(SRC_gpAssert)
+
+#Depends on:
+# src: 
+COMPS+=gpBaseComps
+SRC_gpBaseComps:=
+SRC_gpBaseComps+=$(BASEDIR)/../../../Components/Qorvo/OS/gpBaseComps/src/gpBaseComps_StackInit.c
+SRC+=$(SRC_gpBaseComps)
+INC_gpBaseComps:=
+INC_gpBaseComps+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpBaseComps/inc
+INC+=$(INC_gpBaseComps)
+SRC_NOWARNING+=$(SRC_gpBaseComps)
+
+#Depends on:
+# src: gphal
+COMPS+=gpBatteryMonitor
+SRC_gpBatteryMonitor:=
+SRC_gpBatteryMonitor+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c
+SRC+=$(SRC_gpBatteryMonitor)
+INC_gpBatteryMonitor:=
+INC_gpBatteryMonitor+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpBatteryMonitor/inc
+INC+=$(INC_gpBatteryMonitor)
+SRC_NOWARNING+=$(SRC_gpBatteryMonitor)
+
+#Depends on:
+# src: gpBleComps, gpBleConfig, gpBleDataCommon, gpBleAddressResolver, gpBleActivityManager, gpLog, gpAssert, gphal, gpRandom, gpSched, gpPoolMem, gpBleDataChannelRxQueue, gpBleDataChannelTxQueue, gpBleDataRx, gpBleDataTx, gpBleLlcp, gpBleLlcpFramework, gpBleLlcpProcedures
+# inc: gpHci, gpBleAdvertiser, gpBleInitiator
+COMPS+=gpBle
+SRC_gpBle:=
+SRC_gpBle+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBle/src/gpBle.c
+SRC_gpBle+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBle/src/gpBle_Acad.c
+SRC_gpBle+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBle/src/gpBle_AccessAddress.c
+SRC_gpBle+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBle/src/gpBle_Connections.c
+SRC_gpBle+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBle/src/gpBle_Helpers.c
+SRC_gpBle+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBle/src/gpBle_Helpers_rom.c
+SRC_gpBle+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBle/src/gpBle_ResourceManager.c
+SRC_gpBle+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBle/src/gpBle_Vsd.c
+SRC+=$(SRC_gpBle)
+INC_gpBle:=
+INC_gpBle+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBle/inc
+INC+=$(INC_gpBle)
+SRC_NOWARNING+=$(SRC_gpBle)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci, gpBlePreSched
+COMPS+=gpBleActivityManager
+SRC_gpBleActivityManager:=
+SRC_gpBleActivityManager+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Common.c
+SRC_gpBleActivityManager+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleActivityManager/src/gpBleActivityManager_Simple.c
+SRC+=$(SRC_gpBleActivityManager)
+INC_gpBleActivityManager:=
+INC_gpBleActivityManager+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleActivityManager/inc
+INC+=$(INC_gpBleActivityManager)
+SRC_NOWARNING+=$(SRC_gpBleActivityManager)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleAddressResolver
+SRC_gpBleAddressResolver:=
+SRC_gpBleAddressResolver+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleAddressResolver/src/gpBleAddressResolver.c
+SRC_gpBleAddressResolver+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleAddressResolver/src/gpBleAddressResolver_rom.c
+SRC+=$(SRC_gpBleAddressResolver)
+INC_gpBleAddressResolver:=
+INC_gpBleAddressResolver+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleAddressResolver/inc
+INC+=$(INC_gpBleAddressResolver)
+SRC_NOWARNING+=$(SRC_gpBleAddressResolver)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleAdvertiser
+SRC_gpBleAdvertiser:=
+SRC_gpBleAdvertiser+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleAdvertiser/src/gpBleAdvertiser.c
+SRC_gpBleAdvertiser+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleAdvertiser/src/gpBleAdvertiser_rom.c
+SRC+=$(SRC_gpBleAdvertiser)
+INC_gpBleAdvertiser:=
+INC_gpBleAdvertiser+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleAdvertiser/inc
+INC_gpBleAdvertiser+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleAdvertiser/src
+INC+=$(INC_gpBleAdvertiser)
+SRC_NOWARNING+=$(SRC_gpBleAdvertiser)
+
+#Depends on:
+# src: 
+# inc: gpRtIl
+COMPS+=gpBleChannelMapManager
+SRC_gpBleChannelMapManager:=
+SRC_gpBleChannelMapManager+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleChannelMapManager/src/gpBleChannelMapManager.c
+SRC+=$(SRC_gpBleChannelMapManager)
+INC_gpBleChannelMapManager:=
+INC_gpBleChannelMapManager+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleChannelMapManager/inc
+INC+=$(INC_gpBleChannelMapManager)
+
+#Depends on:
+# src: gpBleChannelMapManager, gpRtIl, gpBleAdvertiser, gpBleConnectionManager
+COMPS+=gpBleComps
+SRC_gpBleComps:=
+SRC_gpBleComps+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleComps/src/gpBleComps_StackInit.c
+SRC+=$(SRC_gpBleComps)
+INC_gpBleComps:=
+INC_gpBleComps+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleComps/inc
+INC+=$(INC_gpBleComps)
+SRC_NOWARNING+=$(SRC_gpBleComps)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleConfig
+SRC_gpBleConfig:=
+SRC_gpBleConfig+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleConfig/src/gpBleConfig.c
+SRC_gpBleConfig+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleConfig/src/gpBleConfig_Configuration.c
+SRC+=$(SRC_gpBleConfig)
+INC_gpBleConfig:=
+INC_gpBleConfig+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleConfig/inc
+INC+=$(INC_gpBleConfig)
+SRC_NOWARNING+=$(SRC_gpBleConfig)
+
+#Depends on:
+# src: 
+COMPS+=gpBleConnectionManager
+SRC_gpBleConnectionManager:=
+SRC_gpBleConnectionManager+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleConnectionManager/src/gpBleConnectionManager.c
+SRC+=$(SRC_gpBleConnectionManager)
+INC_gpBleConnectionManager:=
+INC_gpBleConnectionManager+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleConnectionManager/inc
+INC+=$(INC_gpBleConnectionManager)
+SRC_NOWARNING+=$(SRC_gpBleConnectionManager)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleDataChannelRxQueue
+SRC_gpBleDataChannelRxQueue:=
+SRC_gpBleDataChannelRxQueue+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataChannelRxQueue/src/gpBleDataChannelRxQueue.c
+SRC+=$(SRC_gpBleDataChannelRxQueue)
+INC_gpBleDataChannelRxQueue:=
+INC_gpBleDataChannelRxQueue+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataChannelRxQueue/inc
+INC+=$(INC_gpBleDataChannelRxQueue)
+SRC_NOWARNING+=$(SRC_gpBleDataChannelRxQueue)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleDataChannelTxQueue
+SRC_gpBleDataChannelTxQueue:=
+SRC_gpBleDataChannelTxQueue+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataChannelTxQueue/src/gpBleDataChannelTxQueue.c
+SRC+=$(SRC_gpBleDataChannelTxQueue)
+INC_gpBleDataChannelTxQueue:=
+INC_gpBleDataChannelTxQueue+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataChannelTxQueue/inc
+INC+=$(INC_gpBleDataChannelTxQueue)
+SRC_NOWARNING+=$(SRC_gpBleDataChannelTxQueue)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleDataCommon
+SRC_gpBleDataCommon:=
+SRC_gpBleDataCommon+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataCommon/src/gpBleDataCommon.c
+SRC_gpBleDataCommon+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataCommon/src/gpBle_PhyMask.c
+SRC+=$(SRC_gpBleDataCommon)
+INC_gpBleDataCommon:=
+INC_gpBleDataCommon+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataCommon/inc
+INC+=$(INC_gpBleDataCommon)
+SRC_NOWARNING+=$(SRC_gpBleDataCommon)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleDataRx
+SRC_gpBleDataRx:=
+SRC_gpBleDataRx+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataRx/src/gpBleDataRx.c
+SRC+=$(SRC_gpBleDataRx)
+INC_gpBleDataRx:=
+INC_gpBleDataRx+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataRx/inc
+INC+=$(INC_gpBleDataRx)
+SRC_NOWARNING+=$(SRC_gpBleDataRx)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleDataTx
+SRC_gpBleDataTx:=
+SRC_gpBleDataTx+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataTx/src/gpBleDataTx.c
+SRC+=$(SRC_gpBleDataTx)
+INC_gpBleDataTx:=
+INC_gpBleDataTx+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataTx/inc
+INC_gpBleDataTx+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleDataTx/inc/gen
+INC+=$(INC_gpBleDataTx)
+SRC_NOWARNING+=$(SRC_gpBleDataTx)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleInitiator
+INC_gpBleInitiator:=
+INC_gpBleInitiator+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleInitiator/inc
+INC+=$(INC_gpBleInitiator)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleLlcp
+SRC_gpBleLlcp:=
+SRC_gpBleLlcp+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp.c
+SRC_gpBleLlcp+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Getters.c
+SRC_gpBleLlcp+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Helpers_rom.c
+SRC_gpBleLlcp+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Vsd.c
+SRC+=$(SRC_gpBleLlcp)
+INC_gpBleLlcp:=
+INC_gpBleLlcp+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcp/inc
+INC+=$(INC_gpBleLlcp)
+SRC_NOWARNING+=$(SRC_gpBleLlcp)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleLlcpFramework
+SRC_gpBleLlcpFramework:=
+SRC_gpBleLlcpFramework+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpFramework/src/gpBleLlcpFramework.c
+SRC+=$(SRC_gpBleLlcpFramework)
+INC_gpBleLlcpFramework:=
+INC_gpBleLlcpFramework+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpFramework/inc
+INC+=$(INC_gpBleLlcpFramework)
+SRC_NOWARNING+=$(SRC_gpBleLlcpFramework)
+
+#Depends on:
+# src: gpBle
+# inc: gpHci
+COMPS+=gpBleLlcpProcedures
+SRC_gpBleLlcpProcedures:=
+SRC_gpBleLlcpProcedures+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures.c
+SRC_gpBleLlcpProcedures+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_AclTermination.c
+SRC_gpBleLlcpProcedures+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_AclTermination_rom.c
+SRC_gpBleLlcpProcedures+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ChannelMapUpdate.c
+SRC_gpBleLlcpProcedures+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_ConnectionUpdate.c
+SRC_gpBleLlcpProcedures+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_FeatureExchange.c
+SRC_gpBleLlcpProcedures+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_UpdateCommon.c
+SRC_gpBleLlcpProcedures+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_VersionExchange.c
+SRC_gpBleLlcpProcedures+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_VersionExchange_rom.c
+SRC+=$(SRC_gpBleLlcpProcedures)
+INC_gpBleLlcpProcedures:=
+INC_gpBleLlcpProcedures+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/inc
+INC_gpBleLlcpProcedures+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBleLlcpProcedures/src
+INC+=$(INC_gpBleLlcpProcedures)
+SRC_NOWARNING+=$(SRC_gpBleLlcpProcedures)
+
+#Depends on:
+# src: gpBle, gphal
+# inc: gpHci
+COMPS+=gpBlePreSched
+INC_gpBlePreSched:=
+INC_gpBlePreSched+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpBlePreSched/inc
+INC+=$(INC_gpBlePreSched)
+
+#Depends on:
+# src: 
+COMPS+=gpBsp
+INC_gpBsp:=
+INC_gpBsp+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/gpBsp/inc
+INC_gpBsp+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/gpBsp/inc/BLE
+INC_gpBsp+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/gpBsp/inc/FTS
+INC_gpBsp+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/gpBsp/inc/FoundationAndSilicon
+INC_gpBsp+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/gpBsp/inc/Gateway
+INC_gpBsp+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/gpBsp/inc/PTC
+INC_gpBsp+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/gpBsp/inc/CentralExamples
+INC_gpBsp+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/gpBsp/inc/RemoteControl
+INC_gpBsp+=-I$(BASEDIR)/../../../Components/Qorvo/BSP/gpBsp/inc/SmartHomeAndLighting
+INC+=$(INC_gpBsp)
+
+#Depends on:
+# src: gpAssert, gpLog, gpUtils, gpCentral
+COMPS+=gpCom
+SRC_gpCom:=
+SRC_gpCom+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c
+SRC_gpCom+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpCom/src/gpCom_serial.c
+SRC_gpCom+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpCom/src/gpCom_serialDrvUART.c
+SRC+=$(SRC_gpCom)
+INC_gpCom:=
+INC_gpCom+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpCom/inc
+INC_gpCom+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpCom/inc/gen
+INC_gpCom+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpCom/src
+INC+=$(INC_gpCom)
+SRC_NOWARNING+=$(SRC_gpCom)
+
+#Depends on:
+# src: 
+COMPS+=gpECC
+SRC_gpECC:=
+SRC_gpECC+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpECC/src/gpECC.c
+SRC+=$(SRC_gpECC)
+INC_gpECC:=
+INC_gpECC+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpECC/inc
+INC+=$(INC_gpECC)
+SRC_NOWARNING+=$(SRC_gpECC)
+
+#Depends on:
+# src: gpPd, gphal
+COMPS+=gpEncryption
+SRC_gpEncryption:=
+SRC_gpEncryption+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption.c
+SRC_gpEncryption+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpEncryption/src/gpEncryption_aes_mmo.c
+SRC+=$(SRC_gpEncryption)
+INC_gpEncryption:=
+INC_gpEncryption+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpEncryption/inc
+INC+=$(INC_gpEncryption)
+SRC_NOWARNING+=$(SRC_gpEncryption)
+
+#Depends on:
+# src: 
+COMPS+=gpFreeRTOS
+SRC_gpFreeRTOS:=
+SRC_gpFreeRTOS+=$(BASEDIR)/../../../Components/Qorvo/OS/gpFreeRTOS/config/hooks.c
+SRC_gpFreeRTOS+=$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/list.c
+SRC_gpFreeRTOS+=$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c
+SRC_gpFreeRTOS+=$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/portable/MemMang/heap_3.c
+SRC_gpFreeRTOS+=$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/queue.c
+SRC_gpFreeRTOS+=$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/stream_buffer.c
+SRC_gpFreeRTOS+=$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/tasks.c
+SRC_gpFreeRTOS+=$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/timers.c
+SRC+=$(SRC_gpFreeRTOS)
+INC_gpFreeRTOS:=
+INC_gpFreeRTOS+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpFreeRTOS/config
+INC_gpFreeRTOS+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpFreeRTOS/inc
+INC_gpFreeRTOS+=-I$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/include
+INC_gpFreeRTOS+=-I$(BASEDIR)/../../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F
+INC+=$(INC_gpFreeRTOS)
+AINC_gpFreeRTOS:=
+AINC_gpFreeRTOS+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpFreeRTOS/config
+AINC+=$(AINC_gpFreeRTOS)
+SRC_NOWARNING+=$(SRC_gpFreeRTOS)
+
+#Depends on:
+# src: gpAssert, gpPoolMem, gpBle
+# inc: gphal, gpLog
+COMPS+=gpHci
+SRC_gpHci:=
+SRC_gpHci+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpHci/src/gpHci.c
+SRC_gpHci+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpHci/src/gpHci_Subevents.c
+SRC_gpHci+=$(BASEDIR)/../../../Components/Qorvo/BleController/gpHci/src/gpHci_sequencer.c
+SRC+=$(SRC_gpHci)
+INC_gpHci:=
+INC_gpHci+=-I$(BASEDIR)/../../../Components/Qorvo/BleController/gpHci/inc
+INC+=$(INC_gpHci)
+SRC_NOWARNING+=$(SRC_gpHci)
+
+#Depends on:
+# src: gpAssert, gpCom
+COMPS+=gpLog
+SRC_gpLog:=
+SRC_gpLog+=$(BASEDIR)/../../../Components/Qorvo/OS/gpLog/src/gpLog_vsnprintf.c
+SRC+=$(SRC_gpLog)
+INC_gpLog:=
+INC_gpLog+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpLog/inc
+INC+=$(INC_gpLog)
+SRC_NOWARNING+=$(SRC_gpLog)
+
+#Depends on:
+# src: gphal, gpAssert, gpPd, gpPad, gpRxArbiter, gpPoolMem, gpEncryption
+# inc: gpStat
+COMPS+=gpMacCore
+SRC_gpMacCore:=
+SRC_gpMacCore+=$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacCore/src/gpMacCore_Data.c
+SRC_gpMacCore+=$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacCore/src/gpMacCore_Main.c
+SRC+=$(SRC_gpMacCore)
+INC_gpMacCore:=
+INC_gpMacCore+=-I$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacCore/inc
+INC_gpMacCore+=-I$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacCore/src
+INC+=$(INC_gpMacCore)
+SRC_NOWARNING_EXCLUDES_gpMacCore:=
+SRC_NOWARNING+=$(filter-out $(SRC_NOWARNING_EXCLUDES_gpMacCore), $(SRC_gpMacCore))
+
+#Depends on:
+# src: gpMacCore, gpAssert, gpPd, gpSched
+# inc: gpStat
+COMPS+=gpMacDispatcher
+SRC_gpMacDispatcher:=
+SRC_gpMacDispatcher+=$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacDispatcher/src/gpMacDispatcher.c
+SRC_gpMacDispatcher+=$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacDispatcher/src/gpMacDispatcher_common.c
+SRC_gpMacDispatcher+=$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacDispatcher/src/gpMacDispatcher_stackMapping.c
+SRC+=$(SRC_gpMacDispatcher)
+INC_gpMacDispatcher:=
+INC_gpMacDispatcher+=-I$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacDispatcher/inc
+INC_gpMacDispatcher+=-I$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacDispatcher/inc/gen
+INC_gpMacDispatcher+=-I$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpMacDispatcher/src
+INC+=$(INC_gpMacDispatcher)
+
+#Depends on:
+# src: gpPoolMem, gphal, gpAssert, gpLog, gpSched, gpUtils
+# inc: gpPoolMem
+COMPS+=gpNvm
+SRC_gpNvm:=
+SRC_gpNvm+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpNvm/src/gpNvm_AssertSafetyNet.c
+SRC_gpNvm+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpNvm/src/gpNvm_CheckConsistency.c
+SRC_gpNvm+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpNvm/src/gpNvm_ElemIf_KeyMap.c
+SRC_gpNvm+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpNvm/src/gpNvm_NvmProtect.c
+SRC_gpNvm+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpNvm/src/gpNvm_RW_Kx_SubpagedFlash_v2.c
+SRC+=$(SRC_gpNvm)
+INC_gpNvm:=
+INC_gpNvm+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpNvm/inc
+INC+=$(INC_gpNvm)
+SRC_NOWARNING+=$(SRC_gpNvm)
+
+#Depends on:
+# src: gpLog, gpAssert, gphal
+COMPS+=gpPad
+SRC_gpPad:=
+SRC_gpPad+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpPad/src/gpPad.c
+SRC+=$(SRC_gpPad)
+INC_gpPad:=
+INC_gpPad+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpPad/inc
+INC+=$(INC_gpPad)
+
+#Depends on:
+# src: gpLog, gpAssert, gphal
+# inc: gpSched
+COMPS+=gpPd
+SRC_gpPd:=
+SRC_gpPd+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpPd/src/gpPd.c
+SRC+=$(SRC_gpPd)
+INC_gpPd:=
+INC_gpPd+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpPd/inc
+INC+=$(INC_gpPd)
+
+#Depends on:
+# src: 
+COMPS+=gpCentral
+SRC_gpCentral:=
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvAkumaTriggers.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvBist.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvBistAdc.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvDMA.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvDMADCB.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvES.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvFractClk.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvGPADC.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvGPIO.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvHRADC.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvI2S.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvIOB.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvIR.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvKeypad.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvLED.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvLPCMP.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvObm.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvPWMXL.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvQUIC.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvRTZ.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvSPIM.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvSPIS.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvTWIM.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvTWIS.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvTimerXL.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvTsens.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvUART.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/src/qDrvWatchdog.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/xp4002/src/qRegInfoPage.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/xp4002/src/qRegStandby.c
+SRC_gpCentral+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/xp400x/src/qRegHwInfo.c
+SRC+=$(SRC_gpCentral)
+INC_gpCentral:=
+INC_gpCentral+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/inc
+INC_gpCentral+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/xp4002/inc
+INC_gpCentral+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpCentral/xp400x/inc
+INC+=$(INC_gpCentral)
+
+#Depends on:
+# src: gpLog, gpAssert, gpWmrk
+# inc: gpPd
+COMPS+=gpPoolMem
+SRC_gpPoolMem:=
+SRC_gpPoolMem+=$(BASEDIR)/../../../Components/Qorvo/OS/gpPoolMem/src/gpPoolMem.c
+SRC_gpPoolMem+=$(BASEDIR)/../../../Components/Qorvo/OS/gpPoolMem/src/gpPoolMem_impl_malloc.c
+SRC+=$(SRC_gpPoolMem)
+INC_gpPoolMem:=
+INC_gpPoolMem+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpPoolMem/inc
+INC+=$(INC_gpPoolMem)
+SRC_NOWARNING+=$(SRC_gpPoolMem)
+
+#Depends on:
+# src: gpLog, gpAssert
+COMPS+=gpRadio
+SRC_gpRadio:=
+SRC_gpRadio+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpRadio/src/gpRadio.c
+SRC+=$(SRC_gpRadio)
+INC_gpRadio:=
+INC_gpRadio+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpRadio/inc
+INC+=$(INC_gpRadio)
+SRC_NOWARNING+=$(SRC_gpRadio)
+
+#Depends on:
+# src: gpLog, gpSched, gphal, gpEncryption
+COMPS+=gpRandom
+SRC_gpRandom:=
+SRC_gpRandom+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpRandom/src/gpRandom_SE.c
+SRC+=$(SRC_gpRandom)
+INC_gpRandom:=
+INC_gpRandom+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpRandom/inc
+INC+=$(INC_gpRandom)
+
+#Depends on:
+# src: 
+COMPS+=gpRap
+SRC_gpRap:=
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_AppUc.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_BistAdc.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Cp.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Dcdc.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Pmu.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Pwr.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Pwr_gen.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Sens.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_TSens.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_XO32M.c
+SRC_gpRap+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_nvm.c
+SRC+=$(SRC_gpRap)
+INC_gpRap:=
+INC_gpRap+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/inc
+INC+=$(INC_gpRap)
+
+#Depends on:
+# src: 
+COMPS+=gpRegMap
+INC_gpRegMap:=
+INC_gpRegMap+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRegMap/inc
+INC_gpRegMap+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRegMap/xp4002/inc
+INC_gpRegMap+=-I$(BASEDIR)/../../../Components/ThirdParty/mera/sw
+INC_gpRegMap+=-I$(BASEDIR)/../../../Components/ThirdParty/mera/sw/regmap
+INC_gpRegMap+=-I$(BASEDIR)/../../../Components/ThirdParty/mera/sw/sys_regmap
+INC+=$(INC_gpRegMap)
+AINC_gpRegMap:=
+AINC_gpRegMap+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRegMap/inc
+AINC_gpRegMap+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/gpRegMap/xp4002/inc
+AINC+=$(AINC_gpRegMap)
+
+#Depends on:
+# src: 
+COMPS+=gpReset
+SRC_gpReset:=
+SRC_gpReset+=$(BASEDIR)/../../../Components/Qorvo/OS/gpReset/src/gpReset.c
+SRC+=$(SRC_gpReset)
+INC_gpReset:=
+INC_gpReset+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpReset/inc
+INC+=$(INC_gpReset)
+SRC_NOWARNING+=$(SRC_gpReset)
+
+#Depends on:
+# src: 
+COMPS+=gpRtIl
+SRC_gpRtIl:=
+SRC_gpRtIl+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl.c
+SRC_gpRtIl+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_Ble.c
+SRC_gpRtIl+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpRtIl/src/gpRtIl_BleChannelMap.c
+SRC+=$(SRC_gpRtIl)
+INC_gpRtIl:=
+INC_gpRtIl+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gpRtIl/inc
+INC+=$(INC_gpRtIl)
+SRC_NOWARNING+=$(SRC_gpRtIl)
+
+#Depends on:
+# src: gpAssert, gphal, gpLog
+COMPS+=gpRxArbiter
+SRC_gpRxArbiter:=
+SRC_gpRxArbiter+=$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpRxArbiter/src/gpRxArbiter.c
+SRC+=$(SRC_gpRxArbiter)
+INC_gpRxArbiter:=
+INC_gpRxArbiter+=-I$(BASEDIR)/../../../Components/Qorvo/802_15_4/gpRxArbiter/inc
+INC+=$(INC_gpRxArbiter)
+SRC_NOWARNING+=$(SRC_gpRxArbiter)
+
+#Depends on:
+# src: gpAssert, gpLog, gpUtils, gpFreeRTOS
+COMPS+=gpSched
+SRC_gpSched:=
+SRC_gpSched+=$(BASEDIR)/../../../Components/Qorvo/OS/gpSched/src/gpSched.c
+SRC_gpSched+=$(BASEDIR)/../../../Components/Qorvo/OS/gpSched/src/gpSched_data.c
+SRC_gpSched+=$(BASEDIR)/../../../Components/Qorvo/OS/gpSched/src/gpSched_rom.c
+SRC_gpSched+=$(BASEDIR)/../../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_il.c
+SRC_gpSched+=$(BASEDIR)/../../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_runOn.c
+SRC+=$(SRC_gpSched)
+INC_gpSched:=
+INC_gpSched+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpSched/inc
+INC_gpSched+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpSched/src
+INC+=$(INC_gpSched)
+SRC_NOWARNING+=$(SRC_gpSched)
+
+#Depends on:
+# src: gpLog, gpAssert
+COMPS+=gpStat
+INC_gpStat:=
+INC_gpStat+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpStat/inc
+INC+=$(INC_gpStat)
+
+#Depends on:
+# src: gpUtils, gphal
+COMPS+=gpUpgrade
+SRC_gpUpgrade:=
+SRC_gpUpgrade+=$(BASEDIR)/../../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_OtaArea.c
+SRC_gpUpgrade+=$(BASEDIR)/../../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c
+SRC+=$(SRC_gpUpgrade)
+INC_gpUpgrade:=
+INC_gpUpgrade+=-I$(BASEDIR)/../../../Components/Qorvo/Bootloader/gpUpgrade/inc
+INC+=$(INC_gpUpgrade)
+SRC_NOWARNING+=$(SRC_gpUpgrade)
+
+#Depends on:
+# src: gpAssert, gpLog
+COMPS+=gpUtils
+SRC_gpUtils:=
+SRC_gpUtils+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c
+SRC_gpUtils+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LLext.c
+SRC_gpUtils+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_Math.c
+SRC_gpUtils+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_base64.c
+SRC_gpUtils+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_crc.c
+SRC_gpUtils+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_crc32.c
+SRC_gpUtils+=$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_rangecheck.c
+SRC+=$(SRC_gpUtils)
+INC_gpUtils:=
+INC_gpUtils+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpUtils/inc
+INC+=$(INC_gpUtils)
+SRC_NOWARNING+=$(SRC_gpUtils)
+
+#Depends on:
+# src: 
+COMPS+=gpVersion
+SRC_gpVersion:=
+SRC_gpVersion+=$(BASEDIR)/../../../Components/Qorvo/OS/gpVersion/src/gpVersion.c
+SRC_gpVersion+=$(BASEDIR)/../../../Components/Qorvo/OS/gpVersion/src/gpVersion_versionInfo.c
+SRC+=$(SRC_gpVersion)
+INC_gpVersion:=
+INC_gpVersion+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpVersion/inc
+INC_gpVersion+=-I$(BASEDIR)/../../../Components/Qorvo/OS/gpVersion/src
+INC+=$(INC_gpVersion)
+
+#Depends on:
+# src: gpLog, gpAssert
+COMPS+=gpWmrk
+INC_gpWmrk:=
+INC_gpWmrk+=-I$(BASEDIR)/../../../Components/Qorvo/BaseUtils/gpWmrk/inc
+INC+=$(INC_gpWmrk)
+
+#Depends on:
+# src: gpAssert, gpReset, gpSched, gpRandom, gpAssert, gpUtils, gpRadio, gpPd, rt_nrt_common
+# inc: gpStat, gpBsp, gpEncryption, gpPd
+COMPS+=gphal
+SRC_gphal:=
+SRC_gphal+=$(BASEDIR)/../../../Applications/Ble/Central/gen/Ble_qpg6200/gpHal_RtSystem.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/src/gpHal_Calibration.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/src/gpHal_Common.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/src/gpHal_OscillatorBenchmark.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/src/gpHal_Pbm_common.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_DP.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_Debug.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_HW.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_ISR.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_MAC.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_MAC_Ext.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_MAC_Raw.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_NVM.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_Phy.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_Scan.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_Statistics.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Bbpll.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Rt.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Rtm.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Rx.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Sx.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_SysAk.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Tx.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rt.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_reset.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ble.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleAdvLeg.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleCommon.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleValidation.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Ipc.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MAC_RxWindows.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_MISC.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_Pbm.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterrupts.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsBle.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsZb.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RtEvents.c
+SRC_gphal+=$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_SEC.c
+SRC+=$(SRC_gphal)
+INC_gphal:=
+INC_gphal+=-I$(BASEDIR)/../../../Applications/Ble/Central/gen/Ble_qpg6200
+INC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/inc
+INC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/inc/gen
+INC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/src
+INC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/inc
+INC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/src
+INC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/inc
+INC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp400x/src
+INC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/Rt/sw_regmap_inc
+INC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/Rt/sw_regmap_inc/xp4002
+INC_gphal+=-I$(BASEDIR)/../../../Components/ThirdParty/mera/sw
+INC_gphal+=-I$(BASEDIR)/../../../Components/ThirdParty/mera/sw/regmap
+INC+=$(INC_gphal)
+AINC_gphal:=
+AINC_gphal+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_RF/gphal/xp4002/inc
+AINC+=$(AINC_gphal)
+
+#Depends on:
+# src: halCortexM4, gpRegMap, gpRap, gphal
+COMPS+=halAppUcSubsystem
+
+#Depends on:
+# src: gpAssert, gpUtils, gphal, gpRegMap, halPlatform, gpRap, halAppUcSubsystem
+# inc: gpBsp
+COMPS+=halCortexM4
+SRC_halCortexM4:=
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/default_log_handlers.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_BleFreeRTOS.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_Heap.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_MutexFreeRTOS.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_SleepFreeRTOS.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_appuc_header.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/default_handlers.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/dig_hal.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_CLK.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_HardwareVersion.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_SEMailbox.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Sleep.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_interrupts.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_save_context_gcc.S
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_wait.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/handlers_gcc.S
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/ivt.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/host/libs/esecure/platform/QPG62xx/platform.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/host/libs/esecure/src/esecure.c
+SRC_halCortexM4+=$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/host/libs/esecure/src/esecure_async.c
+SRC+=$(SRC_halCortexM4)
+INC_halCortexM4:=
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/inc
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/inc
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/ThirdParty/CMSIS_5/CMSIS/Core/Include
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/ThirdParty/mera/sw/appuc
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/esec/libs/base/include
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/esec/libs/common
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/esec/libs/libcryptosoc/include
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/host/libs/common
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/host/libs/esecure/include
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/host/libs/esecure/platform/QPG62xx
+INC_halCortexM4+=-I$(BASEDIR)/../../../Components/ThirdParty/secure_element/software/host/libs/esecure/src
+INC+=$(INC_halCortexM4)
+SRC_NOWARNING+=$(SRC_halCortexM4)
+
+#Depends on:
+# src: 
+COMPS+=halPlatform
+SRC_halPlatform:=
+SRC_halPlatform+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/gpAppUcSubsystem_Calibrations.c
+SRC_halPlatform+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_ES.c
+SRC_halPlatform+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c
+SRC_halPlatform+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c
+SRC_halPlatform+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Sec.c
+SRC_halPlatform+=$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_SupplyVoltageMonitor.c
+SRC+=$(SRC_halPlatform)
+INC_halPlatform:=
+INC_halPlatform+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halPlatform/inc
+INC_halPlatform+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/inc
+INC_halPlatform+=-I$(BASEDIR)/../../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src
+INC+=$(INC_halPlatform)
+
+#Depends on:
+# src: gpSched, gpAssert, gpVersion, gpECC, gpBle, gpHci
+COMPS+=qorvoBleHost
+SRC_qorvoBleHost:=
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/cordioBleHost.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/cordioBleHost_Hci.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_cmd.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_cmd_enc.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_cmd_phy.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_core_ps.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_tr.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_vs.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/hci/common/hci_core.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_aes.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_aes_rev.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_cmac_hci.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/common/sec_main.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/qorvo/sec_ecc.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/att_main.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/att_uuid.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ccc.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_csf.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_dyn.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_ind.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_main.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_proc.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_sign.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_write.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/cfg/cfg_stack.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_adv.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_adv_leg.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master_leg.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave_leg.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_sm.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev_priv.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_phy.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_priv.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_scan.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_scan_leg.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec_lesc.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec_master.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec_slave.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/hci/hci_main.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_main.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_master.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_slave.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_act.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_db.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_main.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_non.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_sc_act.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smp_sc_main.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_act.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_act.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_sm.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sm.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpr_act.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpr_sc_act.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpr_sc_sm.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpr_sm.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/platform/targets/qorvo/sources/pal_sys.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/bda.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/bstream.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/calc128.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/crc32.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/fcs.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/print.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/sources/util/wstr.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_assert.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_cs.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_msg.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_os.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_timer.c
+SRC_qorvoBleHost+=$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_trace.c
+SRC+=$(SRC_qorvoBleHost)
+INC_qorvoBleHost:=
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/inc
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/include
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/sec/common
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/att
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/cfg
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/hci
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-profiles/include
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-profiles/sources/af
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-profiles/sources/profiles
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/ble-profiles/sources/services
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/platform/include
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/include
+INC_qorvoBleHost+=-I$(BASEDIR)/../../../Components/ThirdParty/BleHost/wsf/include/util
+INC+=$(INC_qorvoBleHost)
+SRC_NOWARNING+=$(SRC_qorvoBleHost)
+
+#Depends on:
+# src: 
+COMPS+=rt_nrt_common
+INC_rt_nrt_common:=
+INC_rt_nrt_common+=-I$(BASEDIR)/../../../Components/Qorvo/Rt/rt_nrt_common/inc
+INC_rt_nrt_common+=-I$(BASEDIR)/../../../Components/Qorvo/Rt/rt_nrt_common/inc/xp4002
+INC+=$(INC_rt_nrt_common)
+
+
+COMPILER_SPECIFIC_LIB_RULE ?= yes
+.PRECIOUS:default_target_makefile
+.PHONY:default_target_makefile
+default_target_makefile:  \
+$(BASEDIR)/../../../Work/Bootloader_qpg6200/Bootloader_qpg6200.hex \
+app
+
+PREREQ_HEADER_GENERATION_TARGETS =  \
+$(BASEDIR)/../../../Work/Bootloader_qpg6200/Bootloader_qpg6200.hex
+
+.PRECIOUS: $(BASEDIR)/../../../Work/Bootloader_qpg6200/Bootloader_qpg6200.hex
+$(BASEDIR)/../../../Work/Bootloader_qpg6200/Bootloader_qpg6200.hex:
+	$(MAKE) -f $(BASEDIR)/../../../Applications/Bootloader/Makefile.Bootloader_qpg6200
+-include $(BASEDIR)/custom.mk
+include $(ENV_PATH)/make/gpcommon.mk

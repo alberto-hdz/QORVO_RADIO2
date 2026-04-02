@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp400x/inc/qRegIOB.h:166:20:qRegIOB_AlternateEnableSet	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_reset.c:126:6:gpHal_Init	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_reset.c:219:6:gpHal_DidGPReset	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_reset.c:229:6:gpHal_CheckMsi	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_reset.c:234:6:gpHal_AdvancedInit	0	static

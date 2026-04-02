@@ -1,0 +1,6 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleCommon.c:81:6:gpHal_BleCommonInit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleCommon.c:86:7:gpHal_BlePdToPbm	40	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleCommon.c:120:31:gpHal_BleAddConnIdMapping	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleCommon.c:148:31:gpHal_BleGetConnMappingFromId	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleCommon.c:167:31:gpHal_BleGetConnMappingFromEvent	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleCommon.c:186:6:gpHal_BleRemoveConnIdMapping	8	static

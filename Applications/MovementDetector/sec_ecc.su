@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/sec/qorvo/sec_ecc.c:74:12:secEccRng	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/sec/qorvo/sec_ecc.c:91:6:SecEccHciCback	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/sec/qorvo/sec_ecc.c:121:8:SecEccGenKey	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/sec/qorvo/sec_ecc.c:198:8:SecEccGenSharedSecret	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/sec/qorvo/sec_ecc.c:267:6:SecEccInit	0	static

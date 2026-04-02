@@ -1,0 +1,8 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Sleep.c:267:6:hal_InitSleep	40	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Sleep.c:288:6:hal_SleepIncrementCount	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Sleep.c:290:8:hal_SleepGetSleepCount	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Sleep.c:292:6:hal_sleep_uc	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Sleep.c:375:6:hal_SleepSetGotoSleepEnable	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Sleep.c:402:6:hal_SleepSetGotoSleepThreshold	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Sleep.c:411:8:hal_SleepGetGotoSleepThreshold	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Sleep.c:420:6:hal_SleepCheck	0	static

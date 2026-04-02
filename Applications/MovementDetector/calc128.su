@@ -1,0 +1,3 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/calc128.c:48:6:Calc128Cpy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/calc128.c:61:6:Calc128Cpy64	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/calc128.c:74:6:Calc128Xor	8	static

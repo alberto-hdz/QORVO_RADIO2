@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/wstr.c:36:6:WstrnCpy	12	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/wstr.c:62:6:WStrReverseCpy	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/wstr.c:80:6:WStrReverse	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/wstr.c:101:6:WStrFormatHex	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/wstr.c:127:6:WStrHexToArray	28	static

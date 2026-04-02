@@ -1,0 +1,15 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:300:6:dmEmptyReset	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:314:6:dmEmptyHandler	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:281:13:dmHciEvtCback	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:328:6:dmDevPassHciEvtToConn	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:343:6:DmRegister	192	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:375:10:DmFindAdType	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:407:6:DmHandlerInit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:429:6:DmHandler	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:457:8:DmLlPrivEnabled	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:471:9:DmLlAddrType	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:500:9:DmHostAddrType	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:529:10:DmSizeOfEvt	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:583:9:DmScanPhyToIdx	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:598:9:dmInitPhyToIdx	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_main.c:625:9:DmInitPhyToIdx	0	static

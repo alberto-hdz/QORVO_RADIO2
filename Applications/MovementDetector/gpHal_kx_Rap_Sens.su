@@ -1,0 +1,6 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Sens.c:50:6:rap_sens_gp_adc_init	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Sens.c:63:6:rap_sens_gp_adc_deinit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Sens.c:74:7:rap_sens_gp_adc_code_to_uv	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Sens.c:140:6:rap_sens_hr_adc_init	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Sens.c:153:6:rap_sens_hr_adc_deinit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_Sens.c:164:7:rap_sens_hr_adc_code_to_uv	8	static

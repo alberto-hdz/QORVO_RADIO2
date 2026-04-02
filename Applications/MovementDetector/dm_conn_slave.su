@@ -1,0 +1,6 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave.c:54:13:dmConnUpdateCback.isra	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave.c:109:6:dmConnUpdActL2cUpdateCnf	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave.c:76:6:dmConnUpdActUpdateSlave	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave.c:136:6:DmL2cConnUpdateCnf	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave.c:161:6:DmL2cCmdRejInd	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_slave.c:188:12:DmConnAccept	32	static

@@ -1,0 +1,4 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_runOn.c:85:6:runOn_executor	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_runOn.c:102:6:gpSched_RunOnInit	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_runOn.c:120:10:gpSched_RunOn	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/integration/FreeRTOS/gpSched_runOn.c:140:6:gpSched_RunOnMainLoopReached	0	static

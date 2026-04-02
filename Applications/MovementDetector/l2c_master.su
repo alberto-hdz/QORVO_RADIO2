@@ -1,0 +1,3 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_master.c:138:6:L2cMasterInit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_master.c:154:6:L2cDmConnUpdateRsp	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/l2c/l2c_master.c:74:13:l2cMasterRxSignalingPkt	40	static

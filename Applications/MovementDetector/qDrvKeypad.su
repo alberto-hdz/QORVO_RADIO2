@@ -1,0 +1,15 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp400x/inc/qRegIOB.h:99:20:qRegIOB_InputBufferEnableSet	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp400x/inc/qRegIOB.h:119:20:qRegIOB_PullEnableSet	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:411:20:qDrvKeypad_IndicateButtonChange	4	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp400x/inc/qRegIOB.h:134:20:qRegIOB_PullModeSet.constprop	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:125:11:qDrvKeypad_PinConfigSet	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:166:11:qDrvKeypad_PinConfigClear	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:270:6:qDrvKeypad_InitCheck	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:194:11:qDrvKeypad_Init	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:278:11:qDrvKeypad_Enable	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:321:11:qDrvKeypad_Disable	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:251:11:qDrvKeypad_Deinit	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:347:6:qDrvKeypad_EnableCheck	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:360:11:qDrvKeypad_Trigger	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:381:11:qDrvKeypad_DebounceSet	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvKeypad.c:527:6:keypad_handler_impl	48	static

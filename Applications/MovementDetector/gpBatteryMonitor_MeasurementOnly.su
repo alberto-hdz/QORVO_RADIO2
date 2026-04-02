@@ -1,0 +1,9 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c:92:6:gpBatteryMonitor_Init	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c:96:6:gpBatteryMonitor_enableVoltageMeasurement	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c:100:6:gpBatteryMonitor_triggerVoltageMeasurement	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c:104:6:gpBatteryMonitor_voltageMeasurementReady	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c:108:7:gpBatteryMonitor_getVoltageMeasurement	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c:113:6:gpBatteryMonitor_disableVoltageMeasurement	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c:119:6:gpBatteryMonitor_Measure	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c:140:6:gpBatteryMonitor_registerCbNonBlockingMeasurement	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpBatteryMonitor/src/gpBatteryMonitor_MeasurementOnly.c:148:6:gpBatteryMonitor_MeasureWithNonBlockingClaim	8	static

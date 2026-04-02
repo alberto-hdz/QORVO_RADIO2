@@ -1,0 +1,4 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvAkumaTriggers.c:52:25:qDrvAkumaTriggers_QuicSpeedGet	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvAkumaTriggers.c:58:30:qDrvAkumaTriggers_QuicTriggerSrcGet	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvAkumaTriggers.c:109:11:qDrvAkumaTriggers_Init	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvAkumaTriggers.c:125:11:qDrvAkumaTriggers_Deinit	8	static

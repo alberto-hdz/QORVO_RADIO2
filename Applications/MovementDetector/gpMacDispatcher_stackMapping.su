@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/802_15_4/gpMacDispatcher/src/gpMacDispatcher_stackMapping.c:61:6:MacDispatcher_InitStackMapping	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/802_15_4/gpMacDispatcher/src/gpMacDispatcher_stackMapping.c:72:6:gpMacDispatcher_RegisterCallbacks	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/802_15_4/gpMacDispatcher/src/gpMacDispatcher_stackMapping.c:120:6:MacDispatcher_UnRegisterCallbacks	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/802_15_4/gpMacDispatcher/src/gpMacDispatcher_stackMapping.c:137:30:MacDispatcher_GetCallbacks	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/802_15_4/gpMacDispatcher/src/gpMacDispatcher_stackMapping.c:100:6:gpMacDispatcher_GetCallbacks	8	static

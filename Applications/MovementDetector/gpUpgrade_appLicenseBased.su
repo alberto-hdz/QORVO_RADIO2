@@ -1,0 +1,9 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c:245:27:gpUpgrade_FlashUnitWrite.constprop	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c:98:6:gpUpgrade_Init	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c:125:20:gpUpgrade_SetPendingImage	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c:232:6:gpUpgrade_Reset	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c:263:6:gpUpgrade_GetBootloaderVersion	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c:286:20:gpUpgrade_SetPendingBootloaderImage	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c:301:6:gpUpgrade_GetSecureElementVersion	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c:327:20:gpUpgrade_SetPendingSecureElementImage	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/Bootloader/gpUpgrade/src/gpUpgrade_appLicenseBased.c:341:6:gpUpgrade_GetApplicationVersionFromHeader	0	static

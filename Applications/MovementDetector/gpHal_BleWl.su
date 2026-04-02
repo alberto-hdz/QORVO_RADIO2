@@ -1,0 +1,14 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:136:6:gpHal_BleAddToWhiteList	20	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:190:6:gpHal_BleWlInit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:233:7:gpHal_BleFindFilterAcceptListEntry	40	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:201:16:gpHal_BleAddDeviceToFilterAcceptList.part.0	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:201:16:gpHal_BleAddDeviceToFilterAcceptList	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:262:7:gpHal_BleGetFilterAcceptListEntryIndex	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:292:6:gpHal_BleClearFilterAcceptList	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:272:16:gpHal_BleRemoveDeviceFromFilterAcceptList	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:362:6:gpHal_BleIsFilterAcceptListEntryValid	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:369:16:gpHal_UpdateFilterAcceptListEntryState	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:406:7:gpHal_BleGetFilterAcceptListEntryState	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:421:16:gpHal_BleGetFilterAcceptListEntry	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:440:16:gpHal_BleUpdateFilterAcceptListEntryState	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_BleWl.c:567:6:gpHal_BleUpdateFilterAcceptListEntryStateBulk	24	static

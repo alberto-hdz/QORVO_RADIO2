@@ -1,0 +1,4 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/default_log_handlers.c:174:13:BusFault_Dump	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/default_log_handlers.c:202:13:UsageFault_Dump	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/default_log_handlers.c:230:6:Log_Unexpected_Fault	64	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/default_log_handlers.c:350:6:Log_Unexpected_Interrupt	16	static

@@ -1,0 +1,4 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/bstream.c:37:10:BstreamToUint64	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/bstream.c:57:6:Uint64ToBstream	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/bstream.c:78:10:BstreamToBda64	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/bstream.c:96:6:Bda64ToBstream	0	static

@@ -1,0 +1,4 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_Math.c:78:8:gpUtils_Pow	12	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_Math.c:100:7:gpUtils_Log2	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_Math.c:110:8:gpUtils_factorial	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_Math.c:121:8:gpUtils_pow_fractional	64	static

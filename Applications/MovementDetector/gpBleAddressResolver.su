@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleAddressResolver/src/gpBleAddressResolver.c:128:6:gpBleAddressResolver_Init	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleAddressResolver/src/gpBleAddressResolver.c:133:6:gpBleAddressResolver_Reset	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleAddressResolver/src/gpBleAddressResolver.c:141:16:gpBle_ClearWL	40	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleAddressResolver/src/gpBleAddressResolver.c:177:16:gpBle_AddDeviceToWL	40	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleAddressResolver/src/gpBleAddressResolver.c:230:16:gpBle_RemoveDeviceFromWL	40	static

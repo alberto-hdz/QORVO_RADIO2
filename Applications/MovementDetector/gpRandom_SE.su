@@ -1,0 +1,6 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpRandom/src/gpRandom_SE.c:120:6:gpRandom_RandomizeSeed	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpRandom/src/gpRandom_SE.c:146:6:gpRandom_GetNewSequence	48	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpRandom/src/gpRandom_SE.c:164:6:gpRandom_GetFromDRBG	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpRandom/src/gpRandom_SE.c:177:6:gpRandom_Init	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpRandom/src/gpRandom_SE.c:191:6:gpRandom_Reset	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpRandom/src/gpRandom_SE.c:199:8:gpRandom_GenerateLargeRandom	16	static

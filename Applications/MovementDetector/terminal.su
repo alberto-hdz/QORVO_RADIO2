@@ -1,0 +1,11 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:141:6:TerminalRegisterUartTxFunc	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:153:6:TerminalRegisterCommand	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:122:6:TerminalInit	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:479:6:TerminalTx	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:398:6:TerminalTxStr	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:497:16:terminalCommandEchoHandler	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:446:16:terminalCommandHelpHandler	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:326:6:TerminalHandler	64	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:410:6:TerminalTxChar	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:347:6:TerminalRx	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/sources/util/terminal.c:423:6:TerminalTxPrint	272	static

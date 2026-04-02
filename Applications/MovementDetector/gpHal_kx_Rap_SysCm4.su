@@ -1,0 +1,9 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c:50:6:rap_sys_cm4_reset_early	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c:59:6:rap_sys_cm4_backup_late	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c:63:6:rap_sys_cm4_hal_init	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c:76:6:rap_sys_cm4_is_tx20	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c:84:6:rap_sys_cm4_cal_nvm_load_defaults	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c:90:6:rap_sys_cm4_cal_nvm_restore_ao	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c:104:6:rap_sys_cm4_cal_nvm_restore	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c:131:6:rap_sys_cm4_temp_change	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpRap/xp4002/src/gpHal_kx_Rap_SysCm4.c:182:6:rap_sys_cm4_batt_change	16	static

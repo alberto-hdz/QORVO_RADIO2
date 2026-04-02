@@ -1,0 +1,9 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c:160:6:gpHal_FlashInit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c:166:20:gpHal_FlashBlankCheck	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c:189:20:gpHal_FlashRead	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c:299:20:gpHal_FlashWriteNoVerify	40	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c:88:27:gpHal_FlashEraseSectorInternal	520	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c:199:20:gpHal_FlashEraseSectorNoVerify	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c:289:20:gpHal_FlashEraseSector	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c:415:20:gpHal_FlashWrite	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_Flash.c:426:20:gpHal_FlashProgramSector	1048	static

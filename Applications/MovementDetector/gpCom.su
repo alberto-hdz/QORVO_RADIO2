@@ -1,0 +1,10 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:188:6:gpCom_Init	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:210:6:gpCom_DataRequest	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:270:8:gpCom_GetFreeBufferSpace	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:300:6:gpCom_GetTXEnable	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:311:6:gpCom_TXDataPending	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:324:6:gpCom_Flush	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:332:6:gpCom_DeInit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:343:6:gpCom_HandleTx	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:405:6:gpCom_RegisterActivateTxCb	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom.c:416:8:Com_Call_ActivateTxCb	32	static

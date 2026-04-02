@@ -1,0 +1,2 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_AclTermination_rom.c:71:6:Ble_LlcpTerminationGetCtrData	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcpProcedures/src/gpBleLlcpProcedures_AclTermination_rom.c:96:27:Ble_LlcpTerminationStoreCtrData	16	static

@@ -1,0 +1,15 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:185:6:dmSecMsgHandler	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:453:6:dmSecReset	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:70:6:dmSecApiLtkMsg	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:245:6:DmSmpCbackExec	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:94:6:dmSecHciHandler	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:271:6:DmSecCancelReq	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:298:6:DmSecAuthRsp	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:327:6:DmSecInit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:344:6:DmSecSetLocalCsrk	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:360:6:DmSecSetLocalIrk	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:377:6:DmSecSetLocalIdentityAddr	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:392:10:DmSecGetLocalCsrk	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:404:10:DmSecGetLocalIrk	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:416:10:DmSecGetLocalIdentityAddr	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_sec.c:435:9:DmSecGetLocalIdentityAddrType	0	static

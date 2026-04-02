@@ -1,0 +1,3 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/gpSched.c:50:8:gpSched_GetTimeToNextEvent	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/gpSched.c:77:8:gpSched_GetGoToSleepThreshold	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/gpSched.c:86:6:gpSched_IsSleepEnabled	8	static

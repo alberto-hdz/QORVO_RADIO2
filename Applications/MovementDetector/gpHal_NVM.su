@@ -1,0 +1,8 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_NVM.c:57:13:is_region_inside_nvm_linear_or_infopage	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_NVM.c:77:18:gpHal_NVMRead	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_NVM.c:105:18:gpHal_NVMWriteNoVerify	48	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_NVM.c:88:18:gpHal_NVMWrite	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_NVM.c:191:18:gpHal_NVMBlankCheck	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_NVM.c:217:18:gpHal_NVMEraseNoVerify	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_NVM.c:243:18:gpHal_NVMErase	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_NVM.c:211:18:gpHal_NVMEraseApplicationArea	8	static

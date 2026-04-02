@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rt.c:101:9:gpHal_GetCurrentRxDataPtr	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rt.c:64:6:gpHal_CheckPbmConflicts	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rt.c:110:8:gpHal_RtAddressToOffset	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rt.c:129:8:gpHal_RtRciPop	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rt.c:204:6:gpHal_RtAddFrPtr	24	static

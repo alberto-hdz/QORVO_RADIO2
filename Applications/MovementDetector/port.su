@@ -1,0 +1,14 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:261:13:prvPortStartFirstTask	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:701:13:vPortEnableVFP	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:217:13:prvTaskExitError	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:187:14:pxPortInitialiseStack	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:242:6:svcall_handler	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:395:6:vPortEndScheduler	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:403:6:vPortEnterCritical	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:420:6:vPortExitCritical	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:431:6:pendsv_handler	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:488:6:systick_handler_impl	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:510:29:vPortSuppressTicksAndSleep	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:679:30:vPortSetupTimerInterrupt	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:287:12:xPortStartScheduler	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/port.c:717:7:vPortValidateInterruptPriority	8	static

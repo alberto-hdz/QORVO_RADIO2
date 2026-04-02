@@ -1,0 +1,11 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:133:10:WsfBufCalcSize	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:193:10:WsfBufInit	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:298:8:CheckWsfBufAlloc	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:345:7:WsfBufAlloc	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:457:6:WsfBufFree	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:520:10:WsfBufGetAllocStats	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:536:10:WsfBufGetPoolOverFlowStats	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:552:9:WsfBufGetNumPool	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:565:6:WsfBufGetPoolStats	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:614:6:WsfBufDiagRegister	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_buf.c:631:10:WsfBufNumOutstanding	0	static

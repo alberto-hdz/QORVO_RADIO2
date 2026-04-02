@@ -1,0 +1,14 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:100:6:hal__AtomicOn	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:113:6:hal__AtomicOff	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:131:6:hal_HandleRadioInterrupt	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:186:6:hal_Init	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:266:8:hal_GetStackStartAddress	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:276:8:hal_GetStackEndAddress	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:290:6:hal_Reset	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:297:20:hal_GetWakeupReason	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:319:19:hal_GetResetReason	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:446:6:hal_NotifyRTOS	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:456:6:hal_IntHandlerPrologue	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:469:6:hal_IntHandlerEpilogue	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:474:6:es_handler_impl	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal.c:484:6:halADC_MeasureTemperature	0	static

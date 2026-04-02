@@ -1,0 +1,26 @@
+hal_MutexFreeRTOS.o: \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/src/hal_MutexFreeRTOS.c \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Applications/MovementDetector/gen/qpg6200/qorvo_config.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Applications/MovementDetector/gen/qpg6200/qorvo_internals.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/inc/gp_kx.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/inc/dev_irqn.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/mera/sw/appuc/irq_nrs.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/CMSIS_5/CMSIS/Core/Include/core_cm4.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/CMSIS_5/CMSIS/Core/Include/cmsis_version.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/CMSIS_5/CMSIS/Core/Include/cmsis_compiler.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/CMSIS_5/CMSIS/Core/Include/cmsis_gcc.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/CMSIS_5/CMSIS/Core/Include/mpu_armv7.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpAssert/inc/gpAssert.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/inc/global.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/inc/compiler/ARMGCCEMB/compiler.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/include/FreeRTOS.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Applications/Matter/shared/config/inc/FreeRTOSConfig.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/include/projdefs.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/include/portable.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/include/deprecated_definitions.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/portable/GCC/ARM_CM4F/portmacro.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/include/mpu_wrappers.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/include/semphr.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/include/queue.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/include/task.h \
+ /workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/FreeRTOS/repo/include/list.h

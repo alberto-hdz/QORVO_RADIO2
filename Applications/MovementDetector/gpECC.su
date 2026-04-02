@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpECC/src/gpECC.c:75:13:gpECC_secp256r1	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpECC/src/gpECC.c:85:7:gpECC_make_key	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpECC/src/gpECC.c:118:7:gpECC_shared_secret	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpECC/src/gpECC.c:154:6:gpECC_set_rng	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpECC/src/gpECC.c:163:7:gpECC_valid_public_key	0	static

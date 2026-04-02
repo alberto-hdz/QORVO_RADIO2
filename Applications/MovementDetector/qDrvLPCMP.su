@@ -1,0 +1,15 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp4002/inc/qRegLPCMP.h:184:20:qRegLPCMP_SlotEnableSet	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp4002/inc/qRegLPCMP.h:194:20:qRegLPCMP_SlotEnableGet	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp4002/inc/qRegLPCMP.h:327:20:qRegLPCMP_EnableSet	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/xp400x/inc/qRegIntCtrl.h:90:20:qRegIntCtrl_IRQDisable.constprop	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:159:11:qDrvLPCMP_PinConfigSet	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:181:11:qDrvLPCMP_PinConfigClear	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:188:11:qDrvLPCMP_Init	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:257:6:qDrvLPCMP_InitCheck	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:236:11:qDrvLPCMP_Deinit	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:264:11:qDrvLPCMP_EnableSet	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:281:11:qDrvLPCMP_SlotEnableSet	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:317:11:qDrvLPCMP_SlotConfigSet	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:375:11:qDrvLPCMP_SlotWindowSet	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:412:6:qDrvLPCMP_SlotResultGet	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/gpPeripheral/src/qDrvLPCMP.c:425:1:pmud_handler	24	static

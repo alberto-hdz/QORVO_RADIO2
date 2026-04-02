@@ -1,0 +1,8 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c:54:6:WsfQueueEnq	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c:93:7:WsfQueueDeq	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c:133:6:WsfQueuePush	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c:170:6:WsfQueueInsert	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c:214:6:WsfQueueRemove	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c:257:10:WsfQueueCount	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c:293:8:WsfQueueEmpty	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/wsf/targets/baremetal/sources/wsf_queue.c:321:8:WsfIsQueueDepthOne	0	static

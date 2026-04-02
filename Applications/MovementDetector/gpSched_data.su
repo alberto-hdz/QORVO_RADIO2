@@ -1,0 +1,6 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/gpSched_data.c:101:6:gpSched_RegisterOnIdleCallback	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/gpSched_data.c:117:6:gpSched_PostProcessIdle	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/gpSched_data.c:137:6:gpSched_RegisterPreProcessOnIdleCallback	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/gpSched_data.c:153:6:gpSched_PreProcessIdle	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/gpSched_data.c:172:6:gpSched_InitExtramData	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpSched/src/gpSched_data.c:200:6:gpSched_SetGotoSleepCheckCallback	0	static

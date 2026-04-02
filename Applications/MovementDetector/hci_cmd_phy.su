@@ -1,0 +1,3 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_cmd_phy.c:40:6:HciLeReadPhyCmd	48	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_cmd_phy.c:63:6:HciLeSetDefaultPhyCmd	48	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/ARM/cordio-r20-05/qorvoBleHost/src/hci/hci_cmd_phy.c:86:6:HciLeSetPhyCmd	48	static

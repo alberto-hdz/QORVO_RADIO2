@@ -1,0 +1,4 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleConfig/src/gpBleConfig_Configuration.c:55:7:gpBleConfig_GetLlVersion	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleConfig/src/gpBleConfig_Configuration.c:60:8:gpBleConfig_GetCompanyId	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleConfig/src/gpBleConfig_Configuration.c:65:8:gpBleConfig_GetLlSubversion	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleConfig/src/gpBleConfig_Configuration.c:70:6:gpBleConfig_GetConfig	8	static

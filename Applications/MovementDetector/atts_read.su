@@ -1,0 +1,9 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c:75:10:attsFindUuidInRange	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c:129:10:attsFindServiceGroupEnd	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c:198:6:attsProcReadBlobReq	48	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c:285:6:attsProcFindTypeReq	72	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c:413:6:attsProcReadTypeReq	72	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c:601:6:attsProcReadMultReq	64	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c:713:6:attsProcReadGroupTypeReq	80	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c:880:6:AttsContinueReadReq	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/att/atts_read.c:929:6:AttsContinueReadBlobReq	32	static

@@ -1,0 +1,2 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master_leg.c:75:6:dmConnSmActOpen	56	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_conn_master_leg.c:87:6:DmConnMasterInit	8	static

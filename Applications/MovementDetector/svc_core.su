@@ -1,0 +1,9 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c:363:6:SvcCoreAddGroup	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c:376:6:SvcCoreRemoveGroup	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c:392:6:SvcCoreGapCbackRegister	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c:408:6:SvcCoreGattCbackRegister	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c:423:6:SvcCoreGapCentAddrResUpdate	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c:436:6:SvcCoreGapAddRpaoCh	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c:454:6:SvcCoreGattSetSsf	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c:468:6:SvcCoreGapDeviceNameUpdate	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-profiles/sources/services/svc_core.c:484:6:SvcCoreGapAppearanceUpdate	0	static

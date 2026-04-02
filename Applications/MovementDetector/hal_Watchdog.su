@@ -1,0 +1,10 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:64:13:watchdogCallback	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:101:6:hal_WatchdogRestore	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:134:6:hal_EnableWatchdog	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:145:6:hal_DisableWatchdog	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:153:6:hal_ResetWatchdog	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:162:8:hal_GetWatchdogTimeRemaining	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:167:6:hal_TriggerWatchdog	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:178:6:hal_EnableWatchdogInterrupt	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:113:6:hal_WatchdogInit	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halCortexM4/xp4002/src/hal_Watchdog.c:189:6:hal_WatchdogRegisterTimeoutCallback	0	static

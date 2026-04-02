@@ -1,0 +1,7 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_SEC.c:91:23:gpHalSec_CCMbase	64	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_SEC.c:207:6:gpHal_SEC_Init	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_SEC.c:214:16:gpHal_AESEncrypt	40	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_SEC.c:272:16:gpHal_CCMEncrypt	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_SEC.c:277:16:gpHal_CCMEncrypt_RAM	56	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_SEC.c:316:16:gpHal_CCMDecrypt_RAM	56	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_SEC.c:362:16:gpHal_CCMDecrypt	0	static

@@ -1,0 +1,17 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:71:6:gpUtils_LLLockCreate	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:78:6:gpUtils_LLLockDestroy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:85:6:gpUtils_LLLockAcquire	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:94:6:gpUtils_LLLockRelease	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:103:6:gpUtils_LLLockIsValid	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:112:6:gpUtils_LLLockIsAcquired	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:121:6:Utils_InsertBound	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:152:6:gpUtils_LLInit	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:180:6:gpUtils_LLClear	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:193:7:gpUtils_LLNew	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:230:6:gpUtils_LLAdd	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:245:6:gpUtils_LLInsertBefore	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:265:6:gpUtils_LLUnlink	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:300:6:gpUtils_LLFree	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:330:7:gpUtils_LLGetFirstElem	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:338:6:gpUtils_LLDeInit	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpUtils/src/gpUtils_LL.c:346:6:gpUtils_LLDeInitFree	0	static

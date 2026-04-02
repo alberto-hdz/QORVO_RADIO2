@@ -1,0 +1,2 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Rtm.c:49:7:ak_rap_rtm_get_trc_warmup_time	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp4002/src/gpHal_kx_Rap_Rtm.c:88:6:ak_rap_rtm_trigger_statereq	8	static

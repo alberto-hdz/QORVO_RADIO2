@@ -1,0 +1,6 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRadio/src/gpRadio.c:122:18:gpRadio_SetRxMode	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRadio/src/gpRadio.c:101:6:gpRadio_Init	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRadio/src/gpRadio.c:139:18:gpRadio_GetRxMode	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRadio/src/gpRadio.c:153:18:gpRadio_SetRxAntenna	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRadio/src/gpRadio.c:186:28:gpRadio_GetRxAntenna	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gpRadio/src/gpRadio.c:221:18:gpRadio_SetRadioFirFilter	8	static

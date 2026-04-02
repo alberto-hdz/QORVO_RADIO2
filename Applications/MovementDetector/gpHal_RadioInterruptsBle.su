@@ -1,0 +1,8 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsBle.c:66:6:gpHal_RadioInterruptsHandleBleDataConfBle	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsBle.c:71:6:gpHal_RadioInterruptsHandleDataIndBle	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsBle.c:76:6:gpHal_RadioInterruptsHandleAdvIndBle	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsBle.c:90:6:gpHal_RadioInterruptsHandleEventProcessed	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsBle.c:106:6:gpHal_RadioInterruptsHandleLastEvent	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsBle.c:121:6:gpHal_RadioInterruptsHandleStat	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsBle.c:131:6:gpHal_RadioInterruptsHandleScanReqRx	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_RF/gphal/xp400x/src/gpHal_RadioInterruptsBle.c:139:6:gpHal_IsrHighPriorityInterrupt	8	static

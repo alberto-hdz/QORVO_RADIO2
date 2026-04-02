@@ -1,0 +1,7 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Connections.c:70:6:gpBle_ConnectionsInit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Connections.c:75:6:gpBle_ConnectionsReset	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Connections.c:80:6:gpBle_RegisterConnectionCallbacks	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Connections.c:90:26:gpBle_AllocateHciConnectionHandle	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Connections.c:102:6:gpBle_EstablishConnection	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Connections.c:110:6:gpBle_StopConnection	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBle/src/gpBle_Connections.c:118:6:gpBle_SendHciNumberOfCompletedPacketsEvent	16	static

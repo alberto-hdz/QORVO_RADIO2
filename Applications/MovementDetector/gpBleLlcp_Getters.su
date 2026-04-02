@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Getters.c:34:8:gpBleLlcp_GetConnIntervalUnit	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Getters.c:45:8:gpBleLlcp_GetConnIntervalUs	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Getters.c:56:8:gpBleLlcp_GetLatency	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Getters.c:67:6:gpBleLlcp_IsMasterConnection	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BleController/gpBleLlcp/src/gpBleLlcp_Getters.c:78:8:gpBleLlcp_GetMinCeUnit	16	static

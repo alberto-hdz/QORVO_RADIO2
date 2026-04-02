@@ -1,0 +1,5 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpFreeRTOS/config/hooks.c:71:6:vApplicationMallocFailedHook	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpFreeRTOS/config/hooks.c:92:6:vApplicationGetIdleTaskMemory	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpFreeRTOS/config/hooks.c:115:6:vApplicationGetTimerTaskMemory	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpFreeRTOS/config/hooks.c:128:28:vApplicationIdleHook	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/OS/gpFreeRTOS/config/hooks.c:149:6:vApplicationStackOverflowHook	0	static

@@ -1,0 +1,2 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_sm.c:577:6:SmpiScInit	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/smp/smpi_sc_sm.c:595:10:smpiStateStr	0	static

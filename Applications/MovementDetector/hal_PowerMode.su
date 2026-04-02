@@ -1,0 +1,17 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:119:17:hal_GetSleepMode	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:174:23:hal_GetPowerMode	40	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:209:6:hal_setClockAccuracy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:228:21:hal_GetSleepClockAccuracy	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:91:13:hal_UpdateStandbyMode	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:114:6:gpHal_InitSleep	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:125:23:hal_SetPowerMode	24	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:243:21:hal_GetWorstSleepClockAccuracy	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:260:21:hal_GetAverageSleepClockAccuracy	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:273:9:hal_AllanDeviationClockAccuracy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:283:6:hal_TemperatureCalibrateClockAccuracy	48	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:381:19:gpHal_GetSleepMode	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:386:8:gpHal_GetSleepClockAccuracy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:391:8:gpHal_GetWorstSleepClockAccuracy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:396:8:gpHal_GetAverageSleepClockAccuracy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:401:16:gpHal_SetSleepMode	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/HAL_PLATFORM/halPlatform/xp4002/src/hal_PowerMode.c:430:6:gpHal_GoToSleepWhenIdle	0	static

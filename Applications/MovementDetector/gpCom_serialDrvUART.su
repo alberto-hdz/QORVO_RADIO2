@@ -1,0 +1,7 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom_serialDrvUART.c:406:6:gpComUart_Init	32	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom_serialDrvUART.c:431:6:gpComUart_DeInit	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom_serialDrvUART.c:449:6:gpComUart_Flush	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom_serialDrvUART.c:461:6:ComUart_FlushRx	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom_serialDrvUART.c:467:6:ComUart_TxEnabled	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom_serialDrvUART.c:478:6:ComUart_TriggerTx	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/Qorvo/BaseUtils/gpCom/src/gpCom_serialDrvUART.c:191:13:gpComUart_TxCb	16	static

@@ -1,0 +1,14 @@
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:157:6:dmDevHciHandler	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:63:6:dmDevActReset	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:192:6:dmDevMsgHandler	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:210:6:dmDevPassEvtToDevPriv	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:236:6:dmDevPassEvtToConnCte	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:256:6:DmDevReset	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:277:6:DmDevSetRandAddr	8	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:294:6:DmDevWhiteListAdd	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:310:6:DmDevWhiteListRemove	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:323:6:DmDevWhiteListClear	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:339:8:dmDevSetFilterPolicy	16	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:408:8:DmDevSetFilterPolicy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:425:8:DmDevSetExtFilterPolicy	0	static
+/workspaces/qpg6200-iot-sdk/Applications/MovementDetector/../../Components/ThirdParty/BleHost/ble-host/sources/stack/dm/dm_dev.c:439:6:DmDevVsInit	0	static
