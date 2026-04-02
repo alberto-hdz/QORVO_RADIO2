@@ -1,3 +1,19 @@
+## Ignore Work directory
+Work/
+
+## Ignore python virtualenv
+.python_venv/
+
+## Ignore python cache
+__pycache__/
+
+## Ignore build artifacts
+*.o
+*.d
+
+## Ignore KiCad lock files
+*.lck
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
