@@ -29,21 +29,21 @@ The QPG6200L is a concurrent BLE 5.4 + IEEE 802.15.4 (OpenThread) radio SoC (ARM
 
 ```
 QORVO_RADIO2/
-├── Applications/
-│   ├── Ble/
-│   │   ├── BleIoTDemo/                    # BLE ↔ MQTT gateway demo
-│   │   ├── Central/                       # BLE Central role example
-│   │   ├── Peripheral/                    # BLE Peripheral role example
-│   │   ├── ThreadBleDoorbell/             # Thread+BLE doorbell (carrier board)
-│   │   ├── ThreadBleDoorbell_DK/          # Thread+BLE doorbell (standalone DK)
-│   │   ├── ThreadBleDoorbell_DK_Analog/   # Doorbell with analog input
-│   │   ├── ThreadBleMotionDetector_HCSR04/    # Motion detector — HC-SR04
-│   │   ├── ThreadBleMotionDetector_MaxSonar/  # Motion detector — LV-MaxSonar
-│   │   └── shared/                        # Shared BLE libraries
-│   └── MovementDetector/                  # Movement detection application
 ├── Computer/
-│   ├── NodeRedDashboardUI/                # Node-RED flow JSON exports
-│   └── Software/Firmware/                 # Mirror of firmware applications
+│   ├── Applications/
+│   │   ├── Ble/
+│   │   │   ├── BleIoTDemo/                    # BLE ↔ MQTT gateway demo
+│   │   │   ├── Central/                       # BLE Central role example
+│   │   │   ├── Peripheral/                    # BLE Peripheral role example
+│   │   │   ├── ThreadBleDoorbell/             # Thread+BLE doorbell (carrier board)
+│   │   │   ├── ThreadBleDoorbell_DK/          # Thread+BLE doorbell (standalone DK)
+│   │   │   ├── ThreadBleDoorbell_DK_Analog/   # Doorbell with analog input
+│   │   │   ├── ThreadBleMotionDetector_HCSR04/    # Motion detector — HC-SR04
+│   │   │   ├── ThreadBleMotionDetector_MaxSonar/  # Motion detector — LV-MaxSonar
+│   │   │   └── shared/                        # Shared BLE libraries
+│   │   └── MovementDetector/                  # Movement detection application
+│   ├── NodeRedDashboardUI/                    # Node-RED flow JSON exports
+│   └── Software/Firmware/                     # Earlier firmware iterations
 ├── Electrical/
 │   └── Hardware/
 │       ├── KiCad/                         # Schematics and PCB layout (REV1, REV2)
@@ -53,7 +53,7 @@ QORVO_RADIO2/
 ├── Mechanical/
 │   ├── Doorbell/                          # Doorbell enclosure CAD + STL
 │   └── MotionDetector/                    # Motion detector enclosure CAD + STL
-├── Files/                                 # Technical documentation and datasheets
+├── docs/                                  # Technical documentation and datasheets
 └── Tests/                                 # Test procedures
 ```
 
@@ -100,11 +100,11 @@ PCB schematics and Gerber files are in `Electrical/Hardware/`. Enclosure STL fil
 
 1. Build the OpenThread FTD library first:
    ```bash
-   make -f Applications/Concurrent/Light/Makefile.Light_Concurrent_qpg6200
+   make -f Computer/Applications/Concurrent/Light/Makefile.Light_Concurrent_qpg6200
    ```
 2. Build the doorbell application:
    ```bash
-   make -f Applications/Ble/ThreadBleDoorbell_DK/Makefile.ThreadBleDoorbell_DK_qpg6200
+   make -f Computer/Applications/Ble/ThreadBleDoorbell_DK/Makefile.ThreadBleDoorbell_DK_qpg6200
    ```
 3. Flash the output hex to the dev kit:
    ```
@@ -115,7 +115,7 @@ Refer to the per-application `README.md` files for application-specific build st
 
 ### Setting up the IoT gateway (BleIoTDemo)
 
-See [`Files/QPG6200_BLE_Demo_Guide.md`](Files/QPG6200_BLE_Demo_Guide.md) for the full setup procedure including the Raspberry Pi bridge, MQTT broker, and Node-RED dashboard configuration.
+See [`docs/QPG6200_BLE_Demo_Guide.md`](docs/QPG6200_BLE_Demo_Guide.md) for the full setup procedure including the Raspberry Pi bridge, MQTT broker, and Node-RED dashboard configuration.
 
 ---
 
@@ -123,15 +123,15 @@ See [`Files/QPG6200_BLE_Demo_Guide.md`](Files/QPG6200_BLE_Demo_Guide.md) for the
 
 | Document | Location |
 |---|---|
-| ThreadBleDoorbell\_DK — Technical Overview | [`Files/ThreadBleDoorbell_DK_Overview.md`](Files/ThreadBleDoorbell_DK_Overview.md) |
-| ThreadBleDoorbell\_DK — Test Plan | [`Files/ThreadBleDoorbell_DK_Test_Plan.md`](Files/ThreadBleDoorbell_DK_Test_Plan.md) |
-| ThreadBleMotionDetector (MaxSonar) — Overview | [`Files/ThreadBleMotionDetector_MaxSonar_Overview.md`](Files/ThreadBleMotionDetector_MaxSonar_Overview.md) |
-| ThreadBleMotionDetector (MaxSonar) — Test Plan | [`Files/ThreadBleMotionDetector_MaxSonar_Test_Plan.md`](Files/ThreadBleMotionDetector_MaxSonar_Test_Plan.md) |
-| BLE IoT Demo — System Guide | [`Files/QPG6200_BLE_Demo_Guide.md`](Files/QPG6200_BLE_Demo_Guide.md) |
-| IoT Gateway — Documentation | [`Files/IoT_Gateway_Documentation.docx.md`](Files/IoT_Gateway_Documentation.docx.md) |
-| Node-RED — Documentation | [`Files/NodeRED_Documentation.docx.md`](Files/NodeRED_Documentation.docx.md) |
-| QPG6200L Datasheet | [`Files/qpg6200L_datasheet.pdf`](Files/qpg6200L_datasheet.pdf) |
-| LV-MaxSonar Datasheet | [`Files/11832-LV-MaSonar-EZ_Datasheet.pub.pdf`](Files/11832-LV-MaSonar-EZ_Datasheet.pub.pdf) |
+| ThreadBleDoorbell\_DK — Technical Overview | [`docs/ThreadBleDoorbell_DK_Overview.md`](docs/ThreadBleDoorbell_DK_Overview.md) |
+| ThreadBleDoorbell\_DK — Test Plan | [`docs/ThreadBleDoorbell_DK_Test_Plan.md`](docs/ThreadBleDoorbell_DK_Test_Plan.md) |
+| ThreadBleMotionDetector (MaxSonar) — Overview | [`docs/ThreadBleMotionDetector_MaxSonar_Overview.md`](docs/ThreadBleMotionDetector_MaxSonar_Overview.md) |
+| ThreadBleMotionDetector (MaxSonar) — Test Plan | [`docs/ThreadBleMotionDetector_MaxSonar_Test_Plan.md`](docs/ThreadBleMotionDetector_MaxSonar_Test_Plan.md) |
+| BLE IoT Demo — System Guide | [`docs/QPG6200_BLE_Demo_Guide.md`](docs/QPG6200_BLE_Demo_Guide.md) |
+| IoT Gateway — Documentation | [`docs/IoT_Gateway_Documentation.docx.md`](docs/IoT_Gateway_Documentation.docx.md) |
+| Node-RED — Documentation | [`docs/NodeRED_Documentation.docx.md`](docs/NodeRED_Documentation.docx.md) |
+| QPG6200L Datasheet | [`docs/qpg6200L_datasheet.pdf`](docs/qpg6200L_datasheet.pdf) |
+| LV-MaxSonar Datasheet | [`docs/11832-LV-MaSonar-EZ_Datasheet.pub.pdf`](docs/11832-LV-MaSonar-EZ_Datasheet.pub.pdf) |
 
 ---
 
