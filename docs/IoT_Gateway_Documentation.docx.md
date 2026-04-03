@@ -96,7 +96,7 @@ Data flows through the system in this order:
 
                     ↓  WiFi  (TRENDnet827\_2.4GHz\_QMGR)  ↓
 
-|   Laptop \+ Lenovo Tab M11   \- SSH:        ssh pi@192.168.10.102   \- Dashboard:  http://192.168.10.102:1880/dashboard   \- OTBR GUI:   http://192.168.10.102 |
+|   Laptop \+ Browser Device   \- SSH:        ssh pi@192.168.10.102   \- Dashboard:  http://192.168.10.102:1880/dashboard   \- OTBR GUI:   http://192.168.10.102 |
 | :---- |
 
 ## **1.4  Final System Status**
@@ -211,7 +211,7 @@ These are the physical components you need for the gateway:
 | USB-C Power Supply | 5V 3A (15W) minimum, official Raspberry Pi PSU recommended | Powers the Raspberry Pi. Underpowered supplies cause instability. The official PSU is reliable. |
 | Ethernet Cable | Cat5e or Cat6, length as needed | Connects Pi to the TRENDnet router yellow LAN port. Wired connection is more reliable than Wi-Fi for a gateway. |
 | TRENDnet TEW-827DRU | AC2600 Dual-Band Router, H/W V2.0R | Portable demo router. Creates private local network. Requires 12V 1.5A power adapter. Pi reserved at 192.168.10.102. |
-| Display Device | Lenovo Tab M11 or any device with a web browser | For viewing the dashboard. Can be a tablet, phone, or computer. Any modern web browser works. |
+| Display Device | Any device with a web browser | For viewing the dashboard. Can be a tablet, phone, or computer. Any modern web browser works. |
 
 ## **3.2  Development/Build Computer (Required for Initial Setup)**
 

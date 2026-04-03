@@ -94,7 +94,7 @@ Node-RED is the final layer in the gateway stack. Data originates in the QPG6200
 
                     ↓  HTTP / WebSocket  ↓
 
-|   Browser on Lenovo Tab M11   \- http://192.168.10.102:1880/dashboard   \- Shows live sensor data and doorbell alerts |
+|   Browser on any device   \- http://192.168.10.102:1880/dashboard   \- Shows live sensor data and doorbell alerts |
 | :---- |
 
 ## **2.2  What Node-RED is Responsible For**
