@@ -70,7 +70,7 @@ The IoT Gateway Stack enables wireless IoT devices (built with Qorvo QPG6200L ch
 
 * **MQTT Broker:** A message routing service. Devices publish data to topics (like home/motion/sensor1), and other applications subscribe to those topics to receive the data. Think of it like a post office for IoT messages.
 
-* **Node-RED Dashboard:** A visual programming tool that receives MQTT messages and displays them on a web-based dashboard with gauges, charts, and buttons. This is what you see on your tablet or phone.
+* **Node-RED Dashboard:** A visual programming tool that receives MQTT messages and displays them on a web-based dashboard with gauges, charts, and buttons. This is what you see on your device.
 
 ## **1.3  System Architecture Diagram**
 
@@ -881,7 +881,7 @@ These credentials must be programmed into your QPG6200L device firmware for them
 
 ## **13.2  Accessing the Interfaces**
 
-Connect your laptop and tablet to WiFi network TRENDnet827\_2.4GHz\_QMGR (no password), then use these URLs:
+Connect your device to WiFi network TRENDnet827\_2.4GHz\_QMGR (no password), then use these URLs:
 
 | OTBR Web GUI | http://192.168.10.102 |
 | :---- | :---- |

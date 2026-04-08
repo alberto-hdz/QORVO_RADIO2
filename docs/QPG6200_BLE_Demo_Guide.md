@@ -6,7 +6,6 @@
 | Field | Value |
 |---|---|
 | Project | IoT Mesh Network Senior Design |
-| Team Members | Alberto (Firmware/SoC), Luke, Abdul |
 | Hardware | QPG6200LDK-01 Development Kit |
 | Gateway | Raspberry Pi 4 (192.168.10.102) |
 | Network | TRENDnet TEW-827DRU Private LAN |
