@@ -103,7 +103,7 @@ Node-RED is the final layer in the gateway stack. Data originates in the QPG6200
 
 * **Processing incoming data:** Parsing JSON payloads, formatting values, and routing data to the correct dashboard widgets.
 
-* **Displaying the dashboard:** Serving the web-based dashboard UI to the tablet browser over HTTP.
+* **Displaying the dashboard:** Serving the web-based dashboard UI to the browser over HTTP.
 
 * **Triggering timed actions:** For example, the doorbell alert shows for 3 seconds then resets to Idle automatically.
 
