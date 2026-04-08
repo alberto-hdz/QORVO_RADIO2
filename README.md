@@ -10,14 +10,14 @@ Developed as a Senior Design project at **UNC Charlotte — William States Lee C
 
 ```
 ┌─────────────────────────┐        BLE         ┌──────────────────────────┐
-│  QPG6200L Dev Kit        │ ◄─────────────────► │  Raspberry Pi 4 Gateway  │
-│  (Firmware application)  │                     │  ble_mqtt_bridge.py      │
-└─────────────────────────┘                     └────────────┬─────────────┘
-        │  Thread/802.15.4 mesh                               │  MQTT (port 1883)
-        ▼                                                     ▼
+│  QPG6200L Dev Kit       │ ◄─────────────────►│  Raspberry Pi 4 Gateway  │
+│  (Firmware application) │                    │  ble_mqtt_bridge.py      │
+└─────────────────────────┘                    └────────────┬─────────────┘
+        │  Thread/802.15.4 mesh                             │  MQTT (port 1883)
+        ▼                                                   ▼
 ┌─────────────────────────┐                     ┌──────────────────────────┐
-│  Other Thread nodes      │                     │  Node-RED + Dashboard    │
-│  (chimes, sensors, …)    │                     │  (browser UI)            │
+│  Other Thread nodes     │                     │  Node-RED + Dashboard    │
+│  (chimes, sensors, …)   │                     │  (browser UI)            │
 └─────────────────────────┘                     └──────────────────────────┘
 ```
 
