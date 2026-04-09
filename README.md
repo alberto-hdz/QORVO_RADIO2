@@ -46,10 +46,10 @@ in partnership with **Qorvo**.
   │   │ (wpan0 ↔IP) │    │  MQTT :1883   │    │  Dashboard :1880   │    │
   │   └─────────────┘    └───────────────┘    └────────────────────┘    │
   │                             ▲                                       │
-  │   ┌─────────────────────────┘                                       │
-  │   │  ble_mqtt_bridge.py  (BLE → MQTT, systemd service)              │
-  │   │  bleak + paho-mqtt, async BLE scan/connect                      │
-  │   └─────────────────────────────────────────────────────────────────┤
+  │   ┌─────────────────────────┘──────────────────────────────────┐    │
+  │   │  ble_mqtt_bridge.py  (BLE → MQTT, systemd service)         │    │
+  │   │  bleak + paho-mqtt, async BLE scan/connect                 │    │
+  │   └────────────────────────────────────────────────────────────┘    ┤
   └─────────────────────────────────────────────────────────────────────┘
             │  BLE 5.4 (commissioning + GATT notifications)
             ▲
