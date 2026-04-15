@@ -108,7 +108,7 @@ QORVO_RADIO2/
 
 ## Custom PCB Devices
 
-Four custom 6-layer PCBs were designed in KiCad and fabricated at JLCPCB. Each device is built
+Four custom 6-layer PCBs were designed in KiCad. Each device is built
 around the QPG6200L SoC.
 
 | Device | Peripheral | Interface | GPIO Pins | Firmware |
