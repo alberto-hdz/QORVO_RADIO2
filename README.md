@@ -79,6 +79,7 @@ QORVO_RADIO2/
 ├── Computer/
 │   ├── Applications/
 │   │   ├── Ble/
+│   │   │   ├── BleGatewayDoorbell/                # BLE-only doorbell — GATT peripheral + Pi gateway + Node-RED
 │   │   │   ├── BleIoTDemo/                        # BLE ↔ MQTT gateway demo
 │   │   │   ├── Central/                           # BLE Central role reference
 │   │   │   ├── Peripheral/                        # BLE Peripheral role reference
@@ -133,6 +134,7 @@ around the QPG6200L SoC.
 
 | Application | Description |
 |---|---|
+| **BleGatewayDoorbell** | BLE-only smart doorbell demo. QPG6200 acts as a BLE peripheral; Raspberry Pi bridge forwards ring events and heartbeat to MQTT; Node-RED dashboard shows live status and controls the BLUE LED. No Thread required. |
 | **ThreadBleMotionDetector\_HCSR04** | Same motion detector logic using HC-SR04 ultrasonic sensor via GPIO trigger/echo. |
 | **BleIoTDemo** | Full IoT gateway demo: QPG6200L BLE peripheral ↔ Raspberry Pi bridge ↔ MQTT ↔ Node-RED. |
 | **Central / Peripheral** | Minimal BLE role examples for reference. |
