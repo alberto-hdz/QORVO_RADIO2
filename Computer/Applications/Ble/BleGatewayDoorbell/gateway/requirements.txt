@@ -1,0 +1,12 @@
+# QPG6200 BLE Gateway Doorbell – Gateway Bridge Python Dependencies
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# Tested with Python 3.10+ on Raspberry Pi OS (Bullseye / Bookworm).
+
+# BLE library – cross-platform async BLE central (uses BlueZ on Linux)
+bleak>=0.21.1
+
+# MQTT client – lightweight publish/subscribe messaging
+paho-mqtt>=1.6.1
