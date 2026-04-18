@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.4">
+  <diagram name="Page-1" id="XvTqd7QeXZN1Zpdsugcx">
+    <mxGraphModel dx="1281" dy="1075" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RK3C7MK6MDy7gNO8KwJu-9" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RK3C7MK6MDy7gNO8KwJu-1" target="RK3C7MK6MDy7gNO8KwJu-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RK3C7MK6MDy7gNO8KwJu-1" value="Power Supply" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="174" y="-95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RK3C7MK6MDy7gNO8KwJu-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RK3C7MK6MDy7gNO8KwJu-2" target="RK3C7MK6MDy7gNO8KwJu-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RK3C7MK6MDy7gNO8KwJu-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RK3C7MK6MDy7gNO8KwJu-2" target="RK3C7MK6MDy7gNO8KwJu-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RK3C7MK6MDy7gNO8KwJu-2" value="QPG6200L" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="174" y="26" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RK3C7MK6MDy7gNO8KwJu-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RK3C7MK6MDy7gNO8KwJu-3" target="RK3C7MK6MDy7gNO8KwJu-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RK3C7MK6MDy7gNO8KwJu-3" value="Envelope Comparator" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="186" y="129" width="96" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="RK3C7MK6MDy7gNO8KwJu-5" value="Receive&lt;div&gt;Transducer&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="174" y="264" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RK3C7MK6MDy7gNO8KwJu-6" value="&lt;div&gt;Protocol Stack&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="359" y="21.5" width="69" height="69" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,89 @@
+Main project goals (minimum/required) - IoT Application Demonstration (Use QPG6200 in application devices, with some existing gateway as a link to web-based control)
+
+Deliverables:
+
+- Hardware/physical:
+	- Demo application hardware, including:
+		- User interface and application controls (e.g. buttons/sensors, controller, phone/tablet etc.)
+		- IoT application PCB assemblies (PCB assemblies designed by team that contain radio and sensor or transducer)
+		- IoT gateway (bought device, something like EW840E5N... possibly)
+
+- Software:
+	- Demo application software (e.g. webpage code, mobile application code, etc.)
+	- Embedded system software (e.g. "microcontroller" program(s))
+	- IoT gateway configuration (if applicable)
+
+- Documentation:
+	- Bill of Materials
+	- Schematics
+	- Layout and design files
+	- Software documentation
+	- IoT gateway documentation if config is non-standard
+	- User guide/application note(s)
+	- Written feedback for Qorvo dev kit and software (no specific format)
+
+Quantifiable Requirements:
+- Deliverables must operate using at least two (2) separate IoT protocols (e.g. Zigbee, Thread over Matter, Bluetooth, etc.)
+- Deliverables must include three (3) separate application use cases (e.g. remote microphone, lighting, remote sensing, etc.
+- Deliverables must implement a total of at least three (3) peripherals from the QPG6200 device (e.g. PDM, PWM, I2S, ADC’s, UART, USB)
+- Deliverable remote IoT devices must be coin cell battery powered.
+- Deliverable remote IoT device assemblies must use a custom PCB design specific for intended applications.
+- (Preferred) Custom PCB design should be a common PCB assembly. *** (If different designs are better, that is OK. To review during concept design.)
+- Deliverable remote IoT devices must be able to connect to an internet (not necessarily the Internet, but that is OK).
+- Deliverable remote IoT devices must be able to communicate bi-directionally with a webpage* user interface. (*Or mobile application)
+- Deliverable remote IoT devices must be able to operate in a mesh topology (e.g. Bluetooth Mesh, mesh nodes with Matter over Thread).
+- Deliverables must implement a battery life calculation for remote devices to be displayed on the control interface.
+
+Qualitative requirements (verification of these requirements can be noted as qualitative in SoW, and may even be subjective to personal opinion.):
+- Demonstration deliverables should be highly interactive and involve creative use cases/application devices.
+- Demonstration deliverables should be visually engaging and easy to understand.
+- Demonstration deliverables should demonstrate connectivity interoperability using IoT devices. (e.g. different protocols work in conjunction)
+- Demonstration deliverables should include hands-on interaction (e.g. employ sight/touch/sound/voice, etc.).
+- Demonstration deliverables should include enclosures.
+
+Specifications:
+- Remote devices must have battery life of > 1 week
+- Size:
+	- Remote devices must occupy a space less than 3"x3"x3"
+- Weight:
+	- Remote devices must weigh less than 0.5 lb
+ 
+Standards/Regulations:
+- Follow FCC guidelines, specifically for ISM band 2.4GHz - 2.5GHz
+- IoT standards:
+	- Bluetooth
+	- Zigbee
+	- Matter (over Thread)
+	- BLE
+
+
+
+
+Secondary (stretch) goals - Demonstration of QPG6200 application boards using custom software defined radio (SDR) system as the IoT gateway
+Deliverables:
+
+- Hardware/physical:
+	- New front end receive hardware for existing SDR - MAY only require a small fix to existing hardware.
+	- New front end transmit hardware for existing SDR
+
+- Software:
+	- Any software implementation with some SDR as a gateway (doesn't have to be existing hardware)
+
+- Documentation:
+	- BOM, schematics, layout/design files for SDR
+	- User guide
+	- Software documentation
+
+Quantifiable requirements:
+- SDR hardware must operate on frequencies between 2.4GHz and 2.5GHz.
+- SDR system must fit inside the existing case.
+- SDR should operate as a minimal gateway (it should be able to send and receive data between the control interface and remote devices in SOME way).
+
+Qualitative requirements:
+- SDR implementation should be easy to use by future UNCC students.
+ 
+Specifications:
+- No particular specifications
+ 
+Standards/Regulations:
+- Same as above/main project
