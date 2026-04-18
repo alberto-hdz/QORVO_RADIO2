@@ -101,8 +101,9 @@ QORVO_RADIO2/
 ├── Mechanical/
 │   ├── Doorbell/                      # Doorbell enclosure CAD + STL
 │   └── MotionDetector/                # Motion detector enclosure CAD + STL
-├── docs/                              # Technical documentation and datasheets
-└── Tests/                             # Test procedures and results
+├── docs/
+│   ├── Extras/                        # Supplementary project files (SD1 Fall 2025, SD2 Spring 2026)
+│   └── *.md / *.pdf                   # Technical documentation and datasheets
 ```
 
 ---
@@ -238,6 +239,7 @@ http://192.168.10.102:1880/dashboard/page1
 | Node-RED Dashboard — Documentation | [`docs/NodeRED_Documentation.docx.md`](docs/NodeRED_Documentation.docx.md) |
 | QPG6200L Datasheet | [`docs/qpg6200L_datasheet.pdf`](docs/qpg6200L_datasheet.pdf) |
 | LV-MaxSonar EZ Datasheet | [`docs/11832-LV-MaSonar-EZ_Datasheet.pub.pdf`](docs/11832-LV-MaSonar-EZ_Datasheet.pub.pdf) |
+| SD1 & SD2 Supplementary Materials | [`docs/Extras/`](docs/Extras/) |
 
 ---
 
