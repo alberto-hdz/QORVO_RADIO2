@@ -1,0 +1,123 @@
+[
+    {
+        "id": "63a813eb26a9b8fd",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "6a809c4b271a9658",
+        "page": "",
+        "ui": "",
+        "name": "Info",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<div style=\"padding: 10px 18px; line-height: 1.6;\">\n\n  <h2 style=\"color:#137d13; margin-bottom:10px;\">About</h2>\n  <p>\n    Smart Door Devices is an IoT-based smart entry monitoring system designed to demonstrate\n    connected door security and automation features through a simple web interface.\n    The system combines doorbell notification, motion detection, lighting indication,\n    and device communication into one dashboard for monitoring and interaction.\n  </p>\n\n  <hr style=\"margin:20px 0;\">\n\n  <h2 style=\"color:#137d13; margin-bottom:10px;\">System Information</h2>\n  <p><b>Gateway:</b> Raspberry Pi with OpenThread Border Router</p>\n  <p><b>Wireless Communication:</b> Thread / BLE</p>\n  <p><b>Data Handling:</b> MQTT with Node-RED Dashboard</p>\n  <p><b>End Device:</b> QPG6200L</p>\n  <p><b>Interface:</b> Node-RED Dashboard 2.0</p>\n\n  <hr style=\"margin:20px 0;\">\n\n  <h2 style=\"color:#137d13; margin-bottom:10px;\">How It Works</h2>\n  <p> The Smart Door Devices system operates through a combination of wireless communication, gateway processing, and a real-time dashboard interface.</p>\n  <ul style=\"margin-left: 20px; padding-left: 10px; line-height: 1.6;\">\n    <li>\n      The <b>QPG6200L device</b> collects sensor data such as motion detection, button presses (doorbell), and device status, then\n      transmits this information over a low-power wireless network (Thread/BLE).\n    </li>\n    <li>\n      The <b>gateway (Raspberry Pi with OpenThread Border Router)</b> receives this data and acts as a bridge between the\n      device network and the dashboard system.\n    </li>\n    <li>\n      The gateway forwards incoming data to <b>Node-RED</b>, where logic flows process the information, trigger events\n      (such as alerts or lighting changes), and prepare it for visualization.\n    </li>\n    <li>\n      The <b>Node-RED dashboard</b> displays real-time device states and allows users to interact with the system through\n      a web-based interface.\n    </li>\n    <li>\n      This setup enables seamless communication between hardware devices and the user interface, creating a responsive and\n      interactive smart door monitoring system.\n    </li>\n  </ul>\n  \n  <hr style=\"margin:20px 0;\">\n  \n  <h2 style=\"color:#137d13; margin-bottom:10px;\">User Guide</h2>\n  <p> This dashboard provides a simple interface for monitoring and interacting with smart door features in real time. </p>\n  <ul style=\"margin-left: 20px; padding-left: 10px; line-height: 1.6;\">\n    <li>\n      Use the dashboard to <b>monitor system components</b>, including the doorbell status, motion detection activity, and\n      lighting system behavior.\n    </li>\n    <li>\n      Click the <b>“Ring Doorbell” button</b> to simulate a visitor event and observe how the system responds\n      (notifications, UI updates, and sound alerts).\n    </li>\n    <li>\n      The <b>motion detector section</b> will automatically update when movement is detected, indicating activity near the\n      door.\n    </li>\n    <li>\n      The <b>lighting system panel</b> shows whether the door light is currently on or off and reflects any automatic or\n      manual changes.\n    </li>\n    <li>\n      Navigate between pages (e.g., Smart Devices and Project Info) using the sidebar while maintaining your session.\n    </li>\n    <li>\n      Use the <b>GitHub repository link</b> provided below to access the full project code, documentation, and\n      implementation details.\n    </li>\n  </ul>\n\n  <hr style=\"margin:20px 0;\">\n\n  <h2 style=\"color:#137d13; margin-bottom:10px;\">Credits</h2>\n  <p><b>Project Team:</b></p>\n  <ul style=\"margin-left: 20px; padding-left: 10px; line-height: 1.6;\">\n    <li><b>Mechanical:</b> Ethan Hartman</li>\n    <li><b>Electrical:</b> Luke Mathews & Abdul Bah</li>\n    <li><b>Computer:</b> Alberto Hernandez & Kenneth Le</li>\n  </ul>\n  <p><b>Industry Sponsors:</b> Qorvo</p>\n  <ul style=\"margin-left: 20px; padding-left: 10px; line-height: 1.6;\">\n    <li>David Kegley</li>\n    <li>Nathan Whitt</li>\n    <li>Daisy Vazquez</li>\n  </ul>\n\n  <p><b>Course:</b> Senior Design 1 / Senior Design 2 (Fall 2025 - Spring 2026)</p>\n\n  <p style=\"margin-top:15px;\">\n    <a href=\"https://github.com/alberto-hdz/QORVO_RADIO2\" target=\"_blank\"\n       style=\"display:inline-block; background:#24292e; color:white; text-decoration:none; padding:10px 16px; border-radius:8px;\">\n      🔗 View GitHub Repository\n    </a>\n  </p>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a809c4b271a9658",
+        "type": "ui-group",
+        "name": " ",
+        "page": "adde522760c5b605",
+        "width": "6",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "adde522760c5b605",
+        "type": "ui-page",
+        "name": "Project Info ",
+        "ui": "662704e15f68651b",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "a57b80d7e3fe3fc8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "662704e15f68651b",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "a57b80d7e3fe3fc8",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#187317",
+            "primary": "#ffffff",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "529cfb50a86ae739",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2"
+        }
+    }
+]
