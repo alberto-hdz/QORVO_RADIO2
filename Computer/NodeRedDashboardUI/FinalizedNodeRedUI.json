@@ -1,0 +1,1267 @@
+[
+    {
+        "id": "5a9eb481a3836ff8",
+        "type": "tab",
+        "label": "QPG IoT Demo",
+        "disabled": false,
+        "info": "QPG6200 BLE IoT Demo – merged flow.\n\nReal hardware data from the QPG6200 development board (via ble_mqtt_bridge.py)\nis wired into the existing Smart Door Devices dashboard:\n\n  qorvo/demo/button    → Triggers Doorbell animation, audio, and notification\n  qorvo/demo/heartbeat → Drives Movement Detector status indicator\n  qorvo/demo/status    → Drives Speaker/Mic connected state\n  qorvo/demo/led       ← Lighting System switch controls QPG6200 BLUE LED\n\nCredentials: admin / 1234  (auto-logout after 5 minutes)",
+        "env": []
+    },
+    {
+        "id": "d44a739ea18a53c6",
+        "type": "ui-text",
+        "z": "5a9eb481a3836ff8",
+        "group": "f5e09de0102e6345",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "name": "BLE Connection Status",
+        "label": "BLE Connection",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 900,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f177ed193464fc22",
+        "type": "ui-text",
+        "z": "5a9eb481a3836ff8",
+        "group": "f5e09de0102e6345",
+        "order": 2,
+        "width": "6",
+        "height": "1",
+        "name": "Heartbeat Counter",
+        "label": "Heartbeat",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 900,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "8a081c1ab197c0a0",
+        "type": "mqtt in",
+        "z": "5a9eb481a3836ff8",
+        "name": "Button State In",
+        "topic": "qorvo/demo/button",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "7e6cafa1f4e993be",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 1060,
+        "wires": [
+            [
+                "58a7a68b0163f097"
+            ]
+        ]
+    },
+    {
+        "id": "58a7a68b0163f097",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Button → Doorbell",
+        "func": "// Only trigger the doorbell on button press, ignore release\nvar data = msg.payload;\nif (!data || data.state !== 'pressed') {\n    return null;\n}\n\n// This is the exact message format the Doorbell Function node expects\nreturn {\n    topic: 'doorbell_press',\n    payload: true\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1060,
+        "wires": [
+            [
+                "d9d667445859f5cd"
+            ]
+        ]
+    },
+    {
+        "id": "ff85883e37a61083",
+        "type": "mqtt in",
+        "z": "5a9eb481a3836ff8",
+        "name": "Heartbeat In",
+        "topic": "qorvo/demo/heartbeat",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "7e6cafa1f4e993be",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 1140,
+        "wires": [
+            [
+                "c6726fdd2c4889f7"
+            ]
+        ]
+    },
+    {
+        "id": "c6726fdd2c4889f7",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Heartbeat → Motion + Counter",
+        "func": "var data = msg.payload;\nvar count = (data && data.count !== undefined) ? data.count : '?';\n\n// Output 1: Motion Detected (existing Status Indicator expects this string)\nvar motionMsg = { payload: 'Motion DETECTED' };\n\n// Output 2: Heartbeat counter for the QPG6200 Device group\nvar counterMsg = { payload: '💓 ' + count };\n\nreturn [motionMsg, counterMsg];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1140,
+        "wires": [
+            [
+                "a55fb0edf8c0ddca",
+                "800a0acd396d0e82",
+                "2cf6072474e027d8"
+            ],
+            [
+                "f177ed193464fc22"
+            ]
+        ]
+    },
+    {
+        "id": "477c5a204455b6a7",
+        "type": "mqtt in",
+        "z": "5a9eb481a3836ff8",
+        "name": "BLE Status In",
+        "topic": "qorvo/demo/status",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "7e6cafa1f4e993be",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 1220,
+        "wires": [
+            [
+                "4fef5aaee586c099"
+            ]
+        ]
+    },
+    {
+        "id": "4fef5aaee586c099",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Status → Speaker + Text",
+        "func": "var data = msg.payload;\nvar connected = data && data.connected === true;\nvar device = (data && data.device) ? data.device : 'QPG6200';\n\n// Output 1: Speaker UI expects true (active) or false (inactive)\nvar speakerMsg = { payload: connected };\n\n// Output 2: Human-readable status for the QPG6200 Device group\nvar statusMsg = {\n    payload: connected\n        ? ('✅ Connected – ' + device)\n        : ('❌ Disconnected – ' + device)\n};\n\nreturn [speakerMsg, statusMsg];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1220,
+        "wires": [
+            [
+                "e57f50607026e8e9"
+            ],
+            [
+                "d44a739ea18a53c6"
+            ]
+        ]
+    },
+    {
+        "id": "c608f9ea2102c5f5",
+        "type": "mqtt out",
+        "z": "5a9eb481a3836ff8",
+        "name": "LED Out",
+        "topic": "qorvo/demo/led",
+        "qos": "0",
+        "retain": "false",
+        "broker": "7e6cafa1f4e993be",
+        "x": 870,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "f603da44863bf468",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Light Switch → LED Command",
+        "func": "// The Light Switch sends 'Motion DETECTED' (on) or 'No motion detected' (off)\nif (msg.payload === 'Motion DETECTED') {\n    msg.payload = JSON.stringify({ led: 'on' });\n} else {\n    msg.payload = JSON.stringify({ led: 'off' });\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1300,
+        "wires": [
+            [
+                "c608f9ea2102c5f5"
+            ]
+        ]
+    },
+    {
+        "id": "070fab2b8c925d38",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Doorbell → LED Flash",
+        "func": "// Flash the QPG6200 BLUE LED for 3 seconds on doorbell ring\nnode.send({ payload: JSON.stringify({ led: 'on' }) });\n\nsetTimeout(function() {\n    node.send({ payload: JSON.stringify({ led: 'off' }) });\n}, 3000);\n\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1360,
+        "wires": [
+            [
+                "c608f9ea2102c5f5"
+            ]
+        ]
+    },
+    {
+        "id": "d3cb0f00ccc24b0e",
+        "type": "comment",
+        "z": "5a9eb481a3836ff8",
+        "name": "── QPG6200 BLE Integration ──",
+        "info": "## QPG6200 BLE IoT Demo Integration\n\nAll nodes below this comment are the BLE↔MQTT bridge between the\nQPG6200 development board and the existing Smart Door Devices UI.\n\n### Data Mapping\n| BLE Event | MQTT Topic | Dashboard Effect |\n|---|---|---|\n| PB5 button press | qorvo/demo/button | Doorbell animates + LED flashes |\n| 5s heartbeat | qorvo/demo/heartbeat | Movement Detector turns green |\n| BLE connected | qorvo/demo/status | Speaker/Mic shows active |\n| Light switch ON | qorvo/demo/led | QPG6200 BLUE LED turns on |\n| Doorbell button | qorvo/demo/led | QPG6200 BLUE LED flashes 3s |\n\n### Gateway setup\nRun on the Raspberry Pi:\n  cd ~/ble-demo\n  python3 ble_mqtt_bridge.py",
+        "x": 200,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "2716fa3c0bf2b9b7",
+        "type": "comment",
+        "z": "5a9eb481a3836ff8",
+        "name": "Login UI",
+        "info": "",
+        "x": 100,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "131b248fffbfbece",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "0526b5467b55c543",
+        "page": "",
+        "ui": "",
+        "name": "Login Interface",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"login-page\">\n\n    <!-- UNCC Logo -->\n    <div class=\"logo-box\">\n      <img class=\"uncc-logo\"\n        src=\"https://engr.charlotte.edu/wp-content/uploads/sites/61/2023/04/WSLCOE-logo_C-Char-Entity-hor-1-1.png\" />\n    </div>\n\n    <!-- Login Card -->\n    <div class=\"login-card\">\n      <h2>Login</h2>\n\n      <div class=\"input-group\">\n        <label>Username</label>\n        <div class=\"input-box\">\n          <span class=\"icon\">👤</span>\n          <input v-model=\"username\" type=\"text\" placeholder=\"Type your username\" />\n        </div>\n      </div>\n\n      <div class=\"input-group\">\n        <label>Password</label>\n        <div class=\"input-box\">\n          <span class=\"icon\">🔒</span>\n          <input v-model=\"password\" type=\"password\" placeholder=\"Type your password\" />\n        </div>\n      </div>\n\n      <button class=\"login-btn\" @click=\"submitLogin\">\n        LOGIN\n      </button>\n    </div>\n\n    <!-- Sponsor -->\n    <div class=\"sponsor\">\n      <p>Sponsored by</p>\n      <img class=\"qorvo-logo\"\n        src=\"https://www.qorvo.com/-/media/images/qorvopublic/media-resources/logo/qorvo-200.png\" />\n    </div>\n\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      username: \"\",\n      password: \"\"\n    }\n  },\n  methods: {\n    submitLogin() {\n      sessionStorage.setItem(\"justLoggedIn\", \"true\")\n      this.send({\n        payload: {\n          username: this.username,\n          password: this.password\n        }\n      })\n    }\n  }\n}\n</script>\n\n<style>\n.login-page {\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n}\n.logo-box {\n  position: absolute;\n  top: 0px;\n  left: 50%;\n  transform: translateX(-50%);\n  background: white;\n  padding: 15px 25px;\n  border-radius: 12px;\n  box-shadow: 0 6px 20px rgba(0,0,0,0.15);\n}\n.uncc-logo { width: 420px; display: block; }\n.login-card {\n  background: white;\n  padding: 30px;\n  border-radius: 12px;\n  width: 320px;\n  box-shadow: 0 10px 30px rgba(0,0,0,0.2);\n  text-align: left;\n}\n.login-card h2 { text-align: center; margin-bottom: 25px; }\n.input-group { margin-bottom: 20px; }\n.input-group label { font-size: 14px; color: #555; }\n.input-box {\n  display: flex;\n  align-items: center;\n  border-bottom: 2px solid #ccc;\n  padding: 5px 0;\n}\n.input-box input { border: none; outline: none; flex: 1; padding: 8px; font-size: 14px; }\n.icon { margin-right: 8px; opacity: 0.6; }\n.login-btn {\n  width: 100%;\n  padding: 12px;\n  border: none;\n  border-radius: 25px;\n  background: linear-gradient(90deg, #00c853, #0f9b0f);\n  color: white;\n  font-weight: bold;\n  cursor: pointer;\n  margin-top: 10px;\n  transition: 0.3s;\n}\n.login-btn:hover { opacity: 0.9; }\n.sponsor { text-align: center; margin-top: 20px; color: rgba(255,255,255,0.7); font-size: 18px; }\n.qorvo-logo { width: 160px; margin-top: 3px; opacity: 0.9; }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 180,
+        "y": 60,
+        "wires": [
+            [
+                "d77730ab63e2d1ef"
+            ]
+        ]
+    },
+    {
+        "id": "d77730ab63e2d1ef",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Check Credentials",
+        "func": "let username = msg.payload.username || \"\";\nlet password = msg.payload.password || \"\";\n\nif (username === \"admin\" && password === \"Qorvo\") {\n    flow.set(\"loggedIn\", true);\n    flow.set(\"logoutAt\", Date.now() + 5 *60 * 1000);\n\n    msg.payload = { status: \"success\" };\n    return msg;\n} else {\n    flow.set(\"loggedIn\", false);\n    flow.set(\"logoutAt\", null);\n\n    msg.payload = { status: \"fail\" };\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 60,
+        "wires": [
+            [
+                "36f0df6d74bab62e"
+            ]
+        ]
+    },
+    {
+        "id": "36f0df6d74bab62e",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Go To Home",
+        "func": "if (msg.payload && msg.payload.status === \"success\") {\n    flow.set(\"loggedIn\", true);\n    let oldTimer = flow.get(\"logoutTimer\");\n    if (oldTimer) clearTimeout(oldTimer);\n    let timer = setTimeout(() => {\n        flow.set(\"loggedIn\", false);\n        node.send({ payload: { page: \"Login\", pages: { hide: [\"Smart Door Devices\"], show: [\"Login\"] } } });\n    }, 5 * 60 * 1000);\n    flow.set(\"logoutTimer\", timer);\n    msg.payload = { page: \"Smart Door Devices\", pages: { hide: [\"Login\"], show: [\"Smart Door Devices\"] }, justLoggedIn: true };\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [
+                "89ec177a8e322b79"
+            ]
+        ]
+    },
+    {
+        "id": "89ec177a8e322b79",
+        "type": "ui-control",
+        "z": "5a9eb481a3836ff8",
+        "name": "",
+        "ui": "662704e15f68651b",
+        "events": "all",
+        "x": 700,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4532789eb8ef5996",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "",
+        "page": "d462a9347688e2dc",
+        "ui": "",
+        "name": "Logout Button (Smart Devices)",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template> \n  <div style=\"position: absolute; top: 20px; right: 20px; z-index: 1000;\"> \n   <button @click=\"logout\" style=\"background: transparent; border: none; color: white; font-weight: normal; cursor: pointer; font-size: 20px;\"> \n      ⏻ Logout \n    </button> \n  </div> \n</template> \n\n<script> \nexport default { \n  methods: { \n    logout() { \n      this.send({ payload: \"logout\" })\n    } \n  } \n} \n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "widget:page",
+        "className": "",
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "37908c1ccba3fada"
+            ]
+        ]
+    },
+    {
+        "id": "37908c1ccba3fada",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Logout",
+        "func": "flow.set(\"loggedIn\", false);\nflow.set(\"logoutAt\", null);\n\nmsg.payload = { page: \"Login\" };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "968f36f0ebbf0718"
+            ]
+        ]
+    },
+    {
+        "id": "968f36f0ebbf0718",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Go To Login",
+        "func": "let loggedIn = flow.get(\"loggedIn\") || false;\nif (!loggedIn) {\n    msg.payload = { page: \"Login\" };\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 240,
+        "wires": [
+            [
+                "5bdd5c27e8a42956"
+            ]
+        ]
+    },
+    {
+        "id": "5bdd5c27e8a42956",
+        "type": "ui-control",
+        "z": "5a9eb481a3836ff8",
+        "name": "",
+        "ui": "662704e15f68651b",
+        "events": "all",
+        "x": 760,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4872ab7cf5c46926",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "",
+        "page": "d462a9347688e2dc",
+        "ui": "",
+        "name": "5-Minute Timeout",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div style=\"position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 1000; color: white; font-weight: normal; font-size: 20px; white-space: nowrap;\">\n    Auto Logout in {{ minutes }}:{{ seconds }}\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      remaining: 0,\n      timer: null\n    }\n  },\n  computed: {\n    minutes() {\n      return Math.floor(this.remaining / 60)\n    },\n    seconds() {\n      return String(this.remaining % 60).padStart(2, \"0\")\n    }\n  },\n  methods: {\n    updateRemaining(logoutAt) {\n      if (!logoutAt) {\n        this.remaining = 0\n        return\n      }\n\n      this.remaining = Math.max(0, Math.floor((logoutAt - Date.now()) / 1000))\n\n      if (this.timer) clearInterval(this.timer)\n\n      this.timer = setInterval(() => {\n        this.remaining = Math.max(0, Math.floor((logoutAt - Date.now()) / 1000))\n\n        if (this.remaining <= 0 && this.timer) {\n          clearInterval(this.timer)\n          this.timer = null\n        }\n      }, 1000)\n    }\n  },\n  watch: {\n    msg: {\n      immediate: true,\n      deep: true,\n      handler(newMsg) {\n        if (newMsg && newMsg.logoutAt) {\n          this.updateRemaining(newMsg.logoutAt)\n        }\n      }\n    }\n  },\n  beforeUnmount() {\n    if (this.timer) clearInterval(this.timer)\n  }\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "widget:page",
+        "className": "",
+        "x": 570,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9c3012c9834897d",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "",
+        "page": "a88a6506cc5ca714",
+        "ui": "",
+        "name": "Page style of Login",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* ===== FULLSCREEN BACKGROUND ===== */\nbody, html, .nrdb-layout, .nrdb-layout-main, .v-application, .v-main, main {\n    background: #0b5d3b !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important;\n}\n/* ===== REMOVE TOP BAR ===== */\n.v-toolbar, .v-app-bar, .nrdb-layout-header, header, nav, .v-navigation-drawer { display: none !important; }\n/* ===== REMOVE GROUP BOX ===== */\n.nrdb-ui-group, .nrdb-ui-group > div, .v-card, .v-sheet { background: transparent !important; box-shadow: none !important; border: none !important; }\n/* ===== REMOVE SPACING ===== */\n.nrdb-layout-main, .v-main, main { padding: 0 !important; margin: 0 !important; }\n.nrdb-ui-group__content, .v-card-text { padding: 0 !important; margin: 0 !important; }\n* { outline: none !important; }",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 830,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9033858dfb308d29",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "0526b5467b55c543",
+        "page": "",
+        "ui": "",
+        "name": "Page style of Login 2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"bg-shapes\">\n    <div class=\"shape shape1\"></div>\n    <div class=\"shape shape2\"></div>\n    <div class=\"shape shape3\"></div>\n  </div>\n</template>\n\n<style>\n.bg-shapes { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }\n.shape { position: absolute; border-radius: 50%; filter: blur(0px); opacity: 0.35; animation: float 14s ease-in-out infinite; }\n.shape1 { width: 500px; height: 500px; background: #297d41; top: -150px; left: -150px; }\n.shape2 { width: 600px; height: 600px; background: #297d41; bottom: -200px; right: -200px; animation-delay: 2s; }\n.shape3 { width: 300px; height: 300px; background: #297d41; bottom: 50px; right: 800px; animation-delay: 4s; }\n@keyframes float { 0% { transform: translate(0px,0px); } 50% { transform: translate(30px,-40px); } 100% { transform: translate(0px,0px); } }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 840,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a652668da402659",
+        "type": "comment",
+        "z": "5a9eb481a3836ff8",
+        "name": "Doorbell Demo  [QPG6200: PB5 button press → rings this bell]",
+        "info": "",
+        "x": 1220,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "81ea975d9361ac52",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "f7a046cb0b9b3513",
+        "page": "",
+        "ui": "",
+        "name": "Doorbell UI",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"doorbell-card\">\n    <div class=\"doorbell-title\"> </div>\n    <button class=\"doorbell-btn\" @click=\"ringBell\">🔔 Ring Doorbell</button>\n    <div class=\"doorbell-status\" :class=\"{ active: msg?.payload === true }\">\n      <span class=\"bell-emoji\" :class=\"{ shake: msg?.payload === true }\">🔔</span>\n      <span>{{ msg?.payload === true ? \"Door bell ringing\" : \"Door bell idle\" }}</span>\n    </div>\n    <audio ref=\"doorbellAudio\" preload=\"auto\">\n      <source src=\"https://raw.githubusercontent.com/alberto-hdz/QORVO_RADIO2/main/Computer/NodeRedDashboardUI/doorbell_audio.mp3\" type=\"audio/mpeg\">\n    </audio>\n  </div>\n</template>\n\n<script>\nexport default {\n  methods: {\n    ringBell() {\n      const audio = this.$refs.doorbellAudio;\n      if (audio) { audio.currentTime = 0; audio.play().catch(err => console.log(\"Audio play failed:\", err)); }\n      this.send({ topic: 'doorbell_press', payload: true });\n    }\n  }\n}\n</script>\n\n<style>\n.doorbell-card { background: white; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }\n.doorbell-title { font-size: 22px; font-weight: bold; margin-bottom: 15px; }\n.doorbell-btn { border: none; border-radius: 12px; padding: 14px 22px; font-size: 18px; cursor: pointer; background: #1976d2; color: white; }\n.doorbell-status { margin-top: 18px; font-size: 18px; font-weight: 600; }\n.doorbell-status.active { color: red; }\n.bell-emoji { display: inline-block; margin-right: 8px; font-size: 28px; }\n.shake { animation: ringShake 0.6s infinite; }\n@keyframes ringShake { 0% { transform: rotate(0deg); } 25% { transform: rotate(20deg); } 50% { transform: rotate(-20deg); } 75% { transform: rotate(12deg); } 100% { transform: rotate(0deg); } }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1170,
+        "y": 60,
+        "wires": [
+            [
+                "d9d667445859f5cd"
+            ]
+        ]
+    },
+    {
+        "id": "d9d667445859f5cd",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Doorbell Function",
+        "func": "if (msg.topic === \"doorbell_press\") {\n    node.send([\n        { topic: \"doorbell_state\", payload: \"🔔 Door bell ringing\" },\n        { payload: true }\n    ]);\n    setTimeout(() => {\n        node.send([\n            { topic: \"doorbell_state\" },\n            { payload: false }\n        ]);\n    }, 3000);\n}\nreturn null;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 60,
+        "wires": [
+            [
+                "38cf232f789381da",
+                "070fab2b8c925d38"
+            ],
+            [
+                "81ea975d9361ac52"
+            ]
+        ]
+    },
+    {
+        "id": "38cf232f789381da",
+        "type": "ui-notification",
+        "z": "5a9eb481a3836ff8",
+        "ui": "662704e15f68651b",
+        "position": "bottom right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Doorbell Notification",
+        "x": 1630,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5f0992da07c9362",
+        "type": "comment",
+        "z": "5a9eb481a3836ff8",
+        "name": "Speaker Demo  [QPG6200: BLE connected → Speaker detected]",
+        "info": "",
+        "x": 1210,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "e57f50607026e8e9",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "5937bfdf7909447f",
+        "page": "",
+        "ui": "",
+        "name": "Speaker UI",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"speaker-card\">\n    <div class=\"speaker-title\">Device Connection</div>\n    <div class=\"speaker-display\" :class=\"{ active: msg?.payload === true }\">\n      <div class=\"speaker-icon\" :class=\"{ pulse: msg?.payload === true }\">\n        {{ msg?.payload === true ? \"📡\" : \"🔌\" }}\n      </div>\n      <div class=\"speaker-text\">\n        {{ msg?.payload === true ? \"QPG6200 Connected\" : \"QPG6200 Offline\" }}\n      </div>\n    </div>\n  </div>\n</template>\n\n<style>\n.speaker-card { background: white; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }\n.speaker-title { font-size: 22px; font-weight: bold; margin-bottom: 18px; }\n.speaker-display { padding: 18px; border-radius: 14px; background: #f3f3f3; transition: all 0.3s ease; }\n.speaker-display.active { background: #e8f5e9; color: #1b5e20; }\n.speaker-icon { font-size: 48px; margin-bottom: 10px; }\n.speaker-text { font-size: 20px; font-weight: 600; }\n.pulse { animation: pulseAnim 1s infinite; }\n@keyframes pulseAnim { 0% { transform: scale(1); } 50% { transform: scale(1.12); } 100% { transform: scale(1); } }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1170,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "114946604bb839f5",
+        "type": "comment",
+        "z": "5a9eb481a3836ff8",
+        "name": "Motion Detection Demo  [QPG6200: heartbeat → Motion DETECTED]",
+        "info": "",
+        "x": 280,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "a55fb0edf8c0ddca",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "563da5ed5640d20b",
+        "page": "",
+        "ui": "",
+        "name": "Status Indicator",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div style=\"text-align:center;\">\n    <div :style=\"{\n        backgroundColor: msg.payload === 'Motion DETECTED' ? 'green' : 'red',\n        color: 'white',\n        padding: '20px',\n        fontSize: '24px',\n        fontWeight: 'bold',\n        borderRadius: '10px'\n    }\">\n      {{ msg.payload }}\n    </div>\n  </div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 280,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "800a0acd396d0e82",
+        "type": "ui-notification",
+        "z": "5a9eb481a3836ff8",
+        "ui": "662704e15f68651b",
+        "position": "bottom right",
+        "colorDefault": false,
+        "color": "#2d9a88",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Motion Notification",
+        "x": 290,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2cf6072474e027d8",
+        "type": "switch",
+        "z": "5a9eb481a3836ff8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Motion DETECTED",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "No motion detected",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 130,
+        "y": 840,
+        "wires": [
+            [
+                "1b029d77ad131fca"
+            ],
+            [
+                "215a07e9f34ef008"
+            ]
+        ]
+    },
+    {
+        "id": "f881bc9a45b6d752",
+        "type": "comment",
+        "z": "5a9eb481a3836ff8",
+        "name": "Door Lights  [Controls QPG6200 BLUE LED via MQTT]",
+        "info": "",
+        "x": 240,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "bf3017aca2ed3b6f",
+        "type": "ui-switch",
+        "z": "5a9eb481a3836ff8",
+        "name": "",
+        "label": "Light Switch",
+        "group": "eab319357594099b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "motion",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "Motion DETECTED",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "No motion detected",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 270,
+        "y": 780,
+        "wires": [
+            [
+                "1b029d77ad131fca",
+                "f603da44863bf468"
+            ]
+        ]
+    },
+    {
+        "id": "1b029d77ad131fca",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "eab319357594099b",
+        "page": "",
+        "ui": "",
+        "name": "Door Light Indicator",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div style=\"text-align:center; padding:20px;\">\n        <div v-if=\"msg.payload === 'Motion DETECTED'\" style=\"background-color:#fff3b0; border-radius:15px; padding:30px; font-size:26px; font-weight:bold; box-shadow:0 0 30px 10px gold;\">\n            💡 Door Light ON\n        </div>\n        <div v-else style=\"background-color:#2c2c2c; color:white; border-radius:15px; padding:30px; font-size:26px; font-weight:bold;\">\n            🌙 Door Light OFF\n        </div>\n    </div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "215a07e9f34ef008",
+        "type": "delay",
+        "z": "5a9eb481a3836ff8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 280,
+        "y": 880,
+        "wires": [
+            [
+                "1b029d77ad131fca"
+            ]
+        ]
+    },
+    {
+        "id": "63a813eb26a9b8fd",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "6a809c4b271a9658",
+        "page": "",
+        "ui": "",
+        "name": "Info",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<div style=\"padding: 10px 18px; line-height: 1.6;\">\n\n  <h2 style=\"color:#137d13; margin-bottom:10px;\">About</h2>\n  <p>\n    Smart Door Devices is an IoT-based smart entry monitoring system designed to demonstrate\n    connected door security and automation features through a simple web interface.\n    The system combines doorbell notification, motion detection, lighting indication,\n    and device communication into one dashboard for monitoring and interaction.\n  </p>\n\n  <hr style=\"margin:20px 0;\">\n\n  <h2 style=\"color:#137d13; margin-bottom:10px;\">System Information</h2>\n  <p><b>Gateway:</b> Raspberry Pi with OpenThread Border Router</p>\n  <p><b>Wireless Communication:</b> Thread / BLE</p>\n  <p><b>Data Handling:</b> MQTT with Node-RED Dashboard</p>\n  <p><b>End Device:</b> QPG6200L</p>\n  <p><b>Interface:</b> Node-RED Dashboard 2.0</p>\n\n  <hr style=\"margin:20px 0;\">\n\n  <h2 style=\"color:#137d13; margin-bottom:10px;\">How It Works</h2>\n  <p> The Smart Door Devices system operates through a combination of wireless communication, gateway processing, and a real-time dashboard interface.</p>\n  <ul style=\"margin-left: 20px; padding-left: 10px; line-height: 1.6;\">\n    <li>\n      The <b>QPG6200L device</b> collects sensor data such as motion detection, button presses (doorbell), and device status, then\n      transmits this information over a low-power wireless network (Thread/BLE).\n    </li>\n    <li>\n      The <b>gateway (Raspberry Pi with OpenThread Border Router)</b> receives this data and acts as a bridge between the\n      device network and the dashboard system.\n    </li>\n    <li>\n      The gateway forwards incoming data to <b>Node-RED</b>, where logic flows process the information, trigger events\n      (such as alerts or lighting changes), and prepare it for visualization.\n    </li>\n    <li>\n      The <b>Node-RED dashboard</b> displays real-time device states and allows users to interact with the system through\n      a web-based interface.\n    </li>\n    <li>\n      This setup enables seamless communication between hardware devices and the user interface, creating a responsive and\n      interactive smart door monitoring system.\n    </li>\n  </ul>\n  \n  <hr style=\"margin:20px 0;\">\n  \n  <h2 style=\"color:#137d13; margin-bottom:10px;\">User Guide</h2>\n  <p> This dashboard provides a simple interface for monitoring and interacting with smart door features in real time. </p>\n  <ul style=\"margin-left: 20px; padding-left: 10px; line-height: 1.6;\">\n    <li>\n      Use the dashboard to <b>monitor system components</b>, including the doorbell status, motion detection activity, and\n      lighting system behavior.\n    </li>\n    <li>\n      Click the <b>“Ring Doorbell” button</b> to simulate a visitor event and observe how the system responds\n      (notifications, UI updates, and sound alerts).\n    </li>\n    <li>\n      The <b>motion detector section</b> will automatically update when movement is detected, indicating activity near the\n      door.\n    </li>\n    <li>\n      The <b>lighting system panel</b> shows whether the door light is currently on or off and reflects any automatic or\n      manual changes.\n    </li>\n    <li>\n      Navigate between pages (e.g., Smart Devices and Project Info) using the sidebar while maintaining your session.\n    </li>\n    <li>\n      Use the <b>GitHub repository link</b> provided below to access the full project code, documentation, and\n      implementation details.\n    </li>\n  </ul>\n\n  <hr style=\"margin:20px 0;\">\n\n  <h2 style=\"color:#137d13; margin-bottom:10px;\">Credits</h2>\n  <p><b>Project Team:</b></p>\n  <ul style=\"margin-left: 20px; padding-left: 10px; line-height: 1.6;\">\n    <li><b>Mechanical:</b> Ethan Hartman</li>\n    <li><b>Electrical:</b> Luke Mathews & Abdul Bah</li>\n    <li><b>Computer:</b> Alberto Hernandez & Kenneth Le</li>\n  </ul>\n  <p><b>Industry Sponsors:</b> Qorvo</p>\n  <ul style=\"margin-left: 20px; padding-left: 10px; line-height: 1.6;\">\n    <li>David Kegley</li>\n    <li>Nathan Whitt</li>\n    <li>Daisy Vazquez</li>\n  </ul>\n\n  <p><b>Course:</b> Senior Design 1 / Senior Design 2 (Fall 2025 - Spring 2026)</p>\n\n  <p style=\"margin-top:15px;\">\n    <a href=\"https://github.com/alberto-hdz/QORVO_RADIO2\" target=\"_blank\"\n       style=\"display:inline-block; background:#24292e; color:white; text-decoration:none; padding:10px 16px; border-radius:8px;\">\n      🔗 View GitHub Repository\n    </a>\n  </p>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0da9a739e906db7a",
+        "type": "inject",
+        "z": "5a9eb481a3836ff8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "0870b4922ad705ca"
+            ]
+        ]
+    },
+    {
+        "id": "0870b4922ad705ca",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Check Session Expiry",
+        "func": "let logoutAt = flow.get(\"logoutAt\");\nlet loggedIn = flow.get(\"loggedIn\");\n\nif (loggedIn && logoutAt && Date.now() >= logoutAt) {\n    flow.set(\"loggedIn\", false);\n    flow.set(\"logoutAt\", null);\n\n    return [\n        { payload: { page: \"Login\" } },\n        null\n    ];\n}\n\nreturn [\n    null,\n    { logoutAt: logoutAt }\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 320,
+        "wires": [
+            [
+                "9d9b475a39801ff5"
+            ],
+            [
+                "4872ab7cf5c46926",
+                "67a4bf497dd2eac1"
+            ]
+        ]
+    },
+    {
+        "id": "9d9b475a39801ff5",
+        "type": "ui-control",
+        "z": "5a9eb481a3836ff8",
+        "name": "",
+        "ui": "662704e15f68651b",
+        "events": "all",
+        "x": 540,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67a4bf497dd2eac1",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "",
+        "page": "adde522760c5b605",
+        "ui": "",
+        "name": "5-Minute Timeout 2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div style=\"position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 1000; color: white; font-weight: normal; font-size: 20px; white-space: nowrap;\">\n    Auto Logout in {{ minutes }}:{{ seconds }}\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      remaining: 0,\n      timer: null\n    }\n  },\n  computed: {\n    minutes() {\n      return Math.floor(this.remaining / 60)\n    },\n    seconds() {\n      return String(this.remaining % 60).padStart(2, \"0\")\n    }\n  },\n  methods: {\n    updateRemaining(logoutAt) {\n      if (!logoutAt) {\n        this.remaining = 0\n        return\n      }\n\n      this.remaining = Math.max(0, Math.floor((logoutAt - Date.now()) / 1000))\n\n      if (this.timer) clearInterval(this.timer)\n\n      this.timer = setInterval(() => {\n        this.remaining = Math.max(0, Math.floor((logoutAt - Date.now()) / 1000))\n\n        if (this.remaining <= 0 && this.timer) {\n          clearInterval(this.timer)\n          this.timer = null\n        }\n      }, 1000)\n    }\n  },\n  watch: {\n    msg: {\n      immediate: true,\n      deep: true,\n      handler(newMsg) {\n        if (newMsg && newMsg.logoutAt) {\n          this.updateRemaining(newMsg.logoutAt)\n        }\n      }\n    }\n  },\n  beforeUnmount() {\n    if (this.timer) clearInterval(this.timer)\n  }\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "widget:page",
+        "className": "",
+        "x": 570,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce934451469b296b",
+        "type": "ui-template",
+        "z": "5a9eb481a3836ff8",
+        "group": "",
+        "page": "adde522760c5b605",
+        "ui": "",
+        "name": "Logout Button (Project Info)",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template> \n  <div style=\"position: absolute; top: 20px; right: 20px; z-index: 1000;\"> \n   <button @click=\"logout\" style=\"background: transparent; border: none; color: white; font-weight: normal; cursor: pointer; font-size: 20px;\"> \n      ⏻ Logout \n    </button> \n  </div> \n</template> \n\n<script> \nexport default { \n  methods: { \n    logout() { \n      this.send({ payload: \"logout\" })\n    } \n  } \n} \n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "widget:page",
+        "className": "",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "361c3f57b9851858"
+            ]
+        ]
+    },
+    {
+        "id": "361c3f57b9851858",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Logout",
+        "func": "flow.set(\"loggedIn\", false);\nflow.set(\"logoutAt\", null);\n\nmsg.payload = { page: \"Login\" };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "27925d9562b3c660"
+            ]
+        ]
+    },
+    {
+        "id": "27925d9562b3c660",
+        "type": "function",
+        "z": "5a9eb481a3836ff8",
+        "name": "Go To Login",
+        "func": "let loggedIn = flow.get(\"loggedIn\") || false;\nif (!loggedIn) {\n    msg.payload = { page: \"Login\" };\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 200,
+        "wires": [
+            [
+                "86bf574c5d6a70a1"
+            ]
+        ]
+    },
+    {
+        "id": "86bf574c5d6a70a1",
+        "type": "ui-control",
+        "z": "5a9eb481a3836ff8",
+        "name": "",
+        "ui": "662704e15f68651b",
+        "events": "all",
+        "x": 760,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76c2a733a2da48fd",
+        "type": "comment",
+        "z": "5a9eb481a3836ff8",
+        "name": "Project Info",
+        "info": "",
+        "x": 110,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f5e09de0102e6345",
+        "type": "ui-group",
+        "name": "QPG6200 Device",
+        "page": "d462a9347688e2dc",
+        "width": "12",
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "7e6cafa1f4e993be",
+        "type": "mqtt-broker",
+        "name": "Pi MQTT Broker (192.168.10.102)",
+        "broker": "192.168.10.102",
+        "port": "1883",
+        "clientid": "node-red-ble-iot-demo",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0526b5467b55c543",
+        "type": "ui-group",
+        "name": "",
+        "page": "a88a6506cc5ca714",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "662704e15f68651b",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "d462a9347688e2dc",
+        "type": "ui-page",
+        "name": "Smart Door Devices",
+        "ui": "662704e15f68651b",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "a57b80d7e3fe3fc8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "a88a6506cc5ca714",
+        "type": "ui-page",
+        "name": "Login",
+        "ui": "662704e15f68651b",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "f7a046cb0b9b3513",
+        "type": "ui-group",
+        "name": "Doorbell",
+        "page": "d462a9347688e2dc",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5937bfdf7909447f",
+        "type": "ui-group",
+        "name": "Speaker/Mic",
+        "page": "d462a9347688e2dc",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "563da5ed5640d20b",
+        "type": "ui-group",
+        "name": "Movement Detector",
+        "page": "d462a9347688e2dc",
+        "width": "7",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "eab319357594099b",
+        "type": "ui-group",
+        "name": "Lighting System",
+        "page": "d462a9347688e2dc",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "false",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6a809c4b271a9658",
+        "type": "ui-group",
+        "name": " ",
+        "page": "adde522760c5b605",
+        "width": "6",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "adde522760c5b605",
+        "type": "ui-page",
+        "name": "Project Info ",
+        "ui": "662704e15f68651b",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "a57b80d7e3fe3fc8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a57b80d7e3fe3fc8",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#187317",
+            "primary": "#ffffff",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "cfd3fb6034ccbfb1",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2"
+        }
+    }
+]
